@@ -8,4 +8,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/__The Rising Bard/Scenes/Try scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 00c2b2c9027574946b26d878f37fe84b, type: 2}
