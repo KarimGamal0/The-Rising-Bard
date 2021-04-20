@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerControlles :MonoBehaviour
+public class PlayerControlles : MonoBehaviour
 {
     // Serialize private data
     [SerializeField] PlayerData playerData;
@@ -19,6 +19,12 @@ public class PlayerControlles :MonoBehaviour
     private float inputX;
     private Rigidbody2D rigidbody2d;
 
+    float dirX;
+
+
+    bool doubleJumpAllowed = false;
+    bool onTheGround = false;
+
 
 
 
@@ -31,13 +37,27 @@ public class PlayerControlles :MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // for Physics
     private void FixedUpdate()
     {
-        rigidbody2d.velocity = new Vector2(inputX * playerSpeed , rigidbody2d.velocity.y);
+        rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y);
+
+
+        // check for Jump and Duble Jump
+
+        if (rigidbody2d.velocity.y == 0)
+            onTheGround = true;
+        else
+            onTheGround = false;
+
+        if (onTheGround)
+            doubleJumpAllowed = true;
+
+
+       
     }
 
 
@@ -51,10 +71,23 @@ public class PlayerControlles :MonoBehaviour
 
     public void HandelJump(InputAction.CallbackContext context)
     {
-        if(context.performed)
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
+        if (context.performed && onTheGround)
+        {
+            Jump();
+        }
+
+        else if (doubleJumpAllowed && context.performed)
+        {
+            Jump();
+            doubleJumpAllowed = false;
+        }
     }
 
+
+    private void Jump()
+    {
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
+    }
 
 
     // Health modificaion functions
@@ -97,6 +130,13 @@ public class PlayerControlles :MonoBehaviour
     {
         playerData.playerScore += increaseValue;
     }
+
+
+
+
+
+
+
 
 
 
