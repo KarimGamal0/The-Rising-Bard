@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8022b83b1e62fb5468b2216bc2453e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: 09bd6d5a79fe5fe4c9ad57d245f8a9b7, type: 2}
+  playerData: {fileID: 0}
   playerSpeed: 5
   jumpForce: 5
 --- !u!114 &8528103025274697665
@@ -564,6 +564,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 3173e06d-5caa-4b23-b1d0-705a21352826
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9114200223376359003}
+        m_TargetAssemblyTypeName: PlayerControlles, Assembly-CSharp
+        m_MethodName: HandleAbility
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 91e63523-2f0b-44d6-b644-a21c40e6daae
+    m_ActionName: Player/Ability[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

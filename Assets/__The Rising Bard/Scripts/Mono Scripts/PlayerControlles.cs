@@ -30,7 +30,19 @@ public class PlayerControlles : MonoBehaviour
 
     private void Awake()
     {
-        playerData.Abilities["Dash"] = true;
+        #region Initilization data for the player
+
+
+        foreach (var item in playerData.abilities)
+        {
+            item.abilityActive = false;
+        }
+        playerData.playerHP = 100;
+        playerData.playerMana = 100;
+
+        #endregion
+
+
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -57,8 +69,11 @@ public class PlayerControlles : MonoBehaviour
             doubleJumpAllowed = true;
 
 
-       
+
     }
+
+
+    #region Input Handling Functions 
 
 
     public void HandelMove(InputAction.CallbackContext context)
@@ -82,6 +97,51 @@ public class PlayerControlles : MonoBehaviour
             doubleJumpAllowed = false;
         }
     }
+
+
+    public void HandleAbility(InputAction.CallbackContext context)
+    {
+        if (context.performed )
+        {
+            if (playerData.abilities[0].abilityActive)
+            {
+                // Dash 
+                Debug.Log("Dash");
+            }
+            else if (playerData.abilities[1].abilityActive)
+            {
+                // Double Jump 
+                Debug.Log("Double Jump");
+            }
+            else if(playerData.abilities[2].abilityActive)
+            {
+                // Mind Control
+                Debug.Log("Mind Control");
+            }
+            else if(playerData.abilities[3].abilityActive)
+            {
+                // Empowered Attack
+                Debug.Log("Empowered Attack");
+            }
+            else if(playerData.abilities[4].abilityActive)
+            {
+                // Time Freeze
+                Debug.Log("Time Freeze");
+
+            }
+            else if(playerData.abilities[5].abilityActive)
+            {
+                // Hyper Attack
+                Debug.Log("Hyper Attack");
+
+            }
+        }
+
+
+    }
+
+
+    #endregion
 
 
     private void Jump()

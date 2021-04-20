@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150c2610ae0a4d847b2dd266e8af49b0, type: 3}
   m_Name: Player Data
   m_EditorClassIdentifier: 
+  abilities:
+  - {fileID: 11400000, guid: f1a915cf76bf036498662259e0ff4f35, type: 2}
+  - {fileID: 11400000, guid: 33aab85c8e0354e4e860f4f75fedbb9f, type: 2}
+  - {fileID: 11400000, guid: 8695818e1b9f57e4a82459cb6435cec3, type: 2}
+  - {fileID: 11400000, guid: 80665743980e52143910bfd19bbc7b55, type: 2}
+  - {fileID: 11400000, guid: 95e87dc645fdc374dbc05fbb5189f2a1, type: 2}
+  - {fileID: 11400000, guid: 58c10f217c8bdb341ae3683ebabd0fcf, type: 2}
   playerHP: 100
   playerMana: 100
   playerScore: 0
