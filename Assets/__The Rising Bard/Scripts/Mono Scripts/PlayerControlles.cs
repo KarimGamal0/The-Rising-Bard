@@ -11,6 +11,9 @@ public class PlayerControlles : MonoBehaviour
     [SerializeField] float dashForced = 50.0f;
     [SerializeField] float jumpForce = 5.0f;
 
+    [SerializeField] ParticleSystem dust;
+
+
 
     // Public Data
 
@@ -20,12 +23,11 @@ public class PlayerControlles : MonoBehaviour
     private float inputX;
     private Rigidbody2D rigidbody2d;
 
-    float dirX;
+    private bool doubleJumpAllowed = false;
+    private bool onTheGround = false;
+    private bool onDash = false;
 
-    bool doubleJumpAllowed = false;
-    bool onTheGround = false;
-    bool onDash = false;
-
+    private bool facingRight = true;
 
 
 
@@ -67,7 +69,7 @@ public class PlayerControlles : MonoBehaviour
 
         }
 
-        
+
         // check for Jump 
 
         if (rigidbody2d.velocity.y == 0)
@@ -86,6 +88,11 @@ public class PlayerControlles : MonoBehaviour
     {
         inputX = context.ReadValue<Vector2>().x;
         Debug.Log(inputX + " value");
+        if (inputX != 0)
+        {
+            CreateDust();
+            transform.localScale = new Vector3(inputX, transform.localScale.y, transform.localScale.z);
+        }
     }
 
 
@@ -111,20 +118,20 @@ public class PlayerControlles : MonoBehaviour
             Debug.Log("Attack");
         }
 
-       
+
     }
 
 
     public void HandleAbility(InputAction.CallbackContext context)
     {
-        if (context.performed )
+        if (context.performed)
         {
             if (playerData.abilities[0].abilityActive)
             {
                 // Dash 
                 Debug.Log("Dash");
                 onDash = true;
-               
+
             }
             else if (playerData.abilities[1].abilityActive)
             {
@@ -132,23 +139,23 @@ public class PlayerControlles : MonoBehaviour
                 Debug.Log("Double Jump");
                 doubleJumpAllowed = true;
             }
-            else if(playerData.abilities[2].abilityActive)
+            else if (playerData.abilities[2].abilityActive)
             {
                 // Mind Control
                 Debug.Log("Mind Control");
             }
-            else if(playerData.abilities[3].abilityActive)
+            else if (playerData.abilities[3].abilityActive)
             {
                 // Empowered Attack
                 Debug.Log("Empowered Attack");
             }
-            else if(playerData.abilities[4].abilityActive)
+            else if (playerData.abilities[4].abilityActive)
             {
                 // Time Freeze
                 Debug.Log("Time Freeze");
 
             }
-            else if(playerData.abilities[5].abilityActive)
+            else if (playerData.abilities[5].abilityActive)
             {
                 // Hyper Attack
                 Debug.Log("Hyper Attack");
@@ -167,6 +174,8 @@ public class PlayerControlles : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
     }
+
+
 
 
     // Health modificaion functions
@@ -216,7 +225,12 @@ public class PlayerControlles : MonoBehaviour
 
 
 
+    // play partical System
 
+    void CreateDust()
+    {
+        dust.Play();
+    }
 
 
 }
