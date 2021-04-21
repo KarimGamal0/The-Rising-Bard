@@ -8,6 +8,7 @@ public class PlayerControlles : MonoBehaviour
     // Serialize private data
     [SerializeField] PlayerData playerData;
     [SerializeField] float playerSpeed = 5.0f;
+    [SerializeField] float dashForced = 50.0f;
     [SerializeField] float jumpForce = 5.0f;
 
 
@@ -21,9 +22,9 @@ public class PlayerControlles : MonoBehaviour
 
     float dirX;
 
-
     bool doubleJumpAllowed = false;
     bool onTheGround = false;
+    bool onDash = false;
 
 
 
@@ -55,19 +56,24 @@ public class PlayerControlles : MonoBehaviour
     // for Physics
     private void FixedUpdate()
     {
-        rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y);
+        if (onDash)
+        {
+            rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y);
+            onDash = false;
+        }
+        else
+        {
+            rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y);
 
+        }
 
-        // check for Jump and Duble Jump
+        
+        // check for Jump 
 
         if (rigidbody2d.velocity.y == 0)
             onTheGround = true;
         else
             onTheGround = false;
-
-        if (onTheGround)
-            doubleJumpAllowed = true;
-
 
 
     }
@@ -107,11 +113,14 @@ public class PlayerControlles : MonoBehaviour
             {
                 // Dash 
                 Debug.Log("Dash");
+                onDash = true;
+               
             }
             else if (playerData.abilities[1].abilityActive)
             {
                 // Double Jump 
                 Debug.Log("Double Jump");
+                doubleJumpAllowed = true;
             }
             else if(playerData.abilities[2].abilityActive)
             {
