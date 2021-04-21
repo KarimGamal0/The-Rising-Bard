@@ -34,7 +34,11 @@ public class AbilitiesUiController: MonoBehaviour
 
     public void  HandelButtonClick(int value)
     {
-        playerData.abilities[value].abilityActive = true;
+        for (int i = 0; i < playerData.abilities.Length; i++)
+        {
+            playerData.abilities[i].abilityActive = (i ==value )?true: false;
+        }
+        
     }
 
 }

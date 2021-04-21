@@ -131,7 +131,6 @@ public class PlayerControlles : MonoBehaviour
                 // Dash 
                 Debug.Log("Dash");
                 onDash = true;
-
             }
             else if (playerData.abilities[1].abilityActive)
             {

@@ -5434,3 +5434,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityMenuUi: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
