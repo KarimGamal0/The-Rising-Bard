@@ -104,6 +104,16 @@ public class PlayerControlles : MonoBehaviour
         }
     }
 
+    public void HandelFire(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Debug.Log("Attack");
+        }
+
+       
+    }
+
 
     public void HandleAbility(InputAction.CallbackContext context)
     {
