@@ -7,9 +7,12 @@ public class PlayerControlles : MonoBehaviour
 {
     // Serialize private data
     [SerializeField] PlayerData playerData;
+
     [SerializeField] float playerSpeed = 5.0f;
     [SerializeField] float dashForced = 50.0f;
     [SerializeField] float jumpForce = 5.0f;
+
+    [SerializeField] float timeFreezeValue = 5.0f;
 
     [SerializeField] ParticleSystem dust;
 
@@ -25,7 +28,12 @@ public class PlayerControlles : MonoBehaviour
 
     private bool doubleJumpAllowed = false;
     private bool onTheGround = false;
+
     private bool onDash = false;
+
+    private bool isTimeFreaze = false;
+    private float timeFreeze;
+    
 
     private bool facingRight = true;
 
@@ -47,6 +55,8 @@ public class PlayerControlles : MonoBehaviour
 
 
         rigidbody2d = GetComponent<Rigidbody2D>();
+
+        timeFreeze = timeFreezeValue;
     }
 
 
@@ -60,12 +70,15 @@ public class PlayerControlles : MonoBehaviour
     {
         if (onDash)
         {
-            rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y);
+            rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y)
+                * Time.fixedDeltaTime * 10 * playerSpeed * (1/Time.timeScale);
             onDash = false;
+            playerData.abilities[0].abilityActive = false;
         }
         else
         {
-            rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y);
+            rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y)
+                * Time.fixedDeltaTime*10* playerSpeed * (1 / Time.timeScale); 
 
         }
 
@@ -76,6 +89,24 @@ public class PlayerControlles : MonoBehaviour
             onTheGround = true;
         else
             onTheGround = false;
+
+
+        // check for time freeze 
+        if (isTimeFreaze)
+        {
+            playerData.abilities[4].abilityActive = false;
+            if (timeFreezeValue > 0)
+            {
+                Time.timeScale = 0.1f;
+                timeFreezeValue -= Time.fixedDeltaTime;
+            }
+            else
+            {
+                timeFreezeValue = timeFreeze;
+                isTimeFreaze = false;
+                Time.timeScale = 1f;
+            }
+        }
 
 
     }
@@ -108,6 +139,7 @@ public class PlayerControlles : MonoBehaviour
         {
             Jump();
             doubleJumpAllowed = false;
+            playerData.abilities[1].abilityActive = false;
         }
     }
 
@@ -152,6 +184,7 @@ public class PlayerControlles : MonoBehaviour
             {
                 // Time Freeze
                 Debug.Log("Time Freeze");
+                isTimeFreaze = true;
 
             }
             else if (playerData.abilities[5].abilityActive)
@@ -171,7 +204,8 @@ public class PlayerControlles : MonoBehaviour
 
     private void Jump()
     {
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce)
+             * Time.fixedDeltaTime *10 * playerSpeed  * (1 / Time.timeScale);
     }
 
 
