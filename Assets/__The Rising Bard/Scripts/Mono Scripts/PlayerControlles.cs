@@ -12,6 +12,9 @@ public class PlayerControlles : MonoBehaviour
     [SerializeField] float dashForced = 50.0f;
     [SerializeField] float jumpForce = 5.0f;
 
+    [SerializeField] float hangTime = 0.1f;
+    [SerializeField] float hangCounter ;
+
     [SerializeField] float timeFreezeValue = 5.0f;
 
     [SerializeField] ParticleSystem dust;
@@ -82,6 +85,16 @@ public class PlayerControlles : MonoBehaviour
 
         }
 
+        //check for last time press jump befor leave ground 
+        if(onTheGround)
+        {
+            hangCounter = hangTime;
+        }
+        else
+        {
+            hangCounter -= Time.fixedDeltaTime;
+        }
+
 
         // check for Jump 
 
@@ -130,9 +143,11 @@ public class PlayerControlles : MonoBehaviour
 
     public void HandelJump(InputAction.CallbackContext context)
     {
-        if (context.performed && onTheGround)
+        if (context.performed && hangCounter>0f)
         {
             Jump();
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce)
+            * Time.fixedDeltaTime * 10 * playerSpeed * (1 / Time.timeScale);
         }
 
         else if (doubleJumpAllowed && context.performed)
@@ -141,6 +156,12 @@ public class PlayerControlles : MonoBehaviour
             doubleJumpAllowed = false;
             playerData.abilities[1].abilityActive = false;
         }
+        // sa=mall jump need to be fixed
+        /*else if(context.canceled && rigidbody2d.velocity.y>0)
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce * 0.5f)
+           * Time.fixedDeltaTime * 10 * playerSpeed * (1 / Time.timeScale);
+        }*/
     }
 
     public void HandelFire(InputAction.CallbackContext context)
