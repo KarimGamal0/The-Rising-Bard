@@ -12,10 +12,11 @@ public class PlayerControlles : MonoBehaviour
     [SerializeField] float dashForced = 50.0f;
     [SerializeField] float jumpForce = 5.0f;
 
-    [SerializeField] float hangTime = 0.1f;
-    [SerializeField] float hangCounter ;
-
     [SerializeField] float timeFreezeValue = 5.0f;
+
+    [SerializeField] float hangTime = 0.1f;
+
+    [SerializeField] float jumpBufferLenght = 0.1f;
 
     [SerializeField] ParticleSystem dust;
 
@@ -31,14 +32,15 @@ public class PlayerControlles : MonoBehaviour
 
     private bool doubleJumpAllowed = false;
     private bool onTheGround = false;
+    private bool wasOnTheGround = false;
 
     private bool onDash = false;
 
     private bool isTimeFreaze = false;
     private float timeFreeze;
-    
 
-    private bool facingRight = true;
+    private float hangCounter;
+
 
 
 
@@ -60,6 +62,7 @@ public class PlayerControlles : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
 
         timeFreeze = timeFreezeValue;
+
     }
 
 
@@ -85,7 +88,8 @@ public class PlayerControlles : MonoBehaviour
 
         }
 
-        //check for last time press jump befor leave ground 
+        // Check for last time press jump befor leave ground 
+        // Manage hange time
         if(onTheGround)
         {
             hangCounter = hangTime;
@@ -95,6 +99,8 @@ public class PlayerControlles : MonoBehaviour
             hangCounter -= Time.fixedDeltaTime;
         }
 
+
+       
 
         // check for Jump 
 
@@ -121,6 +127,8 @@ public class PlayerControlles : MonoBehaviour
             }
         }
 
+        
+        
 
     }
 
@@ -137,17 +145,27 @@ public class PlayerControlles : MonoBehaviour
             CreateDust();
             transform.localScale = new Vector3(inputX, transform.localScale.y, transform.localScale.z);
         }
+        
     }
 
 
 
     public void HandelJump(InputAction.CallbackContext context)
     {
-        if (context.performed && hangCounter>0f)
+        /*if(context.performed)
+        {
+            jumpBufferCounter = jumpBufferLenght;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.fixedDeltaTime;
+        }*/
+        if ( context.performed&& hangCounter>0f)
         {
             Jump();
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce)
             * Time.fixedDeltaTime * 10 * playerSpeed * (1 / Time.timeScale);
+
         }
 
         else if (doubleJumpAllowed && context.performed)
@@ -273,18 +291,10 @@ public class PlayerControlles : MonoBehaviour
         playerData.playerScore += increaseValue;
     }
 
-
-
-
-
-
-
     // play partical System
 
     void CreateDust()
     {
         dust.Play();
     }
-
-
 }
