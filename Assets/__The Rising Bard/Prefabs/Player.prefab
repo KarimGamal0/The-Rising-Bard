@@ -5513,7 +5513,7 @@ MonoBehaviour:
   jumpForce: 5
   timeFreezeValue: 5
   hangTime: 0.1
-  jumpBufferLenght: 0.5
+  jumpBufferLenght: 0
   dust: {fileID: 233452023}
 --- !u!114 &8528103025274697665
 MonoBehaviour:

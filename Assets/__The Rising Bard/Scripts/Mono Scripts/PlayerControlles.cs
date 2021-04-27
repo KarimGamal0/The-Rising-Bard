@@ -34,8 +34,8 @@ public class PlayerControlles : MonoBehaviour
     private float inputX;
     private Rigidbody2D rigidbody2d;
 
-    private bool doubleJumpAllowed = false;
     private bool wasOnTheGround = false;
+    private float jumpCount =0;
 
     private bool onDash = false;
 
@@ -95,6 +95,7 @@ public class PlayerControlles : MonoBehaviour
         if (onTheGround())
         {
             hangCounter = hangTime;
+            jumpCount = 1;
         }
         else
         {
@@ -142,7 +143,7 @@ public class PlayerControlles : MonoBehaviour
     public void HandelJump(InputAction.CallbackContext context)
     {
 
-        if (context.performed && onTheGround())
+        if (context.performed && hangCounter >= 0f)
         {
             Jump();
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
@@ -150,24 +151,24 @@ public class PlayerControlles : MonoBehaviour
 
         }
 
-        /*else if (doubleJumpAllowed && context.performed)
+        else if (doubleJumpAllowed() && jumpCount !=2 && context.performed)
         {
             Debug.Log("doubleJump");
 
             Jump();
-            doubleJumpAllowed = false;
-            playerData.abilities[1].abilityActive = false;
-        }*/
+            playerData.playerMana -= playerData.abilities[1].abilityCost;
+            jumpCount = 2;
+        }
 
     }
 
 
     public void HandleFire(InputAction.CallbackContext context)
     {
-       if(context.performed)
+        if (context.performed)
         {
             Debug.Log("Attack");
-            playerAnimator.SetBool("IsAttacking",true);
+            playerAnimator.SetBool("IsAttacking", true);
         }
         playerAnimator.SetBool("IsAttacking", false);
     }
@@ -229,7 +230,10 @@ public class PlayerControlles : MonoBehaviour
     }
 
 
-
+    private bool doubleJumpAllowed()
+    {
+        return playerData.playerMana >= playerData.abilities[1].abilityCost;
+    }
 
     // Health modificaion functions
 

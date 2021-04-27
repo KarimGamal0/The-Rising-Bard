@@ -524,14 +524,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8451521838436321749, guid: 3541a097d05ff6b489defbaedd37b714, type: 3}
-      propertyPath: m_GravityScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9114200223376359003, guid: 3541a097d05ff6b489defbaedd37b714, type: 3}
-      propertyPath: jumpBufferLenght
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3541a097d05ff6b489defbaedd37b714, type: 3}
 --- !u!1 &1808321320
