@@ -69,12 +69,6 @@ public class PlayerControlles : MonoBehaviour
 
     }
 
-
-    void Start()
-    {
-
-    }
-
     // for Physics
     private void FixedUpdate()
     {
@@ -106,17 +100,16 @@ public class PlayerControlles : MonoBehaviour
         // check for time freeze 
         if (isTimeFreaze)
         {
-            playerData.abilities[4].abilityActive = false;
+           
             if (timeFreezeValue > 0)
             {
-                Time.timeScale = 0.1f;
                 timeFreezeValue -= Time.fixedDeltaTime;
             }
             else
             {
                 timeFreezeValue = timeFreeze;
                 isTimeFreaze = false;
-                Time.timeScale = 1f;
+                playerData.abilities[4].abilityActive = false;
             }
         }
 
@@ -168,58 +161,66 @@ public class PlayerControlles : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("Attack");
-            playerAnimator.SetBool("IsAttacking", true);
+            playerAnimator.SetTrigger("IsAttacking");
         }
-        playerAnimator.SetBool("IsAttacking", false);
     }
 
 
     public void HandleDash(InputAction.CallbackContext context)
     {
-        playerData.abilities[0].abilityActive = true;
-        onDash = true;
-        Debug.Log("Dash");
+        if (context.performed)
+        {
+            playerData.abilities[0].abilityActive = true;
+            onDash = true;
+            Debug.Log("Dash");
+        }
 
     }
     public void HandleTimeFreeze(InputAction.CallbackContext context)
     {
-        playerData.abilities[4].abilityActive = true;
+        if (context.performed)
+        {
+            playerData.abilities[4].abilityActive = true;
 
-        // Time Freeze
-        Debug.Log("Time Freeze");
-        isTimeFreaze = true;
+            // Time Freeze
+            Debug.Log("Time Freeze");
+            isTimeFreaze = true;
+        }
     }
     public void HandleMindControl(InputAction.CallbackContext context)
     {
-        playerData.abilities[2].abilityActive = true;
+        if (context.performed)
+        {
+            playerData.abilities[2].abilityActive = true;
 
-        // Mind Control
-        Debug.Log("Mind Control");
+            // Mind Control
+            Debug.Log("Mind Control");
+        }
     }
     public void HandleEmpoweredAttack(InputAction.CallbackContext context)
     {
+        if (context.performed)
+        {
+            playerData.abilities[3].abilityActive = true;
 
-        playerData.abilities[3].abilityActive = true;
-
-        // Empowered Attack
-        Debug.Log("Empowered Attack");
+            // Empowered Attack
+            Debug.Log("Empowered Attack");
+        }
     }
     public void HandleHyperAttack(InputAction.CallbackContext context)
     {
-        playerData.abilities[5].abilityActive = true;
-        // Hyper Attack
-        Debug.Log("Hyper Attack");
+        if (context.performed)
+        {
+            playerData.abilities[5].abilityActive = true;
+            // Hyper Attack
+            Debug.Log("Hyper Attack");
+        }
     }
 
 
     private bool onTheGround()
     {
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, extraHightCheckForGround, groundLayer);
-        Color raycolor;
-        if (hit.collider != null)
-            raycolor = Color.green;
-        else
-            raycolor = Color.red;
         return hit.collider != null;
     }
 

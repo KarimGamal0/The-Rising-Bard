@@ -5511,7 +5511,7 @@ MonoBehaviour:
   playerSpeed: 3
   dashForced: 50
   jumpForce: 5
-  timeFreezeValue: 5
+  timeFreezeValue: 1
   hangTime: 0.1
   jumpBufferLenght: 0
   dust: {fileID: 233452023}
