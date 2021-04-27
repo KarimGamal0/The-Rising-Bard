@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,9 @@ public class PlayerControlles : MonoBehaviour
 {
     // Serialize private data
     [SerializeField] PlayerData playerData;
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private BoxCollider2D boxCollider2d;
 
     [SerializeField] float playerSpeed = 5.0f;
     [SerializeField] float dashForced = 50.0f;
@@ -31,7 +35,6 @@ public class PlayerControlles : MonoBehaviour
     private Rigidbody2D rigidbody2d;
 
     private bool doubleJumpAllowed = false;
-    private bool onTheGround = false;
     private bool wasOnTheGround = false;
 
     private bool onDash = false;
@@ -40,6 +43,7 @@ public class PlayerControlles : MonoBehaviour
     private float timeFreeze;
 
     private float hangCounter;
+    private float extraHightCheckForGround = .1f;
 
 
 
@@ -76,21 +80,19 @@ public class PlayerControlles : MonoBehaviour
     {
         if (onDash)
         {
-            rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y)
-                * Time.fixedDeltaTime * 10 * playerSpeed * (1/Time.timeScale);
+            rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y);
+
             onDash = false;
             playerData.abilities[0].abilityActive = false;
         }
         else
         {
-            rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y)
-                * Time.fixedDeltaTime*10* playerSpeed * (1 / Time.timeScale); 
-
+            rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y);
         }
 
         // Check for last time press jump befor leave ground 
         // Manage hange time
-        if(onTheGround)
+        if (onTheGround())
         {
             hangCounter = hangTime;
         }
@@ -98,16 +100,6 @@ public class PlayerControlles : MonoBehaviour
         {
             hangCounter -= Time.fixedDeltaTime;
         }
-
-
-       
-
-        // check for Jump 
-
-        if (rigidbody2d.velocity.y == 0)
-            onTheGround = true;
-        else
-            onTheGround = false;
 
 
         // check for time freeze 
@@ -127,124 +119,113 @@ public class PlayerControlles : MonoBehaviour
             }
         }
 
-        
-        
+
 
     }
-
-
-    #region Input Handling Functions 
 
 
     public void HandelMove(InputAction.CallbackContext context)
     {
         inputX = context.ReadValue<Vector2>().x;
-        Debug.Log(inputX + " value");
+        playerAnimator.SetBool("IsWalking", Convert.ToBoolean(inputX));
+        //Debug.Log(inputX + " value");
         if (inputX != 0)
         {
             CreateDust();
             transform.localScale = new Vector3(inputX, transform.localScale.y, transform.localScale.z);
         }
-        
+
     }
 
 
 
     public void HandelJump(InputAction.CallbackContext context)
     {
-        /*if(context.performed)
-        {
-            jumpBufferCounter = jumpBufferLenght;
-        }
-        else
-        {
-            jumpBufferCounter -= Time.fixedDeltaTime;
-        }*/
-        if ( context.performed&& hangCounter>0f)
+
+        if (context.performed && onTheGround())
         {
             Jump();
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce)
-            * Time.fixedDeltaTime * 10 * playerSpeed * (1 / Time.timeScale);
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
+            Debug.Log("Jump");
 
         }
 
-        else if (doubleJumpAllowed && context.performed)
+        /*else if (doubleJumpAllowed && context.performed)
         {
+            Debug.Log("doubleJump");
+
             Jump();
             doubleJumpAllowed = false;
             playerData.abilities[1].abilityActive = false;
-        }
-        // sa=mall jump need to be fixed
-        /*else if(context.canceled && rigidbody2d.velocity.y>0)
-        {
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce * 0.5f)
-           * Time.fixedDeltaTime * 10 * playerSpeed * (1 / Time.timeScale);
         }*/
+
     }
 
-    public void HandelFire(InputAction.CallbackContext context)
+
+    public void HandleFire(InputAction.CallbackContext context)
     {
-        if (context.performed)
+       if(context.performed)
         {
             Debug.Log("Attack");
+            playerAnimator.SetBool("IsAttacking",true);
         }
-
-
+        playerAnimator.SetBool("IsAttacking", false);
     }
 
 
-    public void HandleAbility(InputAction.CallbackContext context)
+    public void HandleDash(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            if (playerData.abilities[0].abilityActive)
-            {
-                // Dash 
-                Debug.Log("Dash");
-                onDash = true;
-            }
-            else if (playerData.abilities[1].abilityActive)
-            {
-                // Double Jump 
-                Debug.Log("Double Jump");
-                doubleJumpAllowed = true;
-            }
-            else if (playerData.abilities[2].abilityActive)
-            {
-                // Mind Control
-                Debug.Log("Mind Control");
-            }
-            else if (playerData.abilities[3].abilityActive)
-            {
-                // Empowered Attack
-                Debug.Log("Empowered Attack");
-            }
-            else if (playerData.abilities[4].abilityActive)
-            {
-                // Time Freeze
-                Debug.Log("Time Freeze");
-                isTimeFreaze = true;
+        playerData.abilities[0].abilityActive = true;
+        onDash = true;
+        Debug.Log("Dash");
 
-            }
-            else if (playerData.abilities[5].abilityActive)
-            {
-                // Hyper Attack
-                Debug.Log("Hyper Attack");
+    }
+    public void HandleTimeFreeze(InputAction.CallbackContext context)
+    {
+        playerData.abilities[4].abilityActive = true;
 
-            }
-        }
+        // Time Freeze
+        Debug.Log("Time Freeze");
+        isTimeFreaze = true;
+    }
+    public void HandleMindControl(InputAction.CallbackContext context)
+    {
+        playerData.abilities[2].abilityActive = true;
 
+        // Mind Control
+        Debug.Log("Mind Control");
+    }
+    public void HandleEmpoweredAttack(InputAction.CallbackContext context)
+    {
 
+        playerData.abilities[3].abilityActive = true;
+
+        // Empowered Attack
+        Debug.Log("Empowered Attack");
+    }
+    public void HandleHyperAttack(InputAction.CallbackContext context)
+    {
+        playerData.abilities[5].abilityActive = true;
+        // Hyper Attack
+        Debug.Log("Hyper Attack");
     }
 
 
-    #endregion
-
+    private bool onTheGround()
+    {
+        RaycastHit2D hit = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, extraHightCheckForGround, groundLayer);
+        Color raycolor;
+        if (hit.collider != null)
+            raycolor = Color.green;
+        else
+            raycolor = Color.red;
+        return hit.collider != null;
+    }
 
     private void Jump()
     {
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce)
-             * Time.fixedDeltaTime *10 * playerSpeed  * (1 / Time.timeScale);
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
+
     }
 
 
@@ -290,6 +271,8 @@ public class PlayerControlles : MonoBehaviour
     {
         playerData.playerScore += increaseValue;
     }
+
+
 
     // play partical System
 

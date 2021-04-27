@@ -38,17 +38,41 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Ability",
+                    "name": "Dash",
                     "type": "Button",
-                    "id": "91e63523-2f0b-44d6-b644-a21c40e6daae",
+                    "id": "faeea582-ddf9-439a-969c-e2a9697230fc",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "AbilityMenuCall",
+                    "name": "TimeFreeze",
                     "type": "Button",
-                    "id": "41b0114d-43ab-487f-bb96-fb542f3285e2",
+                    "id": "0de38308-ffa5-4649-9845-b15e5344d017",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MindControl",
+                    "type": "Button",
+                    "id": "f8cb63e9-2fcf-454c-a974-6e898f426ad4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Empowered Attack",
+                    "type": "Button",
+                    "id": "8eb0842a-1cdd-4c44-9ce0-d9af2f1c2c93",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Hyper Attack",
+                    "type": "Button",
+                    "id": "b474350b-1ce3-4cff-8f08-c05b8a393233",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -299,23 +323,56 @@
                 },
                 {
                     "name": "",
-                    "id": "a5ed17ce-0112-40c0-8a14-15af9ebe9b27",
+                    "id": "eaef7e30-266e-4f20-8b3c-52a8236e7fa2",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Ability",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "08d6a6c2-e1fd-46ff-b8d9-0e06315404c4",
+                    "id": "643ff184-2407-4098-998f-0a8986149894",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "AbilityMenuCall",
+                    "groups": "",
+                    "action": "TimeFreeze",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0b1eec3-e4e8-463c-a834-3e037f26ce46",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MindControl",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "895758cb-d654-4b62-9251-008701f17143",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Empowered Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f985401-269c-4a98-93eb-1f28f3e3e1e9",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hyper Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
