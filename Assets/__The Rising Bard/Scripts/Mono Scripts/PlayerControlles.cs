@@ -35,7 +35,8 @@ public class PlayerControlles : MonoBehaviour
     private Rigidbody2D rigidbody2d;
 
     private bool wasOnTheGround = false;
-    private float jumpCount =0;
+    private bool jumpButtonPressed = false;
+    private float jumpCount = 0;
 
     private bool onDash = false;
 
@@ -43,6 +44,9 @@ public class PlayerControlles : MonoBehaviour
     private float timeFreeze;
 
     private float hangCounter;
+    private float jumpBufferCounter;
+
+    // check for the ground for the box cast 
     private float extraHightCheckForGround = .1f;
 
     private bool wasNotOnTheGround = false;
@@ -100,11 +104,21 @@ public class PlayerControlles : MonoBehaviour
             hangCounter -= Time.fixedDeltaTime;
         }
 
+        // Manage jump buffer time
+        if (jumpButtonPressed)
+        {
+            jumpBufferCounter = jumpBufferLenght;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.fixedDeltaTime;
+        }
+
 
         // check for time freeze 
         if (isTimeFreaze)
         {
-           
+
             if (timeFreezeValue > 0)
             {
                 timeFreezeValue -= Time.fixedDeltaTime;
@@ -141,22 +155,41 @@ public class PlayerControlles : MonoBehaviour
     public void HandelJump(InputAction.CallbackContext context)
     {
 
+        /*//
+        if (context.performed)
+        {
+            jumpButtonPressed = true;
+        }
+        else
+        {
+            jumpButtonPressed = false;
+        }*/
+
+
         if (context.performed && hangCounter >= 0f)
         {
             Jump();
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
             Debug.Log("Jump");
 
+
         }
 
-        else if (doubleJumpAllowed() && jumpCount !=2 && context.performed)
+        else if (doubleJumpAllowed() && jumpCount != 2 && context.performed)
         {
             Debug.Log("doubleJump");
-
             Jump();
             playerData.playerMana -= playerData.abilities[1].abilityCost;
             jumpCount = 2;
         }
+
+        // optinal for now to check te double jump
+        else if (context.canceled && hangCounter >= 0f && rigidbody2d.velocity.y != 0)
+        {
+            Debug.Log("Hrere");
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
+        }
+
 
     }
 
@@ -231,8 +264,8 @@ public class PlayerControlles : MonoBehaviour
 
     private void Jump()
     {
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
-
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpForce);
+       // jumpBufferCounter = 0;
     }
 
 
