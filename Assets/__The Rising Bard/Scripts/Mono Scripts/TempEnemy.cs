@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TempEnemy : MonoBehaviour
 {
+    [SerializeField] GameEvent helthPlayerChange;
     [SerializeField] PlayerData PlayerData;
     Rigidbody2D enemyRigidBody2D;
     public int UnitsToMove = 5;
@@ -59,4 +60,11 @@ public class TempEnemy : MonoBehaviour
         _isFacingRight = transform.localScale.x > 0;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.GetComponent<PlayerControlles>()!=null)
+        {
+            helthPlayerChange.Raise();
+        }
+    }
 }

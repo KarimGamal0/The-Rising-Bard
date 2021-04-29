@@ -45,6 +45,8 @@ public class PlayerControlles : MonoBehaviour
     private float hangCounter;
     private float extraHightCheckForGround = .1f;
 
+    private bool wasNotOnTheGround = false;
+
 
 
 
@@ -72,6 +74,7 @@ public class PlayerControlles : MonoBehaviour
     // for Physics
     private void FixedUpdate()
     {
+        wasNotOnTheGround = onTheGround();
         if (onDash)
         {
             rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y);
@@ -90,6 +93,7 @@ public class PlayerControlles : MonoBehaviour
         {
             hangCounter = hangTime;
             jumpCount = 1;
+
         }
         else
         {
@@ -112,6 +116,7 @@ public class PlayerControlles : MonoBehaviour
                 playerData.abilities[4].abilityActive = false;
             }
         }
+
 
 
 
@@ -242,6 +247,7 @@ public class PlayerControlles : MonoBehaviour
     public void TakeDamage(float damageValue)
     {
         playerData.playerHP -= damageValue;
+        Debug.Log("dameage ");
     }
 
     public void TakeHeal(float healValue)
