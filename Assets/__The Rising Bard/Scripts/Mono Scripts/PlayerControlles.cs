@@ -25,6 +25,12 @@ public class PlayerControlles : MonoBehaviour
     [SerializeField] ParticleSystem dust;
 
 
+    //sound data
+    [SerializeField] GameEvent WalkSoundSE;
+    [SerializeField] GameEvent JumpSoundSE;
+
+
+
 
     // Public Data
 
@@ -75,6 +81,12 @@ public class PlayerControlles : MonoBehaviour
     private void FixedUpdate()
     {
         wasNotOnTheGround = onTheGround();
+        if (onTheGround()&& inputX!=0)
+        {
+          
+                WalkSoundSE.Raise();
+          
+        }
         if (onDash)
         {
             rigidbody2d.velocity = new Vector2(inputX * dashForced * playerSpeed, rigidbody2d.velocity.y);
@@ -85,12 +97,14 @@ public class PlayerControlles : MonoBehaviour
         else
         {
             rigidbody2d.velocity = new Vector2(inputX * playerSpeed, rigidbody2d.velocity.y);
+  
         }
 
         // Check for last time press jump befor leave ground 
         // Manage hange time
         if (onTheGround())
         {
+
             hangCounter = hangTime;
             jumpCount = 1;
 
@@ -125,6 +139,7 @@ public class PlayerControlles : MonoBehaviour
 
     public void HandelMove(InputAction.CallbackContext context)
     {
+
         inputX = context.ReadValue<Vector2>().x;
         playerAnimator.SetBool("IsWalking", Convert.ToBoolean(inputX));
         //Debug.Log(inputX + " value");
@@ -132,8 +147,10 @@ public class PlayerControlles : MonoBehaviour
         {
             CreateDust();
             transform.localScale = new Vector3(inputX, transform.localScale.y, transform.localScale.z);
-        }
 
+           
+        }
+    
     }
 
 
@@ -232,7 +249,7 @@ public class PlayerControlles : MonoBehaviour
     private void Jump()
     {
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
-
+        JumpSoundSE.Raise();
     }
 
 
