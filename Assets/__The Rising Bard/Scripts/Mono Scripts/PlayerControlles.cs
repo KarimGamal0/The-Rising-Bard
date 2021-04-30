@@ -27,6 +27,7 @@ public class PlayerControlles : MonoBehaviour
 
     //sound data
     [SerializeField] GameEvent WalkSoundSE;
+    [SerializeField] GameEvent StopWalkSoundSE;
     [SerializeField] GameEvent JumpSoundSE;
 
 
@@ -86,6 +87,10 @@ public class PlayerControlles : MonoBehaviour
           
                 WalkSoundSE.Raise();
           
+        }
+        else
+        {
+            StopWalkSoundSE.Raise();
         }
         if (onDash)
         {

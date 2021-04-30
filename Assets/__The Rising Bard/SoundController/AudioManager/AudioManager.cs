@@ -50,13 +50,34 @@ public class AudioManager : MonoBehaviour
         {
             if (sound == "walk")
             {
-				 s.source.time = 23.5f;
-			}
-			s.source.Play();
-			Debug.Log("soundcalled");
-		}
-    
-	}
+				s.source.time = 23.5f;
+            }
+            s.source.Play();
 
+        }
+        if (sound == "jump")
+        {
+            s.source.PlayOneShot(s.source.clip);
+        }
+
+    }
+
+
+
+
+    public void Stop(string sound)
+    {
+        Sound s = Array.Find(sounds, item => item.name == sound);
+
+        if (s == null)
+        {
+            Debug.Log("Sound: " + sound + " not found! Please check " + name + "Object in Scene");
+            return;
+        }
  
+            s.source.Stop();
+        
+
+    }
+
 }
