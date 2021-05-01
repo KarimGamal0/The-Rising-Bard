@@ -30,7 +30,7 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(m_inRange);
+       // Debug.Log(m_inRange);
         RaycastDebugger();
         if (m_inRange)
         {

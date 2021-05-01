@@ -76,6 +76,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "OpenDoors",
+                    "type": "Button",
+                    "id": "f95f58f9-3f2b-41b4-bc97-fc950d3a2558",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -373,6 +381,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Hyper Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "987017d1-f250-49b5-aa63-4d705109487c",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenDoors",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
