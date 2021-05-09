@@ -11,7 +11,19 @@ public class AudioManager : MonoBehaviour
 
 	public Sound[] sounds;
 
-	void Awake()
+
+
+    private void OnEnable()
+    {
+		ItemPickSoundHandler.PlaySoundEvent += Play;
+
+
+	}
+    private void OnDisable()
+    {
+		ItemPickSoundHandler.PlaySoundEvent -= Play;
+	}
+    void Awake()
 	{
 		if (instance != null)
 		{
