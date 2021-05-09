@@ -62,6 +62,7 @@ public class PlayerControlles : MonoBehaviour
         foreach (var item in playerData.abilities)
         {
             item.abilityActive = false;
+            item.abilityGained= false;
         }
         playerData.playerHP = 100;
         playerData.playerMana = 100;
