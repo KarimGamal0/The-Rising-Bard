@@ -486,10 +486,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1176694473, guid: b661870d2bc01b14eb78cf1f257423f4, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2659804233856471344, guid: b661870d2bc01b14eb78cf1f257423f4, type: 3}
       propertyPath: m_Name
       value: Level_1 1
@@ -711,14 +707,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1400598124, guid: 3541a097d05ff6b489defbaedd37b714, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400598124, guid: 3541a097d05ff6b489defbaedd37b714, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.26999998
-      objectReference: {fileID: 0}
     - target: {fileID: 1400598125, guid: 3541a097d05ff6b489defbaedd37b714, type: 3}
       propertyPath: m_BoundingShape2D
       value: 

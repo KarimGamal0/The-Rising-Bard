@@ -34,7 +34,7 @@ public class PlayerControlles : MonoBehaviour
     private float inputX;
     private Rigidbody2D rigidbody2d;
 
-    private bool wasOnTheGround = false;
+    //private bool wasOnTheGround = false;
     private bool jumpButtonPressed = false;
     private float jumpCount = 0;
 
