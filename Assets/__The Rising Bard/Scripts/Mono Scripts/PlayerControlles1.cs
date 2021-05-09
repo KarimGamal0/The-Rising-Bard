@@ -101,9 +101,11 @@ public class PlayerControlles1 : MonoBehaviour
 
     private void UpdatAnimation()
     {
-        /*anim.SetBool("isWalking", isWalking);
+        anim.SetBool("isWalking", isWalking);
         anim.SetBool("isGrounded", isGrounded);
-        anim.SetFloat("yVelocity", rb.velocity.y);*/
+        anim.SetFloat("yVelocity", rb.velocity.y);
+        anim.SetBool("isDash", isDashing);
+        //anim.SetBool("isDash", isDashing);
     }
 
     private void CheckInput()
