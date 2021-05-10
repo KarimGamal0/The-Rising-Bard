@@ -2,8 +2,7 @@ using UnityEngine.Audio;
 using System;
 using UnityEngine;
 using UnityEditor;
-
-
+using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
@@ -17,6 +16,7 @@ public class AudioManager : MonoBehaviour
 
 
     public Sound[] sounds;
+    public List<Sound> MyList;
 
 
 
@@ -39,7 +39,13 @@ public class AudioManager : MonoBehaviour
     }
     void Awake()
     {
+        sounds = new Sound[clips.Length];
 
+        for (int i = 0; i < clips.Length; i++)
+        {
+            sounds[i] = new Sound()
+            { source = gameObject.AddComponent<AudioSource>(), clip = clips[i], name = clips[i].name };
+        }
 
         if (instance != null)
         {
@@ -57,16 +63,9 @@ public class AudioManager : MonoBehaviour
         {
             if (index < clips.Length)
             {
-
-                s.source = gameObject.AddComponent<AudioSource>();
-                s.clip = clips[index];
-                s.name = clips[index].name;
-
                 s.source.clip = s.clip;
-                Debug.Log(clips[index].name);
                 s.source.loop = s.loop;
                 s.source.outputAudioMixerGroup = s.mixerGroup;
-                index++;
             }
 
         }
@@ -135,11 +134,6 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-
-
-
- 
- 
         s.source.PlayOneShot(s.source.clip);
 
 
