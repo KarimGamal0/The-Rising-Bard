@@ -11,7 +11,7 @@ public class ItemPickSoundHandler : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         PlaySoundEvent.Invoke(itemPickSound);
-        Destroy(gameObject);
+       Destroy(gameObject);
 
     }
 
