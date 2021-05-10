@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControlles1 : MonoBehaviour
+public class PlayerOldControlles : MonoBehaviour
 {
 
     [SerializeField] private PlayerData playerData;
@@ -188,7 +188,10 @@ public class PlayerControlles1 : MonoBehaviour
     }
 
 
-
+    public bool GetDashStatus()
+    {
+        return isDashing;
+    }
     private void AttempToDash()
     {
         isDashing = true;
@@ -231,6 +234,17 @@ public class PlayerControlles1 : MonoBehaviour
             transform.Rotate(0.0f, 180.0f, 0.0f);
         }
     }
+    public void DisableFlip()
+    {
+        canFlip = false;
+    }
+
+
+    public void EnableFlip()
+    {
+        canFlip = true;
+    }
+
 
     private void CheckSurroundings()
     {
