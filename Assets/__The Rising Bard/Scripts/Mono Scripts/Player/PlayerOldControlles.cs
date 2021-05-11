@@ -28,7 +28,7 @@ public class PlayerOldControlles : MonoBehaviour
     [SerializeField] private float dashCoolDown;
 
 
-
+    [Header("Extra for the player")]
     [SerializeField] private float timeFreezeValue = 5.0f;
 
     [SerializeField] private float hangTimeSet = 0.1f;
@@ -114,6 +114,7 @@ public class PlayerOldControlles : MonoBehaviour
         if(isGrounded)
         {
             hangTime = hangTimeSet;
+            amountOfJumpsLeft = amountOfJumps;
         }
         else
         {
@@ -121,17 +122,30 @@ public class PlayerOldControlles : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump"))
         {
-            if (isGrounded)
-            {
-                amountOfJumpsLeft = amountOfJumps;
-            }
-            if (amountOfJumpsLeft > 0 /* && check if he it able to duble jump */)
+            
+            if (amountOfJumpsLeft > 0 /* && check if he it able to duble jump */ && hangTime >0)
             {
                 Jump();
             }
 
 
         }
+        // time freeze 
+        /*if (isTimeFreaze)
+        {
+
+            if (timeFreezeValue > 0)
+            {
+                timeFreezeValue -= Time.fixedDeltaTime;
+            }
+            else
+            {
+                timeFreezeValue = timeFreeze;
+                isTimeFreaze = false;
+                playerData.abilities[4].abilityActive = false;
+            }
+        }*/
+
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
