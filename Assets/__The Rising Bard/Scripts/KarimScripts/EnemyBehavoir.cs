@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyBehavoir : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class EnemyBehavoir : MonoBehaviour
     [SerializeField] float m_attackDistance; // Minimum distance for attack
     [SerializeField] float m_moveSpeed;
     [SerializeField] float m_timer; // time of cooldown between attacks
+    [SerializeField] float maxHelth;
+    [SerializeField] HelthBarController helthBarController;
 
     RaycastHit2D m_hit;
     Transform m_target;
@@ -19,6 +22,9 @@ public class EnemyBehavoir : MonoBehaviour
     bool m_inRange;  //check the player in range
     bool m_cooling; // check if the enemy is cooling after attack
     private float m_intTimer;
+    private float currentHealth;
+    private int damageDirection;
+
 
     Vector2 rayCastDirection = Vector2.left;
 
@@ -26,11 +32,17 @@ public class EnemyBehavoir : MonoBehaviour
     {
         m_intTimer = m_timer;
         m_animtor = GetComponent<Animator>();
+        currentHealth = maxHelth;
     }
 
     void Update()
     {
-       // Debug.Log(m_inRange);
+        helthBarController.SetHealthAmount(currentHealth,maxHelth);
+        if(currentHealth<0)
+        {
+            Die();
+        }
+        // Debug.Log(m_inRange);
         RaycastDebugger();
         if (m_inRange)
         {
@@ -160,5 +172,25 @@ public class EnemyBehavoir : MonoBehaviour
         }
 
         transform.eulerAngles = rotation;
+    }
+
+    private void Damage(float[] attackDetails)
+    {
+        currentHealth -= attackDetails[0];
+       // Instantiate(hitParticle, alive.transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+
+        if (attackDetails[1] > transform.position.x)
+        {
+            damageDirection = -1;
+        }
+        else
+        {
+            damageDirection = 1;
+        }
+    }
+    private void Die()
+    {
+        Debug.Log("Die");
+        Destroy(gameObject);
     }
 }

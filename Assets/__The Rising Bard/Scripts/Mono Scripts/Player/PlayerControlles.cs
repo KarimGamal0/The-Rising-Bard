@@ -171,14 +171,12 @@ public class PlayerControlles : MonoBehaviour
         {
             Jump();
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.y, jumpForce);
-            Debug.Log("Jump");
 
 
         }
 
         else if (doubleJumpAllowed() && jumpCount != 2 && context.performed)
         {
-            Debug.Log("doubleJump");
             Jump();
             playerData.playerMana -= playerData.abilities[1].abilityCost;
             jumpCount = 2;
@@ -187,7 +185,6 @@ public class PlayerControlles : MonoBehaviour
         // optinal for now to check te double jump
         else if (context.canceled && hangCounter >= 0f && rigidbody2d.velocity.y != 0)
         {
-            Debug.Log("Hrere");
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
         }
 
