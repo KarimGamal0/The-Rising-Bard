@@ -44,6 +44,7 @@ public class PlayerOldControlles : MonoBehaviour
     private float dashTimeLeft;
     private float lastDash;
     private float hangTime;
+    private float jumpBufferTime;
 
     private bool isGrounded;
     private bool canMove = true;
@@ -111,7 +112,8 @@ public class PlayerOldControlles : MonoBehaviour
     private void CheckInput()
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
-        if(isGrounded)
+        // check hangTime
+        if (isGrounded)
         {
             hangTime = hangTimeSet;
             amountOfJumpsLeft = amountOfJumps;
@@ -120,16 +122,32 @@ public class PlayerOldControlles : MonoBehaviour
         {
             hangTime -= Time.deltaTime;
         }
+
+        // chek Jump Buffer
         if (Input.GetButtonDown("Jump"))
         {
+            jumpBufferTime = jumpBufferLenght;
+        }
+        else
+        {
+            jumpBufferTime -= Time.fixedDeltaTime;
+        }
+
+        if (jumpBufferTime>=0)
+        {
             
-            if (amountOfJumpsLeft > 0 /* && check if he it able to duble jump */ && hangTime >0)
+            if (amountOfJumpsLeft >= 0 /* && check if he it able to duble jump */ && hangTime >0)
             {
                 Jump();
+                jumpBufferTime = 0;
             }
 
-
+            
         }
+
+       
+        
+
         // time freeze 
         /*if (isTimeFreaze)
         {

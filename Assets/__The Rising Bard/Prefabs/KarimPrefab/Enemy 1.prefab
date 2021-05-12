@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6d94054bfd62943b3e3d3c934e4637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 709028218756221667}
   low: {r: 0.745283, g: 0, b: 0, a: 0}
   hight: {r: 0.20064259, g: 1, b: 0, a: 0}
   offset: {x: 0, y: 1, z: 0}

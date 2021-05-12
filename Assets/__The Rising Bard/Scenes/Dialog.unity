@@ -1510,7 +1510,7 @@ MonoBehaviour:
   dashCoolDown: 2.5
   timeFreezeValue: 5
   hangTimeSet: 0.12
-  jumpBufferLenght: 0.1
+  jumpBufferLenght: 0.25
   dust: {fileID: 0}
 --- !u!61 &991519872
 BoxCollider2D:
@@ -6569,17 +6569,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3028705782199646964, guid: 2c2956e73cef70d42b26c69b86a60c9b, type: 3}
   m_PrefabInstance: {fileID: 386777451}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1265053326 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 709028218756221667, guid: 669238fc54052f247a043f0b3d624e1a, type: 3}
-  m_PrefabInstance: {fileID: 7760410661135299147}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1282511225
 GameObject:
   m_ObjectHideFlags: 0
@@ -27075,10 +27064,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4153493007295845230, guid: 669238fc54052f247a043f0b3d624e1a, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 1265053326}
     - target: {fileID: 4207616063267718739, guid: 669238fc54052f247a043f0b3d624e1a, type: 3}
       propertyPath: m_Name
       value: Enemy 1
