@@ -133,20 +133,25 @@ public class PlayerOldControlles : MonoBehaviour
             jumpBufferTime -= Time.fixedDeltaTime;
         }
 
-        if (jumpBufferTime>=0)
+        if (jumpBufferTime >= 0)
         {
-            
-            if (amountOfJumpsLeft >= 0 /* && check if he it able to duble jump */ && hangTime >0)
+            if (hangTime > 0)
+            {
+                Jump();
+                jumpBufferTime = 0;
+            }
+            else if (amountOfJumpsLeft >= 0 /* && check if he it able to duble jump */ )
             {
                 Jump();
                 jumpBufferTime = 0;
             }
 
-            
+
+
         }
 
-       
-        
+
+
 
         // time freeze 
         /*if (isTimeFreaze)
@@ -167,6 +172,7 @@ public class PlayerOldControlles : MonoBehaviour
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            amountOfJumpsLeft--;
         }
 
         if (Input.GetButton("Dash"))
@@ -188,14 +194,9 @@ public class PlayerOldControlles : MonoBehaviour
 
     private void Jump()
     {
-
-        if (canJump)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            amountOfJumpsLeft--;
-        }
-
-
+        amountOfJumpsLeft--;
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        
     }
 
     private void CheckMovementDirection()

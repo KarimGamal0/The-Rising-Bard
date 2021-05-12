@@ -189,8 +189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 709028218756221667}
-  low: {r: 0.745283, g: 0, b: 0, a: 0}
-  hight: {r: 0.20064259, g: 1, b: 0, a: 0}
+  low: {r: 0.745283, g: 0, b: 0, a: 1}
+  hight: {r: 0.20064259, g: 1, b: 0, a: 1}
   offset: {x: 0, y: 1, z: 0}
 --- !u!1 &3949200971427704551
 GameObject:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 50
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

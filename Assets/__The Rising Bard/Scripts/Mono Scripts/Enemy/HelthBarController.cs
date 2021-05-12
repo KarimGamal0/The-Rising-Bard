@@ -22,6 +22,7 @@ public class HelthBarController : MonoBehaviour
 
     public void SetHealthAmount(float health , float maxHealth)
     {
+        slider.gameObject.SetActive(health < maxHealth);
         slider.value = health;
         slider.maxValue = maxHealth;
         slider.fillRect.GetComponent<Image>().color = Color.Lerp(low, hight, slider.normalizedValue);
