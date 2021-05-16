@@ -30,13 +30,16 @@ public class AudioManager : MonoBehaviour
     private void OnEnable()
     {
         ItemPickSoundHandler.PlaySoundEvent += PlayMixed;
+        BuzzleMusicHandler.PlaySoundEvent += Play;
+ 
 
 
     }
     private void OnDisable()
     {
         ItemPickSoundHandler.PlaySoundEvent -= PlayMixed;
-    }
+        BuzzleMusicHandler.PlaySoundEvent -= Play;
+     }
     void Awake()
     {
         sounds = new Sound[clips.Length];
