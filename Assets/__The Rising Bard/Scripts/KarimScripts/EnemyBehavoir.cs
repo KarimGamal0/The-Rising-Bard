@@ -37,7 +37,6 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD
         helthBarController.SetHealthAmount(currentHealth,maxHelth);
         if(currentHealth<=0)
         {
@@ -45,11 +44,8 @@ public class EnemyBehavoir : MonoBehaviour
         }
         // Debug.Log(m_inRange);
         RaycastDebugger();
-=======
 
-        //RaycastDebugger();
         ExtDebug.DrawBoxCastBox(m_rayCast.position, new Vector3(2, 2, 0), Quaternion.Euler(0f, 0f, 180.0f), rayCastDirection, 5, Color.green);
->>>>>>> origin/Karim-JesterAi
         if (m_inRange)
         {
             //m_hit = Physics2D.Raycast(m_rayCast.position, rayCastDirection, m_rayCastLenght, m_rayCastMask);
@@ -178,7 +174,7 @@ public class EnemyBehavoir : MonoBehaviour
         transform.eulerAngles = rotation;
     }
 
-<<<<<<< HEAD
+
     private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0];
@@ -198,6 +194,5 @@ public class EnemyBehavoir : MonoBehaviour
         Debug.Log("Die");
         Destroy(gameObject);
     }
-=======
->>>>>>> origin/Karim-JesterAi
+
 }

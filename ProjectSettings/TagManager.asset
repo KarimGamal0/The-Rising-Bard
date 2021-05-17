@@ -12,15 +12,9 @@ TagManager:
   - Water
   - UI
   - Ground
-<<<<<<< HEAD
   - Damgable
   - Dead
   - Player
-=======
-  - 
-  - Player
-  - 
->>>>>>> origin/Karim-JesterAi
   - 
   - 
   - 
@@ -48,20 +42,20 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: BackGround
-    uniqueID: 3434835811
-    locked: 0
-  - name: ForGround
-    uniqueID: 3935428019
-    locked: 0
-  - name: Platforms
-    uniqueID: 3375444083
-    locked: 0
-  - name: Enemy
-    uniqueID: 1703169709
-    locked: 0
-  - name: Player
-    uniqueID: 4183972489
+    uniqueID: 452882361
     locked: 0
   - name: Decoration
-    uniqueID: 3612028561
+    uniqueID: 4026310653
+    locked: 0
+  - name: Platform
+    uniqueID: 3742971843
+    locked: 0
+  - name: Enemy
+    uniqueID: 734879849
+    locked: 0
+  - name: Player
+    uniqueID: 3659443795
+    locked: 0
+  - name: New Layer
+    uniqueID: 3901955437
     locked: 0
