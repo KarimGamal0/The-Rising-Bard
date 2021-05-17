@@ -14,6 +14,16 @@ public class EnemyBehavoir : MonoBehaviour
     [SerializeField] float maxHelth;
     [SerializeField] HelthBarController helthBarController;
 
+/*    [Header("Knockback")]
+    [SerializeField] private Vector2 knockbackSpeed;
+    [SerializeField] private float knockbackDuration;*/
+
+    [Header("Death")]
+    [SerializeField] private GameObject hitParticle;
+    [SerializeField] private GameObject deathChunkParticle;
+    [SerializeField] private GameObject deathBloodParticle;
+
+
     RaycastHit2D m_hit;
     Transform m_target;
     Animator m_animtor;
@@ -178,7 +188,7 @@ public class EnemyBehavoir : MonoBehaviour
     private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0];
-       // Instantiate(hitParticle, alive.transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+        Instantiate(hitParticle,transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
 
         if (attackDetails[1] > transform.position.x)
         {
@@ -192,7 +202,10 @@ public class EnemyBehavoir : MonoBehaviour
     private void Die()
     {
         Debug.Log("Die");
+        Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
+        Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         Destroy(gameObject);
+        
     }
 
 }

@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.16862746}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2784314}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -191,7 +191,7 @@ MonoBehaviour:
   slider: {fileID: 709028218756221667}
   low: {r: 0.745283, g: 0, b: 0, a: 1}
   hight: {r: 0.20064259, g: 1, b: 0, a: 1}
-  offset: {x: 0, y: 1, z: 0}
+  offset: {x: 0.3, y: 0.5, z: 0}
 --- !u!1 &1714764210285563928
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,8 +226,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.056301117, y: 0}
-  m_SizeDelta: {x: 1.6877, y: -4.6591}
+  m_AnchoredPosition: {x: -0.011600494, y: -0.0000038146973}
+  m_SizeDelta: {x: 7.5684, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7117356793494236443
 CanvasRenderer:
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.33333334}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -632,7 +632,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1703169709
+  m_SortingLayerID: 734879849
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6640ef18edad16643875722bb8ec2426, type: 3}
@@ -665,9 +665,12 @@ MonoBehaviour:
   m_rayCastLenght: 2
   m_attackDistance: 0.5
   m_moveSpeed: 2
-  m_timer: 3
+  m_timer: 5
   maxHelth: 50
   helthBarController: {fileID: 4153493007295845230}
+  hitParticle: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
+  deathChunkParticle: {fileID: 3380558688841995781, guid: a5c684d0103b17743ae4629a09cb3187, type: 3}
+  deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
 --- !u!1 &4207616063714933824
 GameObject:
   m_ObjectHideFlags: 0
