@@ -12,9 +12,15 @@ TagManager:
   - Water
   - UI
   - Ground
+<<<<<<< HEAD
   - Damgable
   - Dead
   - Player
+=======
+  - 
+  - Player
+  - 
+>>>>>>> origin/Karim-JesterAi
   - 
   - 
   - 

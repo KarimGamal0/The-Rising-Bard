@@ -37,6 +37,7 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Update()
     {
+<<<<<<< HEAD
         helthBarController.SetHealthAmount(currentHealth,maxHelth);
         if(currentHealth<=0)
         {
@@ -44,6 +45,11 @@ public class EnemyBehavoir : MonoBehaviour
         }
         // Debug.Log(m_inRange);
         RaycastDebugger();
+=======
+
+        //RaycastDebugger();
+        ExtDebug.DrawBoxCastBox(m_rayCast.position, new Vector3(2, 2, 0), Quaternion.Euler(0f, 0f, 180.0f), rayCastDirection, 5, Color.green);
+>>>>>>> origin/Karim-JesterAi
         if (m_inRange)
         {
             //m_hit = Physics2D.Raycast(m_rayCast.position, rayCastDirection, m_rayCastLenght, m_rayCastMask);
@@ -77,8 +83,6 @@ public class EnemyBehavoir : MonoBehaviour
         }
     }
 
-    
-
     void EnemyLogic()
     {
         m_distance = Vector2.Distance(transform.position, m_target.transform.position);
@@ -105,7 +109,7 @@ public class EnemyBehavoir : MonoBehaviour
         m_animtor.SetBool("canWalk", true);
         if (!m_animtor.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
         {
-            Vector2 targetPosition = new Vector2(m_target.position.x, m_target.position.y);
+            Vector2 targetPosition = new Vector2(m_target.position.x, this.transform.position.y);
 
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, m_moveSpeed * Time.deltaTime);
         }
@@ -162,18 +166,19 @@ public class EnemyBehavoir : MonoBehaviour
         Vector3 rotation = transform.eulerAngles;
         if (transform.position.x > m_target.position.x)
         {
-            rotation.y = 180.0f;
+            rotation.y = 0.0f;
             rayCastDirection = Vector2.left;
         }
         else
         {
-            rotation.y = 0.0f;
+            rotation.y = 180.0f;
             rayCastDirection = Vector2.right;
         }
 
         transform.eulerAngles = rotation;
     }
 
+<<<<<<< HEAD
     private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0];
@@ -193,4 +198,6 @@ public class EnemyBehavoir : MonoBehaviour
         Debug.Log("Die");
         Destroy(gameObject);
     }
+=======
+>>>>>>> origin/Karim-JesterAi
 }
