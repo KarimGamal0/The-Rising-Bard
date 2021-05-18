@@ -35,6 +35,9 @@ public class EnemyBehavoir : MonoBehaviour
     private float currentHealth;
     private int damageDirection;
 
+    [SerializeField] float hurtCollDownSet = .5f;
+    private float hurtCollDown ;
+
 
     Vector2 rayCastDirection = Vector2.left;
 
@@ -43,6 +46,7 @@ public class EnemyBehavoir : MonoBehaviour
         m_intTimer = m_timer;
         m_animtor = GetComponent<Animator>();
         currentHealth = maxHelth;
+        hurtCollDown = hurtCollDownSet;
     }
 
     void Update()
@@ -77,6 +81,14 @@ public class EnemyBehavoir : MonoBehaviour
             m_animtor.SetBool("canWalk", false);
             StopAttack();
         }
+        if (m_animtor.GetBool("isHurt") == true)
+            hurtCollDown -= Time.deltaTime;
+        if (hurtCollDown <= 0)
+        {
+            m_animtor.SetBool("isHurt", false);
+            hurtCollDown = hurtCollDownSet;
+        }
+        Debug.Log(m_animtor.GetBool("isHurt"));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -189,6 +201,8 @@ public class EnemyBehavoir : MonoBehaviour
     {
         currentHealth -= attackDetails[0];
         Instantiate(hitParticle,transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+        m_animtor.SetBool("isHurt", true);
+        
 
         if (attackDetails[1] > transform.position.x)
         {
