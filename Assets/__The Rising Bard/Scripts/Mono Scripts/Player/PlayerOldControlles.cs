@@ -194,8 +194,6 @@ public class PlayerOldControlles : MonoBehaviour
         if (isWalking)
         {
             PlaySoundEvent.Invoke(walkSound);
-            Debug.Log("Walking");
-           PlaySoundEvent.Invoke(walkSound);
         }
     }
 

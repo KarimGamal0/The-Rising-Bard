@@ -317,7 +317,7 @@ MonoBehaviour:
   hangTimeSet: 0.12
   jumpBufferLenght: 0.25
   dust: {fileID: 0}
-  jumpSound: jump
+  walkSound: f
 --- !u!114 &7537674935522300347
 MonoBehaviour:
   m_ObjectHideFlags: 0

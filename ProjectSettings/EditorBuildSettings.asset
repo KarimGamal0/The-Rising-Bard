@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/__The Rising Bard/Scenes/Dialog.unity
-    guid: 4f24078197d7b1948830312995ca208d
+    path: Assets/__The Rising Bard/Scenes/Level 1.unity
+    guid: 92988ef0a0648ab4bb4f98e01995a9e7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e3492637779c6d2458ebcf90fff627dd, type: 2}
