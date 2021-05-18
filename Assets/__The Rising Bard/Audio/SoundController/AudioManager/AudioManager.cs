@@ -31,6 +31,7 @@ public class AudioManager : MonoBehaviour
     {
         ItemPickSoundHandler.PlaySoundEvent += PlayMixed;
         BuzzleMusicHandler.PlaySoundEvent += Play;
+        PlayerOldControlles.PlaySoundEvent += PlayMixed;
  
 
 
@@ -39,9 +40,11 @@ public class AudioManager : MonoBehaviour
     {
         ItemPickSoundHandler.PlaySoundEvent -= PlayMixed;
         BuzzleMusicHandler.PlaySoundEvent -= Play;
-     }
+        PlayerOldControlles.PlaySoundEvent -= PlayMixed;
+    }
     void Awake()
     {
+        
         sounds = new Sound[clips.Length];
 
         for (int i = 0; i < clips.Length; i++)
