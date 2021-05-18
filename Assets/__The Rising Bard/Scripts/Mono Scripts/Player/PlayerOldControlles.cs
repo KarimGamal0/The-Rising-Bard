@@ -38,11 +38,12 @@ public class PlayerOldControlles : MonoBehaviour
     [SerializeField] ParticleSystem dust;
 
 
-    [Header("Music")]
-    [SerializeField] private string jumpSound;
+  //  [Header("Music")]
 
-    public delegate void MyDelegate(string song);
-    internal static event MyDelegate PlaySoundEvent;
+    public delegate void onestringdelegate(string song);
+    internal static event onestringdelegate PlaySoundEvent;
+    public string walkSound;
+
 
     private float movementInputDirection;
     private float amountOfJumpsLeft;
@@ -64,6 +65,9 @@ public class PlayerOldControlles : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
+
+
+ 
 
 
 
@@ -189,8 +193,9 @@ public class PlayerOldControlles : MonoBehaviour
 
         if (isWalking)
         {
+            PlaySoundEvent.Invoke(walkSound);
             Debug.Log("Walking");
-           PlaySoundEvent.Invoke(jumpSound);
+           PlaySoundEvent.Invoke(walkSound);
         }
     }
 
