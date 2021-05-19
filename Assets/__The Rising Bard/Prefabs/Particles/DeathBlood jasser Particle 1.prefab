@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6391396260325994418}
   - component: {fileID: -7781256100736127402}
   m_Layer: 0
-  m_Name: DeathBloodParticle
+  m_Name: DeathBlood jasser Particle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1539,7 +1539,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -5707208235025365451, guid: 15d767c2c8d08a945aa88b91e74804e1, type: 3}
+    - sprite: {fileID: 21300000, guid: 9d799a5248019c142afe41a03bfc2b6f, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:

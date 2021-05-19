@@ -38,11 +38,16 @@ public class PlayerOldControlles : MonoBehaviour
     [SerializeField] ParticleSystem dust;
 
 
-  //  [Header("Music")]
+    [Header("Music")]
+    [SerializeField] private string walkSound;
+    [SerializeField] private string jumpSound;
+
+
+
 
     public delegate void onestringdelegate(string song);
     internal static event onestringdelegate PlaySoundEvent;
-    public string walkSound;
+    
 
 
     private float movementInputDirection;
@@ -182,6 +187,8 @@ public class PlayerOldControlles : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             amountOfJumpsLeft--;
+            PlaySoundEvent.Invoke(jumpSound);
+
         }
 
         if (Input.GetButton("Dash"))
@@ -191,9 +198,10 @@ public class PlayerOldControlles : MonoBehaviour
                 AttempToDash();
         }
 
-        if (isWalking)
+        if(isWalking)
         {
             PlaySoundEvent.Invoke(walkSound);
+
         }
     }
 
@@ -209,7 +217,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         amountOfJumpsLeft--;
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
+        PlaySoundEvent.Invoke(jumpSound);
     }
 
     private void CheckMovementDirection()

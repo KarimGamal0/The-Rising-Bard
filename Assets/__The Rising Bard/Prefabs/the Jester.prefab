@@ -143,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2198050142169145788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.97, y: 5.26, z: 0}
+  m_LocalPosition: {x: -0.97, y: 1.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2198050142458520972}
@@ -162,7 +162,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1566225, y: -0.15460014}
+  m_Offset: {x: 0.14038801, y: 0.2350328}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -173,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8359618, y: 1.4061766}
+  m_Size: {x: 0.89434886, y: 0.6269107}
   m_EdgeRadius: 0
 --- !u!114 &2198050142169145786
 MonoBehaviour:
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_rayCastLenght: 6
   m_attackDistance: 1
   m_moveSpeed: 2
-  m_timer: 3
+  m_timer: 1.5
   maxHelth: 50
   helthBarController: {fileID: 108349903668948835}
   hitParticle: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
