@@ -15,6 +15,11 @@ public class Dialog : MonoBehaviour
     float typingSpeed;
 
     [SerializeField]
+    float delayButtonDuration = 5.0f;
+
+    bool isSentenceFinished;
+
+    [SerializeField]
     GameObject continueButton;
 
     int index;
@@ -26,10 +31,17 @@ public class Dialog : MonoBehaviour
 
     private void Update()
     {
-        if(textDisplay.text == setntences[index])
+        if ((textDisplay.text == setntences[index]) && (isSentenceFinished == false))
         {
-            continueButton.SetActive(true);
+            isSentenceFinished = true;
+            StartCoroutine(DelayButtonDisplay());
         }
+    }
+
+    IEnumerator DelayButtonDisplay()
+    {
+        yield return new WaitForSeconds(delayButtonDuration);
+        continueButton.SetActive(true);
     }
 
     IEnumerator Type()
@@ -44,6 +56,7 @@ public class Dialog : MonoBehaviour
     public void NextSentence()
     {
         continueButton.SetActive(false);
+        isSentenceFinished = false;
 
         if (index < setntences.Length - 1)
         {
