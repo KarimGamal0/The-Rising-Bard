@@ -1,43 +1,40 @@
 fileFormatVersion: 2
-guid: c04215f0e0def174b9417873bb3e52b2
+guid: d2e050e99a4b3a64a873e8f8d586e9f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4996199662520497480
-    second: Landing jump Main Character_0
+      213: -1778171604891230935
+    second: landing_0
   - first:
-      213: 3088706027378932137
-    second: Landing jump Main Character_1
+      213: -8266078457159027492
+    second: landing_1
   - first:
-      213: 623353500347768928
-    second: Landing jump Main Character_2
+      213: 346002565792098887
+    second: landing_2
   - first:
-      213: -8434361183049178602
-    second: Landing jump Main Character_3
+      213: -3504602311617232239
+    second: landing_3
   - first:
-      213: -7006536095318531411
-    second: Landing jump Main Character_4
+      213: -6282905822108588823
+    second: landing_4
   - first:
-      213: -2442936998641952245
-    second: Landing jump Main Character_5
+      213: -4473409839888126070
+    second: landing_5
   - first:
-      213: -3597941155693460931
-    second: Landing jump Main Character_6
+      213: 8230276557420638340
+    second: landing_6
   - first:
-      213: 295921925056744048
-    second: Landing jump Main Character_7
+      213: -3698381973662662135
+    second: landing_7
   - first:
-      213: -4305791220383716916
-    second: Landing jump Main Character_8
+      213: 3646737637817677492
+    second: landing_8
   - first:
-      213: -466806713495239733
-    second: Landing jump Main Character_9
+      213: -4349840066817821985
+    second: landing_9
   - first:
-      213: -4644988566592925298
-    second: Landing jump Main Character_10
-  - first:
-      213: 54024141318625839
-    second: Landing jump Main Character_11
+      213: 7452051418474502596
+    second: landing_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,13 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Landing jump Main Character_0
+      name: landing_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2911
-        width: 1372
-        height: 1185
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 845f57f3f11165540800000000000000
-      internalID: 4996199662520497480
+      spriteID: 92d95c4b85aa257e0800000000000000
+      internalID: -1778171604891230935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_1
+      name: landing_1
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 2911
-        width: 1372
-        height: 1185
+        x: 866
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a9778964c94dda20800000000000000
-      internalID: 3088706027378932137
+      spriteID: cd4f683507df84d80800000000000000
+      internalID: -8266078457159027492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_2
+      name: landing_2
       rect:
         serializedVersion: 2
-        x: 2744
-        y: 2911
-        width: 1372
-        height: 1185
+        x: 1732
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 060a9b5b4b896a800800000000000000
-      internalID: 623353500347768928
+      spriteID: 74a6969108f3dc400800000000000000
+      internalID: 346002565792098887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_3
+      name: landing_3
       rect:
         serializedVersion: 2
-        x: 4116
-        y: 2911
-        width: 1372
-        height: 1185
+        x: 2598
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,41 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 612a201f03123fa80800000000000000
-      internalID: -8434361183049178602
+      spriteID: 192ca0904c62d5fc0800000000000000
+      internalID: -3504602311617232239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_4
-      rect:
-        serializedVersion: 2
-        x: 5488
-        y: 2911
-        width: 1372
-        height: 1185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da226942b88c3ce90800000000000000
-      internalID: -7006536095318531411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Landing jump Main Character_5
+      name: landing_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1726
-        width: 1372
-        height: 1185
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a99433eb1f81ed0800000000000000
-      internalID: -2442936998641952245
+      spriteID: 9e4ebfb6172aec8a0800000000000000
+      internalID: -6282905822108588823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_6
+      name: landing_5
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 1726
-        width: 1372
-        height: 1185
+        x: 866
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d320224e49b811ec0800000000000000
-      internalID: -3597941155693460931
+      spriteID: a8f2bb6a3714be1c0800000000000000
+      internalID: -4473409839888126070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_7
+      name: landing_6
       rect:
         serializedVersion: 2
-        x: 2744
-        y: 1726
-        width: 1372
-        height: 1185
+        x: 1732
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ac1484c635b1400800000000000000
-      internalID: 295921925056744048
+      spriteID: 48038405ce0d73270800000000000000
+      internalID: 8230276557420638340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_8
+      name: landing_7
       rect:
         serializedVersion: 2
-        x: 4116
-        y: 1726
-        width: 1372
-        height: 1185
+        x: 2598
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,41 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc96808b2b1ce34c0800000000000000
-      internalID: -4305791220383716916
+      spriteID: 90201289035bcacc0800000000000000
+      internalID: -3698381973662662135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_9
-      rect:
-        serializedVersion: 2
-        x: 5488
-        y: 1726
-        width: 1372
-        height: 1185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc3495f64c19589f0800000000000000
-      internalID: -466806713495239733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Landing jump Main Character_10
+      name: landing_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 541
-        width: 1372
-        height: 1185
+        y: 67
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e815a76428fa98fb0800000000000000
-      internalID: -4644988566592925298
+      spriteID: 4b67b237f80db9230800000000000000
+      internalID: 3646737637817677492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing jump Main Character_11
+      name: landing_9
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 541
-        width: 1372
-        height: 1185
+        x: 866
+        y: 67
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,8 +351,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2a97989baeefb000800000000000000
-      internalID: 54024141318625839
+      spriteID: fd2ff83718342a3c0800000000000000
+      internalID: -4349840066817821985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landing_10
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 67
+        width: 866
+        height: 1343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c95e1e48410b6760800000000000000
+      internalID: 7452051418474502596
       vertices: []
       indices: 
       edges: []

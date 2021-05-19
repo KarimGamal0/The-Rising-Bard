@@ -1,40 +1,31 @@
 fileFormatVersion: 2
-guid: ae7caedf6c684d943b0205288d77e279
+guid: a56f842aee4eb6541906e005c4f46988
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9028511185194264025
-    second: Start Jump Main Character_0
+      213: 2660195087753647290
+    second: Start_0
   - first:
-      213: -3402377391922459107
-    second: Start Jump Main Character_1
+      213: -4938904925403426689
+    second: Start_1
   - first:
-      213: 6044691893028504778
-    second: Start Jump Main Character_2
+      213: -7530241168618467137
+    second: Start_2
   - first:
-      213: 2581625528173806999
-    second: Start Jump Main Character_3
+      213: -6527066995249691807
+    second: Start_3
   - first:
-      213: 6020325517447638367
-    second: Start Jump Main Character_4
+      213: 8951363092807054316
+    second: Start_4
   - first:
-      213: 4601737776534979747
-    second: Start Jump Main Character_5
+      213: 8898705827102091182
+    second: Start_5
   - first:
-      213: 5332334306158736248
-    second: Start Jump Main Character_6
+      213: 8727927491527918636
+    second: Start_6
   - first:
-      213: 5385667508878814751
-    second: Start Jump Main Character_7
-  - first:
-      213: 5598349552895419214
-    second: Start Jump Main Character_8
-  - first:
-      213: 7684242340662640553
-    second: Start Jump Main Character_9
-  - first:
-      213: -8663285709143539935
-    second: Start Jump Main Character_10
+      213: 302293030016454467
+    second: Start_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Start Jump Main Character_0
+      name: Start_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2911
-        width: 1372
-        height: 1185
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72adad389e844b280800000000000000
-      internalID: -9028511185194264025
+      spriteID: ab49bc68659eae420800000000000000
+      internalID: 2660195087753647290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_1
+      name: Start_1
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 2911
-        width: 1372
-        height: 1185
+        x: 866
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e44a2e9c358c0d0800000000000000
-      internalID: -3402377391922459107
+      spriteID: f70d6e5432c757bb0800000000000000
+      internalID: -4938904925403426689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_2
+      name: Start_2
       rect:
         serializedVersion: 2
-        x: 2744
-        y: 2911
-        width: 1372
-        height: 1185
+        x: 1732
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac4c5a4204f03e350800000000000000
-      internalID: 6044691893028504778
+      spriteID: fb05977dd853f7790800000000000000
+      internalID: -7530241168618467137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_3
+      name: Start_3
       rect:
         serializedVersion: 2
-        x: 4116
-        y: 2911
-        width: 1372
-        height: 1185
+        x: 2598
+        y: 2753
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,41 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79541e56db6c3d320800000000000000
-      internalID: 2581625528173806999
+      spriteID: 16347f256233b65a0800000000000000
+      internalID: -6527066995249691807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_4
-      rect:
-        serializedVersion: 2
-        x: 5488
-        y: 2911
-        width: 1372
-        height: 1185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5dafab392e7c8350800000000000000
-      internalID: 6020325517447638367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Start Jump Main Character_5
+      name: Start_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1726
-        width: 1372
-        height: 1185
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a40ddf6028acdf30800000000000000
-      internalID: 4601737776534979747
+      spriteID: ce37e4a7e41a93c70800000000000000
+      internalID: 8951363092807054316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_6
+      name: Start_5
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 1726
-        width: 1372
-        height: 1185
+        x: 866
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 873783eacc1400a40800000000000000
-      internalID: 5332334306158736248
+      spriteID: ea76e196dcd8e7b70800000000000000
+      internalID: 8898705827102091182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_7
+      name: Start_6
       rect:
         serializedVersion: 2
-        x: 2744
-        y: 1726
-        width: 1372
-        height: 1185
+        x: 1732
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1ea519901cbdba40800000000000000
-      internalID: 5385667508878814751
+      spriteID: c2443ed9fc3df1970800000000000000
+      internalID: 8727927491527918636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start Jump Main Character_8
+      name: Start_7
       rect:
         serializedVersion: 2
-        x: 4116
-        y: 1726
-        width: 1372
-        height: 1185
+        x: 2598
+        y: 1410
+        width: 866
+        height: 1343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,50 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e436cccc14551bd40800000000000000
-      internalID: 5598349552895419214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Start Jump Main Character_9
-      rect:
-        serializedVersion: 2
-        x: 5488
-        y: 1726
-        width: 1372
-        height: 1185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9af763b22b9e3aa60800000000000000
-      internalID: 7684242340662640553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Start Jump Main Character_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 541
-        width: 1372
-        height: 1185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12ff7ce2c83d5c780800000000000000
-      internalID: -8663285709143539935
+      spriteID: 34f0530c8e5f13400800000000000000
+      internalID: 302293030016454467
       vertices: []
       indices: 
       edges: []
