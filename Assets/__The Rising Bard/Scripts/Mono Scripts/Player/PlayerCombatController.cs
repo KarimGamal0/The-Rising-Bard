@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private float attack1Damage;
     [SerializeField] private LayerMask whatIsDamageable;
 
+    [SerializeField] private GameObject deathChunkParticle;
+    [SerializeField] private GameObject deathBloodParticle;
 
     private bool gotInput;
     private bool isAttacking;
@@ -24,6 +27,7 @@ public class PlayerCombatController : MonoBehaviour
 
     private Animator anim;
     private PlayerOldControlles POC;
+    [SerializeField] private PlayerData PD;
     //private PlayerStats PS;
 
 
@@ -39,7 +43,10 @@ public class PlayerCombatController : MonoBehaviour
     {
         CheckCombatInput();
         CheckAttacks();
+        CheckDealth();
     }
+
+
 
     private void CheckCombatInput()
     {
@@ -105,14 +112,25 @@ public class PlayerCombatController : MonoBehaviour
             }
             //POC.Knockback(direction);
         }
+        PD.playerHP -= attackDetails[0];
     }
 
-
+    private void CheckDealth()
+    {
+        if (PD.playerHP <= 0)
+            Die();
+    }
     private void FinishAttack1()
     {
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
         anim.SetBool("attack1", false);
+    }  
+    private void Die()
+    {
+        Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
+        Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmos()

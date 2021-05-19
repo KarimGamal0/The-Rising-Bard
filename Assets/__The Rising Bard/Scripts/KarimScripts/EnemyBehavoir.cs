@@ -6,12 +6,15 @@ using UnityEngine.UI;
 public class EnemyBehavoir : MonoBehaviour
 {
     [SerializeField] Transform m_rayCast;
+    [SerializeField] Transform hitPostion;
+    [SerializeField] Transform hitParticles;
     [SerializeField] LayerMask m_rayCastMask;
     [SerializeField] float m_rayCastLenght;
     [SerializeField] float m_attackDistance; // Minimum distance for attack
     [SerializeField] float m_moveSpeed;
     [SerializeField] float m_timer; // time of cooldown between attacks
     [SerializeField] float maxHelth;
+    [SerializeField] float m_rayCasDistance;
     [SerializeField] HelthBarController helthBarController;
 
 /*    [Header("Knockback")]
@@ -23,6 +26,7 @@ public class EnemyBehavoir : MonoBehaviour
     [SerializeField] private GameObject deathChunkParticle;
     [SerializeField] private GameObject deathBloodParticle;
 
+    private float[] attackDetails = new float[2];
 
     RaycastHit2D m_hit;
     Transform m_target;
@@ -34,6 +38,8 @@ public class EnemyBehavoir : MonoBehaviour
     private float m_intTimer;
     private float currentHealth;
     private int damageDirection;
+
+    private int facingDirection = -1;
 
     [SerializeField] float hurtCollDownSet = .5f;
     private float hurtCollDown ;
@@ -59,7 +65,7 @@ public class EnemyBehavoir : MonoBehaviour
         // Debug.Log(m_inRange);
         RaycastDebugger();
 
-        ExtDebug.DrawBoxCastBox(m_rayCast.position, new Vector3(2, 2, 0), Quaternion.Euler(0f, 0f, 180.0f), rayCastDirection, 5, Color.green);
+        //ExtDebug.DrawBoxCastBox(m_rayCast.position, new Vector3(2, 2, 0), Quaternion.Euler(0f, 0f, 180.0f), rayCastDirection, 5, Color.green);
         if (m_inRange)
         {
             //m_hit = Physics2D.Raycast(m_rayCast.position, rayCastDirection, m_rayCastLenght, m_rayCastMask);
@@ -186,21 +192,35 @@ public class EnemyBehavoir : MonoBehaviour
         {
             rotation.y = 0.0f;
             rayCastDirection = Vector2.left;
+            facingDirection = -1;
         }
         else
         {
             rotation.y = 180.0f;
             rayCastDirection = Vector2.right;
+            facingDirection = 1;
         }
 
         transform.eulerAngles = rotation;
-    }
 
+    }
+    private void CheckAttackHitBox()
+    {
+        Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(hitPostion.position, m_rayCasDistance, m_rayCastMask);
+
+        attackDetails[0] = 10;
+        attackDetails[1] = transform.position.x;
+        foreach (Collider2D collider in detectedObjects)
+        {
+            collider.transform.SendMessage("Damage", attackDetails);
+            //Instantiate hit particle
+        }
+    }
 
     private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0];
-        Instantiate(hitParticle,transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+        Instantiate(hitParticle,hitParticles.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
         m_animtor.SetBool("isHurt", true);
         
 
@@ -220,6 +240,10 @@ public class EnemyBehavoir : MonoBehaviour
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         Destroy(gameObject);
         
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(hitPostion.position, m_rayCasDistance);
     }
 
 }

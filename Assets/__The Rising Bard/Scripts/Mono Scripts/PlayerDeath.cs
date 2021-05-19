@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
+    [SerializeField] private GameEvent gameEvent;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Obstacles"))
         {
+            gameEvent.Raise();
             Destroy(gameObject);
-            LevelManager.instance.Respawn();
+           
         }
     }
+
+        
+    
 }

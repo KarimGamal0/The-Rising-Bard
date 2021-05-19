@@ -14,13 +14,13 @@ public class FallingObstacle : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.gameObject.name.Equals("Player"))
+		if (col.gameObject.tag == "Player")
 			rb.isKinematic = false;
 	}
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		if (col.gameObject.name.Equals("Player"))
+		if (col.gameObject.tag == "Player")
 			Debug.Log("Got you!");
 	}
 }
