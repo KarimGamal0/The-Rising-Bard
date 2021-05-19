@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("UITRY");
+        SceneManager.LoadScene("Level 1");
 
     }
     public void QuitGame()
