@@ -242,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 6495855076808043209, guid: acab10cd17172d345941870979b63303, type: 3}
       propertyPath: levelManager
       value: 
-      objectReference: {fileID: 2998536080903490652}
+      objectReference: {fileID: 0}
     - target: {fileID: 6495855076808043209, guid: acab10cd17172d345941870979b63303, type: 3}
       propertyPath: checkPointName
       value: LevelEntry

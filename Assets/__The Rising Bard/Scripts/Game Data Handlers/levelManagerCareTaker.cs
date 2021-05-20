@@ -32,7 +32,6 @@ public class levelManagerCareTaker : MonoBehaviour
     
     public Memento get(string key)//get momento with key (name) ..you have to use add with string ... 
     {
-        Debug.LogError(key);
         if (mementoDic.ContainsKey(key))
         {
             Memento val;
@@ -46,7 +45,7 @@ public class levelManagerCareTaker : MonoBehaviour
         }
     }
 }
- 
+    
 
 //public Memento get(int index)
 //{
