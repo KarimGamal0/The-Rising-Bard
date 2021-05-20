@@ -30,6 +30,36 @@ Transform:
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7181918461712688262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962964645515708008}
+  m_Layer: 9
+  m_Name: ledeg Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962964645515708008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181918461712688262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7537674935522300346}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7537674934231397944
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7537674934568653331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.012, y: -0.377, z: 0}
+  m_LocalPosition: {x: 0.012, y: -0.484, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
@@ -200,6 +230,8 @@ Transform:
   - {fileID: 7537674935191869151}
   - {fileID: 7537674934231397945}
   - {fileID: 3988337807890998007}
+  - {fileID: 6627103875636012024}
+  - {fileID: 962964645515708008}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -243,7 +275,7 @@ SpriteRenderer:
   m_SortingLayerID: -635523501
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 3e4d0929e7f2d8945b194bb4bcafec93, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: 7b35265eea3694942a1458fdfc315d0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -307,18 +339,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021662712, y: -0.04895252}
+  m_Offset: {x: 0.0058073997, y: -0.09538424}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.857143, y: 2.857143}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 2.857143, y: 2.857143}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16907787, y: 0.6990564}
+  m_Size: {x: 0.3197031, y: 0.8041327}
   m_EdgeRadius: 0
 --- !u!114 &7537674935522300225
 MonoBehaviour:
@@ -332,25 +364,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb19f7d3da762840b6bc874fc7163aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
   movementSpeed: 3.5
-  groundCheckRadius: 0.07
+  jumpForce: 12
   groundCheck: {fileID: 7537674934568653328}
-  ground:
+  whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  groundCheckRadius: 0.07
   amountOfJumps: 2
-  airDragMultiplier: 0.59
-  jumpForce: 12
+  wallCheck: {fileID: 6627103875636012024}
+  wallCheckDistance: 0.4
+  wallSlideSpeed: 2
+  moveFoecOnAir: 20
+  airDragMultiplier: 0.95
+  variableJumpHeightMultiplier: 0.5
+  jumpTimerSet: 0.15
+  wallHopDirection: {x: 1, y: 0.5}
+  wallJumpDirection: {x: 1, y: 2}
+  wallHopForce: 1000000
+  wallJumpForce: 15
+  turnTimerSet: 0.1
+  wallJumpTimerSet: 0.5
+  ledgeCheck: {fileID: 962964645515708008}
+  ledgeClimbXOffset1: 0.2
+  ledgeClimbYOffset1: 0.55
+  ledgeClimbXOffset2: 0.4
+  ledgeClimbYOffset2: 2
   dashTime: 0.1
   dashSpeed: 30
+  distanceBetweenImages: 0.1
   dashCoolDown: 2.5
-  timeFreezeValue: 5
-  hangTimeSet: 0.12
-  jumpBufferLenght: 0.25
-  dust: {fileID: 0}
-  walkSound: walk
-  jumpSound: jump
+  knockbackDuration: 0.1
+  knockbackSpeed: {x: 10, y: 10}
 --- !u!114 &7537674935522300347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,3 +432,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameEvent: {fileID: 11400000, guid: 8f4f82031e51f6c47a3f5fa7bad16c14, type: 2}
+--- !u!1 &7928889977678348548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6627103875636012024}
+  m_Layer: 9
+  m_Name: WallCeck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6627103875636012024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7928889977678348548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7537674935522300346}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
