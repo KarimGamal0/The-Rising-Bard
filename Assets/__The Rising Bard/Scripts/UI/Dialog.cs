@@ -31,7 +31,7 @@ public class Dialog : MonoBehaviour
 
     private void Update()
     {
-        if ((textDisplay.text == setntences[index]) && (isSentenceFinished == false))
+        if ((textDisplay.text == setntences[index]) && (!isSentenceFinished))
         {
             isSentenceFinished = true;
             StartCoroutine(DelayButtonDisplay());
