@@ -10,14 +10,43 @@ public class LevelManager : MonoBehaviour
     public GameObject playerPrefab;
     public CinemachineVirtualCameraBase cam;
 
-    private void Awake()
+    [SerializeField] float spwanDelaySet = 1;
+
+    [SerializeField] private PlayerData PD;
+
+    private float spwanDelay;
+    private bool isDead = false;
+
+    private void Start()
     {
-        instance = this;
+        spwanDelay = spwanDelaySet;
+    }
+    private void Update()
+    {
+        if (isDead || PD.playerHP <= 0)
+        {
+            spwanDelay -= Time.deltaTime;
+        }
+        if (spwanDelay < 0)
+        {
+            Respawn();
+            spwanDelay = spwanDelaySet;
+            isDead = false;
+        }
 
     }
-   public void Respawn()
+    public void Respawn()
     {
       GameObject player=  Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
         cam.Follow = player.transform;
     }
+
+
+    public void Dead()
+    {
+        isDead = true;
+
+    }
+
+
 }
