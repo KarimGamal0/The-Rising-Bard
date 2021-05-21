@@ -374,7 +374,7 @@ MonoBehaviour:
   groundCheckRadius: 0.07
   amountOfJumps: 2
   wallCheck: {fileID: 6627103875636012024}
-  wallCheckDistance: 0.4
+  wallCheckDistance: 0.3
   wallSlideSpeed: 2
   moveFoecOnAir: 20
   airDragMultiplier: 0.95
@@ -388,9 +388,9 @@ MonoBehaviour:
   wallJumpTimerSet: 0.5
   ledgeCheck: {fileID: 962964645515708008}
   ledgeClimbXOffset1: 0.2
-  ledgeClimbYOffset1: 0.55
+  ledgeClimbYOffset1: -0.3
   ledgeClimbXOffset2: 0.4
-  ledgeClimbYOffset2: 2
+  ledgeClimbYOffset2: 0.5
   dashTime: 0.1
   dashSpeed: 30
   distanceBetweenImages: 0.1
