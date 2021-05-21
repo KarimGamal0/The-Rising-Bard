@@ -110,7 +110,7 @@ public class PlayerCombatController : MonoBehaviour
             {
                 direction = -1;
             }
-            //POC.Knockback(direction);
+            POC.Knockback(direction);
         }
         PD.playerHP -= attackDetails[0];
     }

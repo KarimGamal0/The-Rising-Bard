@@ -15,16 +15,36 @@ public class EnemyBehavoir : MonoBehaviour
     [SerializeField] float m_timer; // time of cooldown between attacks
     [SerializeField] float maxHelth;
     [SerializeField] float m_rayCasDistance;
-    [SerializeField] HelthBarController helthBarController;
 
-/*    [Header("Knockback")]
+
+    [SerializeField] HelthBarController helthBarController;
+    [SerializeField] float hurtCollDownSet = .5f;
+
+    [Header("Knockback")]
     [SerializeField] private Vector2 knockbackSpeed;
-    [SerializeField] private float knockbackDuration;*/
+    [SerializeField] private float knockbackDuration;
 
     [Header("Death")]
     [SerializeField] private GameObject hitParticle;
     [SerializeField] private GameObject deathChunkParticle;
     [SerializeField] private GameObject deathBloodParticle;
+
+    [Header("Player touch")]
+    [SerializeField] private LayerMask whatIsPlayer;
+    [SerializeField] private Transform touchDamageCheck;
+    [SerializeField] private float touchDamageCooldown;
+    [SerializeField] private float touchDamage;
+    [SerializeField] private float touchDamageWidth;
+    [SerializeField] private float touchDamageHeight;
+
+
+    private Vector2 movement;
+    private Vector2 touchDamageBotLeft;
+    private Vector2 touchDamageTopRight;
+
+    private float lastTouchDamageTime;
+    private float knockbackStartTime;
+
 
     private float[] attackDetails = new float[2];
 
@@ -41,11 +61,12 @@ public class EnemyBehavoir : MonoBehaviour
 
     private int facingDirection = -1;
 
-    [SerializeField] float hurtCollDownSet = .5f;
+
     private float hurtCollDown ;
 
 
     Vector2 rayCastDirection = Vector2.left;
+    Rigidbody2D rb;
 
     private void Awake()
     {
@@ -53,6 +74,7 @@ public class EnemyBehavoir : MonoBehaviour
         m_animtor = GetComponent<Animator>();
         currentHealth = maxHelth;
         hurtCollDown = hurtCollDownSet;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -95,6 +117,8 @@ public class EnemyBehavoir : MonoBehaviour
             hurtCollDown = hurtCollDownSet;
         }
         Debug.Log(m_animtor.GetBool("isHurt"));
+        CheckTouchDamage();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -232,7 +256,15 @@ public class EnemyBehavoir : MonoBehaviour
         {
             damageDirection = 1;
         }
+        EnterKnockbackState();
     }
+    private void EnterKnockbackState()
+    {
+       // knockbackStartTime = Time.time;
+        movement.Set(knockbackSpeed.x * damageDirection, knockbackSpeed.y);
+        rb.AddForce( movement);
+    }
+
     private void Die()
     {
         Debug.Log("Die");
@@ -241,9 +273,39 @@ public class EnemyBehavoir : MonoBehaviour
         Destroy(gameObject);
         
     }
+
+    private void CheckTouchDamage()
+    {
+
+        if (Time.time >= lastTouchDamageTime + touchDamageCooldown)
+        {
+
+            touchDamageBotLeft.Set(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+            touchDamageTopRight.Set(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+
+            Collider2D hit = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight, whatIsPlayer);
+            if (hit != null)
+            {
+                lastTouchDamageTime = Time.time;
+                attackDetails[0] = touchDamage;
+                attackDetails[1] = transform.position.x;
+                hit.SendMessage("Damage", attackDetails);
+
+            }
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(hitPostion.position, m_rayCasDistance);
+        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+
+        Gizmos.DrawLine(botLeft, botRight);
+        Gizmos.DrawLine(botRight, topRight);
+        Gizmos.DrawLine(topRight, topLeft);
+        Gizmos.DrawLine(topLeft, botLeft);
     }
 
 }

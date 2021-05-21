@@ -30998,13 +30998,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
+      propertyPath: knockbackSpeed.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
+      propertyPath: knockbackSpeed.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2198050142458521073, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: m_Name
       value: the Jester
-      objectReference: {fileID: 0}
-    - target: {fileID: 2198050142458521073, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3809913766672678495, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: m_AnchorMax.x
@@ -36768,6 +36772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: PD
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
     - target: {fileID: 7537674935522300346, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: m_RootOrder
       value: 3
