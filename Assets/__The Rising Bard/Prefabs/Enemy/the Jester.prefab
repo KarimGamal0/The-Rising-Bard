@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &68565024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68565025}
+  m_Layer: 0
+  m_Name: Ground Detection
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68565025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68565024}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.2, y: 1.19, z: 0}
+  m_LocalScale: {x: 2.7211425, y: 2.7211425, z: 2.7211425}
+  m_Children: []
+  m_Father: {fileID: 2198050142458520972}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2198050140721148431
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +300,7 @@ Transform:
   - {fileID: 4682666373902496498}
   - {fileID: 3301365048016641703}
   - {fileID: 1134453920760586858}
+  - {fileID: 68565025}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -363,14 +394,19 @@ MonoBehaviour:
   m_rayCastMask:
     serializedVersion: 2
     m_Bits: 512
-  m_rayCastLenght: 6
-  m_attackDistance: 0.5
-  m_moveSpeed: 1
-  m_timer: 1.5
-  maxHelth: 50
-  m_rayCasDistance: 0.1
   helthBarController: {fileID: 108349903668948835}
-  hurtCollDownSet: 0.25
+  hurtCooldownSet: 0.5
+  m_moveSpeed: 1
+  maxHelth: 50
+  m_attackDistance: 0.5
+  m_cooldownTimer: 0
+  m_rayCastDistance: 0
+  m_rayCastLenght: 6
+  m_groundDetection: {fileID: 68565025}
+  m_groundhitDistance: 2
+  m_groundLayers:
+    serializedVersion: 2
+    m_Bits: 64
   knockbackSpeed: {x: 10, y: 5}
   knockbackDuration: 0.1
   hitParticle: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
