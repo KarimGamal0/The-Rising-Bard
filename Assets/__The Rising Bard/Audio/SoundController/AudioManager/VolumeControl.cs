@@ -15,6 +15,8 @@ public class VolumeControl : MonoBehaviour
     private void Start()
     {
         slider.value = PlayerPrefs.GetFloat(volumeParam);
+        mixer.SetFloat(volumeParam, PlayerPrefs.GetFloat(volumeParam));
+
 
     }
     void Awake()
@@ -27,7 +29,7 @@ public class VolumeControl : MonoBehaviour
     {
         if (toggleValue)//from toggle event if u toggle it will give u true here .
         {
-            slider.value = 0;
+            slider.value = -80;
         }
         else
         {
@@ -35,7 +37,7 @@ public class VolumeControl : MonoBehaviour
         }
 
 
-        if (slider.value == 0)
+        if (slider.value == -80)
         {
             toggle.isOn = true;
         }
@@ -45,11 +47,11 @@ public class VolumeControl : MonoBehaviour
     {
         //  await Task.Delay(100);
     
-        mixer.SetFloat(volumeParam, (1 - Mathf.Sqrt(arg0)) * -80f);
+        mixer.SetFloat(volumeParam, arg0);
         PlayerPrefs.SetFloat(volumeParam, slider.value);
  
 
-        if (slider.value==0)
+        if (slider.value==-80)
         {
             toggle.isOn = true;
         }
