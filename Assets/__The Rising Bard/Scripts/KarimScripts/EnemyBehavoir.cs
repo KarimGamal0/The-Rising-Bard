@@ -131,7 +131,7 @@ public class EnemyBehavoir : MonoBehaviour
             hurtCooldown = hurtCooldownSet;
         }
 
-        Debug.Log(m_animtor.GetBool("isHurt"));
+
         CheckTouchDamage();
     }
 

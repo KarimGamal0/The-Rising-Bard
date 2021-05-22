@@ -382,8 +382,7 @@ AnimatorState:
   m_Name: W_LedgeClimb
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -5415585801058410756}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -469,7 +468,6 @@ AnimatorStateMachine:
   - {fileID: 1527329690614833893}
   - {fileID: 1955598771416374130}
   - {fileID: 6157920838415125787}
-  - {fileID: -4072142226970651739}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
@@ -601,9 +599,6 @@ AnimatorStateTransition:
     m_ConditionEvent: isWallSliding
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: canClimbLedge
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
     m_ConditionEvent: isAttacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -661,9 +656,6 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: canAttack
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: canClimbLedge
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1290370197045201420}
@@ -877,9 +869,6 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: firstAttack
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: canClimbLedge
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2696432132327565346}

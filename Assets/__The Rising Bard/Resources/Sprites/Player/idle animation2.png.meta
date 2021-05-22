@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: 81202c8eec920e04dbf03aed7cb90779
+guid: b17f57e392955c0469cfc55a49741528
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3395494617456055772
-    second: Attack Animation MAin Character_0
+      213: 6345458823624479076
+    second: idle animation2_0
   - first:
-      213: -5629551379265930984
-    second: Attack Animation MAin Character_1
+      213: 9163130046425021245
+    second: idle animation2_1
   - first:
-      213: 358053907672064689
-    second: Attack Animation MAin Character_2
+      213: 174455746400399462
+    second: idle animation2_2
   - first:
-      213: 8976682549023141138
-    second: Attack Animation MAin Character_3
+      213: 2019049173123792072
+    second: idle animation2_3
   - first:
-      213: -3254384714860358951
-    second: Attack Animation MAin Character_4
+      213: 4266389653863060885
+    second: idle animation2_4
   - first:
-      213: 5146546239069875691
-    second: Attack Animation MAin Character_5
+      213: -2642215158748346880
+    second: idle animation2_5
   - first:
-      213: 3848333355693974906
-    second: Attack Animation MAin Character_6
+      213: -5371000109282850574
+    second: idle animation2_6
   - first:
-      213: 6753273259360405557
-    second: Attack Animation MAin Character_7
+      213: 141175938875028930
+    second: idle animation2_7
   - first:
-      213: -4300079003974050289
-    second: Attack Animation MAin Character_8
+      213: -1597430755298829655
+    second: idle animation2_8
+  - first:
+      213: -2858923625078289456
+    second: idle animation2_9
+  - first:
+      213: 215090804620025404
+    second: idle animation2_10
+  - first:
+      213: 796322458618664434
+    second: idle animation2_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack Animation MAin Character_0
+      name: idle animation2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1080
-        width: 728
-        height: 968
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42ae7c1b2a7c0e0d0800000000000000
-      internalID: -3395494617456055772
+      spriteID: 461510f2e299f0850800000000000000
+      internalID: 6345458823624479076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_1
+      name: idle animation2_1
       rect:
         serializedVersion: 2
-        x: 728
-        y: 1080
-        width: 728
-        height: 968
+        x: 358
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8193b02e8d0dfd1b0800000000000000
-      internalID: -5629551379265930984
+      spriteID: d3b3fd79a3af92f70800000000000000
+      internalID: 9163130046425021245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_2
+      name: idle animation2_2
       rect:
         serializedVersion: 2
-        x: 1456
-        y: 1080
-        width: 728
-        height: 968
+        x: 716
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b2eb39c12018f400800000000000000
-      internalID: 358053907672064689
+      spriteID: 660b839b39acb6200800000000000000
+      internalID: 174455746400399462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_3
+      name: idle animation2_3
       rect:
         serializedVersion: 2
-        x: 2184
-        y: 1080
-        width: 728
-        height: 968
+        x: 1074
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21de8f3c735939c70800000000000000
-      internalID: 8976682549023141138
+      spriteID: 8ccf61c868a150c10800000000000000
+      internalID: 2019049173123792072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_4
+      name: idle animation2_4
       rect:
         serializedVersion: 2
-        x: 2912
-        y: 1080
-        width: 728
-        height: 968
+        x: 1432
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d29944285a16d2d0800000000000000
-      internalID: -3254384714860358951
+      spriteID: 595d8ef29c2453b30800000000000000
+      internalID: 4266389653863060885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_5
+      name: idle animation2_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
-        width: 728
-        height: 968
+        x: 1790
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bede1ef69843c6740800000000000000
-      internalID: 5146546239069875691
+      spriteID: 00607aaef47f45bd0800000000000000
+      internalID: -2642215158748346880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_6
+      name: idle animation2_6
       rect:
         serializedVersion: 2
-        x: 728
-        y: 112
-        width: 728
-        height: 968
+        x: 2148
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a752d633cc6086530800000000000000
-      internalID: 3848333355693974906
+      spriteID: 2f88c9d7bdf5675b0800000000000000
+      internalID: -5371000109282850574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_7
+      name: idle animation2_7
       rect:
         serializedVersion: 2
-        x: 1456
-        y: 112
-        width: 728
-        height: 968
+        x: 2506
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 538425fbf3278bd50800000000000000
-      internalID: 6753273259360405557
+      spriteID: 2c57a77b4ce85f100800000000000000
+      internalID: 141175938875028930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack Animation MAin Character_8
+      name: idle animation2_8
       rect:
         serializedVersion: 2
-        x: 2184
-        y: 112
-        width: 728
-        height: 968
+        x: 2864
+        y: 1244
+        width: 358
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +333,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0ed20ebdec0354c0800000000000000
-      internalID: -4300079003974050289
+      spriteID: 9aa112d0139c4d9e0800000000000000
+      internalID: -1597430755298829655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle animation2_9
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 1244
+        width: 358
+        height: 804
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db8c373c101358d0800000000000000
+      internalID: -2858923625078289456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle animation2_10
+      rect:
+        serializedVersion: 2
+        x: 3580
+        y: 1244
+        width: 358
+        height: 804
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e54db72f72cf200800000000000000
+      internalID: 215090804620025404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle animation2_11
+      rect:
+        serializedVersion: 2
+        x: 3580
+        y: 440
+        width: 358
+        height: 804
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f591a89e0b1d0b00800000000000000
+      internalID: 796322458618664434
       vertices: []
       indices: 
       edges: []

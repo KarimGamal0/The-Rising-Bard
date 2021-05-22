@@ -156,7 +156,7 @@ public class PlayerOldControlles : MonoBehaviour
         CheckIfCanJump();
         CheckIfWallSliding();
         CheckJump();
-        CheckLedgeClimb();
+       // CheckLedgeClimb();
         CheckDash();
         CheckKnockback();
     }
@@ -371,12 +371,15 @@ public class PlayerOldControlles : MonoBehaviour
 
         isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
-        isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
-        if (isTouchingWall && !isTouchingLedge && !ledgeDetected)
+       // isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
+
+
+        /*if (isTouchingWall && !isTouchingLedge && !ledgeDetected)
         {
+            Debug.Log("ledgeDetected  " + ledgeDetected);
             ledgeDetected = true;
             ledgePosBot = wallCheck.position;
-        }
+        }*/
     }
 
 
@@ -627,7 +630,6 @@ public class PlayerOldControlles : MonoBehaviour
 
     private void Flip()
     {
-        Debug.Log("Flip");
         if (!isWallSliding && canFlip && !knockback && !ledgeDetected)
         {
             facingDirection *= -1;
@@ -646,7 +648,6 @@ public class PlayerOldControlles : MonoBehaviour
     public void EnableFlip()
     {
         canFlip = true;
-        Debug.Log("Called");
     }
 
 
@@ -681,6 +682,6 @@ public class PlayerOldControlles : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
 
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
-        Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
+       // Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
     }
 }
