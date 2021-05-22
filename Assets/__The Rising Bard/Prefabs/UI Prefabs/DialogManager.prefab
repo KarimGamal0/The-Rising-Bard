@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5011445441387699905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5011445441387699904}
+  - component: {fileID: 5011445441387699907}
+  m_Layer: 0
+  m_Name: DialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5011445441387699904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5011445441387699905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 249.18192, y: 138.45319, z: -194.76645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5011445441387699907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5011445441387699905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101c0c39ec48d264885774855c03195a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 0}
+  setntences:
+  - 'Darkness creeps in, all that once was bright and beautiful is now defiled. 
+    Everything seems dull and tasteless.  '
+  - Even the sound of happiness has disappeared.
+  - City of guardians was a city known for its strong warriors and great melodies.
+  - It was told that these melodies had a healing power and magical effects that
+    made rivers flow and plants grow.
+  - Now, all is lost,
+  - 'for Haru the demon of darkness had arrived. He took over the city, pillaged
+    its people and took them to himself. '
+  - He deprived the lands of all melodies and light.
+  - The once prideful people of this city are now powerless against him.
+  - Falling day by day into his influence and deforming into the music of darkness.
+  - What now?
+  - What about our last hope?
+  - The first bard of this kingdom?Ash
+  - as the legend tells, was the one who introduced music to this city.
+  - 'One stroke of his mandoline could bend time and enchant minds. Where is he now? '
+  - Buried in the dungeon of heroes, underground.  Can he be resurrected?
+  - Yes? So here we go.  Using the last power of melodies the citizens could master,
+    they collaborate to bring Ash back to life.
+  typingSpeed: 0.01
+  delayButtonDuration: 5
+  continueButton: {fileID: 0}

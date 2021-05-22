@@ -21,23 +21,34 @@ public class PlayerKillMemoTest : MonoBehaviour
                 PlayerOldControlles player = collision.GetComponent<PlayerOldControlles>();
                 if (player)
                 {
-                    Memento memo;
+                    Memento memo=new Memento(-1,-1,new Vector2(1,2));
                     if (useCustomCheckPoint)
                     {
                         memo = levelManager.get($"{checkPoint.checkPointName}");
+                        Debug.Log(memo);
+
 
                     }
                     else
                     {
-                        memo = levelManager.get($"{CheckPointMain.lastCheckPoint}");
-                    }
-                    player.GetMementoFromCareTaker(memo);//todo event (send memo via event )
+                       memo = levelManager.get($"{CheckPointMain.lastCheckPoint}");
+                  
 
-                    
+                    }
+                    if(memo.PlayerHP!=-1)
+                    {
+                        player.GetMementoFromCareTaker(memo);//todo event (send memo via event )
+
+                    }
+                    else
+                    {
+                        Debug.LogError("Errrror check point not taken or check of level manager in the scene ");
+                    }
+
                     //Debug.Log(memo.PlayerHP);
                     //Debug.Log(memo.PlayerMana);
                     //Debug.Log(memo.PlayerPosition);
-          
+
                     //
                 }
             }
