@@ -15,7 +15,7 @@ TagManager:
   - Damgable
   - Dead
   - Player
-  - 
+  - background
   - 
   - 
   - 
@@ -38,12 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
-  - name: BackGround
-    uniqueID: 452882361
-    locked: 0
   - name: Decoration
     uniqueID: 4026310653
     locked: 0
@@ -58,4 +52,31 @@ TagManager:
     locked: 0
   - name: For Ground Decoration
     uniqueID: 3901955437
+    locked: 0
+  - name: BackGround
+    uniqueID: 452882361
+    locked: 0
+  - name: backgoround decoration
+    uniqueID: 1373706669
+    locked: 0
+  - name: 'background 1 '
+    uniqueID: 4144977361
+    locked: 0
+  - name: bg_decoration_L2
+    uniqueID: 302409155
+    locked: 0
+  - name: Midground
+    uniqueID: 1843735457
+    locked: 0
+  - name: Transition
+    uniqueID: 1022790019
+    locked: 0
+  - name: tiles
+    uniqueID: 1018822895
+    locked: 0
+  - name: ui
+    uniqueID: 799563621
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
