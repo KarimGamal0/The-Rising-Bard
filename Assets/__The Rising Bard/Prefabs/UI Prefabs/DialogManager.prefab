@@ -66,5 +66,5 @@ MonoBehaviour:
   - Yes? So here we go.  Using the last power of melodies the citizens could master,
     they collaborate to bring Ash back to life.
   typingSpeed: 0.01
-  delayButtonDuration: 5
+  delayButtonDuration: 1.5
   continueButton: {fileID: 0}

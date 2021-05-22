@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Dialog : MonoBehaviour
@@ -36,6 +37,7 @@ public class Dialog : MonoBehaviour
             isSentenceFinished = true;
             StartCoroutine(DelayButtonDisplay());
         }
+        
     }
 
     IEnumerator DelayButtonDisplay()
@@ -63,6 +65,10 @@ public class Dialog : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+        }
+        else if (index >= setntences.Length-1)
+        {
+            SceneManager.LoadScene(2);
         }
         else
         {

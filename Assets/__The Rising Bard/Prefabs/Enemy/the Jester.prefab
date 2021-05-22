@@ -388,20 +388,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e3bef23481c0b4590fb9c2ea9a0814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rayCast: {fileID: 2198050140721148430}
   hitPostion: {fileID: 2198050142169145787}
   hitParticles: {fileID: 3301365048016641703}
-  m_rayCastMask:
-    serializedVersion: 2
-    m_Bits: 512
   helthBarController: {fileID: 108349903668948835}
   hurtCooldownSet: 0.5
   m_moveSpeed: 1
   maxHelth: 50
   m_attackDistance: 0.5
   m_cooldownTimer: 0
+  m_rayCast: {fileID: 2198050140721148430}
   m_rayCastDistance: 0
   m_rayCastLenght: 6
+  m_rayCastMask:
+    serializedVersion: 2
+    m_Bits: 512
   m_groundDetection: {fileID: 68565025}
   m_groundhitDistance: 2
   m_groundLayers:
@@ -418,8 +418,8 @@ MonoBehaviour:
   touchDamageCheck: {fileID: 1134453920760586858}
   touchDamageCooldown: 0.2
   touchDamage: 10
-  touchDamageWidth: 0.4
-  touchDamageHeight: 0.9
+  touchDamageWidth: 0.25
+  touchDamageHeight: 0.8
 --- !u!95 &2198050142458521072
 Animator:
   serializedVersion: 3
@@ -463,7 +463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5530525642910586708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.156, y: 1.228, z: 0}
+  m_LocalPosition: {x: 0.253, y: 1.228, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2198050142458520972}

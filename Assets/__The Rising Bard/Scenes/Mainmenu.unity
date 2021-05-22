@@ -338,70 +338,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI sound
       objectReference: {fileID: 0}
-    - target: {fileID: 7506557361290938620, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557361544089575, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557361544089575, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362123332281, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362123332281, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362123332281, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362709850957, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362709850957, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362709850957, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362887889647, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362887889647, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362954331199, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362954331199, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557362954331199, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557363112354778, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506557363112354778, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
 --- !u!1 &1486423883 stripped
@@ -512,10 +448,6 @@ PrefabInstance:
     - target: {fileID: 7415836228189581902, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
       propertyPath: m_Name
       value: Mainmenu Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8502976372430269041, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
