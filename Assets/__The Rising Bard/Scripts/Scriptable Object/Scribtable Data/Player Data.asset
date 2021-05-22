@@ -19,6 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 80665743980e52143910bfd19bbc7b55, type: 2}
   - {fileID: 11400000, guid: 95e87dc645fdc374dbc05fbb5189f2a1, type: 2}
   - {fileID: 11400000, guid: 58c10f217c8bdb341ae3683ebabd0fcf, type: 2}
-  playerHP: 1000
+  playerHP: 60
   playerMana: 100
   playerScore: 100
