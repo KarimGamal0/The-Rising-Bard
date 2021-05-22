@@ -207,7 +207,6 @@ GameObject:
   - component: {fileID: 7537674935522300350}
   - component: {fileID: 7537674935522300225}
   - component: {fileID: 7537674935522300347}
-  - component: {fileID: 1176346008960593915}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -335,7 +334,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7537674935522300224}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ffa03777622c75f4faf90c3869f983f0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -397,6 +396,11 @@ MonoBehaviour:
   dashCoolDown: 2.5
   knockbackDuration: 0.1
   knockbackSpeed: {x: 10, y: 10}
+  hangTimeSet: 0.1
+  jumpBufferLenght: 0.1
+  dust: {fileID: 0}
+  walkSound: walk
+  jumpSound: jump
 --- !u!114 &7537674935522300347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,19 +424,6 @@ MonoBehaviour:
   deathChunkParticle: {fileID: 3380558688841995781, guid: fee86d5ce26b2bb4b8316217ee503241, type: 3}
   deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
   PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
---- !u!114 &1176346008960593915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537674935522300224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa8ce87842b35a343be50ec91adcacff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 8f4f82031e51f6c47a3f5fa7bad16c14, type: 2}
 --- !u!1 &7928889977678348548
 GameObject:
   m_ObjectHideFlags: 0

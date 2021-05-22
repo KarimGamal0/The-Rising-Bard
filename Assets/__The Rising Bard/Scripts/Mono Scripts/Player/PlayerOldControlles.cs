@@ -5,559 +5,7 @@ using UnityEngine;
 
 public class PlayerOldControlles : MonoBehaviour
 {
-    /*
-        [SerializeField] private PlayerData playerData;
-
-        [Header("Player")]
-        [SerializeField] private float movementSpeed;
-
-        [Header("Ground")]
-        [SerializeField] private float groundCheckRadius;
-        [SerializeField] private Transform groundCheck;
-        [SerializeField] private LayerMask whatIsGround;
-
-        [Header("Jump")]
-        [SerializeField] private float amountOfJumps;
-        [SerializeField] private float airDragMultiplier;
-        [SerializeField] private float jumpForce;
-
-
-        [Header("Dash")]
-        [SerializeField] private float dashTime;
-        [SerializeField] private float dashSpeed;
-        [SerializeField] private float dashCoolDown;
-
-
-        [Header("Wall Compenet")]
-        [SerializeField] private Transform wallCheck;
-        [SerializeField] private float wallCheckDistance;
-        [SerializeField] private float wallSlideSpeed;
-
-        [Header("Wall Jump Compenet")]
-        [SerializeField] private Vector2 wallHopDirection;
-        [SerializeField] private Vector2 wallJumpDirection;
-        [SerializeField] private float wallHopForce;
-        [SerializeField] private float wallJumpForce;
-
-        [Header("Turn Compenet")]
-        [SerializeField] private float turnTimerSet = 0.1f;
-        [SerializeField] private float wallJumpTimerSet = 0.5f;
-
-        [Header("Ledge Compenet")]
-        [SerializeField] private Transform ledgeCheck;
-        [SerializeField] float ledgeClimbXOffset1 = 0f;
-        [SerializeField] float ledgeClimbYOffset1 = 0f;
-        [SerializeField] float ledgeClimbXOffset2 = 0f;
-        [SerializeField] float ledgeClimbYOffset2 = 0f;
-
-        [Header("knockback Compenet")]
-        [SerializeField] private float knockbackDuration;
-        [SerializeField] private Vector2 knockbackSpeed;
-
-        [Header("Extra for the player")]
-
-        [SerializeField] private float hangTimeSet = 0.1f;
-
-        [SerializeField] private float jumpBufferLenght = 0.1f;
-
-        [SerializeField] ParticleSystem dust;
-
-
-        [Header("Music")]
-        [SerializeField] private string walkSound;
-        [SerializeField] private string jumpSound;
-
-
-
-
-        public delegate void onestringdelegate(string song);
-        internal static event onestringdelegate PlaySoundEvent;
-
-
-
-        private float movementInputDirection;
-        private float amountOfJumpsLeft;
-        private float dashTimeLeft;
-        private float lastDash;
-        private float hangTime;
-        private float jumpBufferTime;
-        private float knockbackStartTime;
-        private float jumpTimer = 0.15F;
-        private float turnTimer = 0.1F;
-        private float wallJumpTimer = 0.1F;
-
-
-        private bool isGrounded;
-        private bool canMove = true;
-        private bool canFlip = true;
-        private bool isFacingRight = true;
-        private bool canJump = true;
-        private bool isWalking;
-        private bool isDashing;
-        private bool hasWallJumped;
-        private bool isTouchingLedge;
-        private bool canClimbLedge = false;
-        private bool ledgeDetected;
-        private bool canWallJump = false;
-        private bool isTouchingWall;
-        private bool isWallSliding;
-        private bool knockback;
-        private bool isAttemptingToJump;
-        private bool checkJumpMultiplier;
-
-
-
-        private int facingDirection = 1;
-        private int lastWallJumpDirection = 1;
-
-
-        private Vector2 ledgePosBot;
-        private Vector2 ledgePos1;
-        private Vector2 ledgePos2;
-
-        private Rigidbody2D rb;
-        private Animator anim;
-
-
-
-
-
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            #region Initilization data for the player
-
-
-            foreach (var item in playerData.abilities)
-            {
-                item.abilityActive = false;
-                item.abilityGained = false;
-            }
-            playerData.playerHP = 100;
-            playerData.playerMana = 100;
-
-            #endregion
-
-            rb = GetComponent<Rigidbody2D>();
-            anim = GetComponent<Animator>();
-            amountOfJumpsLeft = amountOfJumps;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            UpdatAnimation();
-            CheckInput();
-            CheckMovementDirection();
-            CheckDash();
-            CheckJump();
-            CheckIfWallSliding();
-            CheckLedgeClimb();
-            CheckKnockback();
-        }
-
-        private void FixedUpdate()
-        {
-            ApplyMovement();
-            CheckSurroundings();
-        }
-
-
-
-        private void UpdatAnimation()
-        {
-            anim.SetBool("isWalking", isWalking);
-            anim.SetBool("isGrounded", isGrounded);
-            anim.SetFloat("yVelocity", rb.velocity.y);
-            anim.SetBool("isDash", isDashing);
-            anim.SetBool("isWallSliding", isWallSliding);
-
-            //anim.SetBool("isDash", isDashing);
-        }
-
-        private void CheckInput()
-        {
-            movementInputDirection = Input.GetAxisRaw("Horizontal");
-            // check hangTime
-            if (isGrounded || isTouchingWall)
-            {
-                hangTime = hangTimeSet;
-                amountOfJumpsLeft = amountOfJumps;
-            }
-            else
-            {
-                hangTime -= Time.deltaTime;
-            }
-
-            // chek Jump Buffer
-            if (Input.GetButtonDown("Jump"))
-            {
-                jumpBufferTime = jumpBufferLenght;
-            }
-            else
-            {
-                jumpBufferTime -= Time.fixedDeltaTime;
-            }
-
-            if (jumpBufferTime >= 0)
-            {
-                if (hangTime > 0)
-                {
-                    NormalJump();
-                    jumpBufferTime = 0;
-                }
-                else if (amountOfJumpsLeft >= 0 && playerData.abilities[1].abilityGained&& playerData.playerMana>= playerData.abilities[1].abilityCost)
-                {
-                    NormalJump();
-                    jumpBufferTime = 0;
-                }
-            }
-
-            if (Input.GetButtonDown("Horizontal") && isTouchingWall)
-            {
-                if (!isGrounded && movementInputDirection != facingDirection)
-                {
-                    canMove = false;
-                    canFlip = false;
-
-                    turnTimer = turnTimerSet;
-                }
-            }
-            if (turnTimer >= 0)
-            {
-                turnTimer -= Time.deltaTime;
-
-                if (turnTimer <= 0)
-                {
-                    canMove = true;
-                    canFlip = true;
-                }
-            }
-
-
-
-            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-                amountOfJumpsLeft--;
-                PlaySoundEvent.Invoke(jumpSound);
-
-            }
-
-            if (Input.GetButton("Dash"))
-            {
-                //  check for the mana value is able to dash or not
-                if (Time.time >= (lastDash + dashCoolDown) &&  playerData.abilities[0].abilityGained && playerData.playerMana >= playerData.abilities[0].abilityCost)
-                    AttempToDash();
-            }
-
-            if(isWalking)
-            {
-                PlaySoundEvent.Invoke(walkSound);
-
-            }
-        }
-
-        private void ApplyMovement()
-        {
-            if (canMove)
-            {
-                rb.velocity = new Vector2(movementSpeed * movementInputDirection, rb.velocity.y);
-            }
-        }
-        private void CheckJump()
-        {
-
-                //WallJump
-                if (!isGrounded && isTouchingWall && movementInputDirection != 0 && movementInputDirection != facingDirection)
-                {
-                    WallJump();
-                }
-                else if (isGrounded)
-                {
-                    NormalJump();
-                }
-
-
-            if (isAttemptingToJump)
-            {
-                jumpTimer -= Time.deltaTime;
-            }
-
-            if (wallJumpTimer > 0)
-            {
-                if (hasWallJumped && movementInputDirection == -lastWallJumpDirection)
-                {
-                    rb.velocity = new Vector2(rb.velocity.x, 0.0f);
-                    hasWallJumped = false;
-                }
-                else if (wallJumpTimer <= 0)
-                {
-                    hasWallJumped = false;
-                }
-                else
-                {
-                    wallJumpTimer -= Time.deltaTime;
-                }
-            }
-        }
-        private void NormalJump()
-        {
-            amountOfJumpsLeft--;
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            PlaySoundEvent.Invoke(jumpSound);
-        }
-        private void WallJump()
-        {
-            if (canWallJump)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, 0.0f);
-                isWallSliding = false;
-                amountOfJumpsLeft = amountOfJumps;
-                amountOfJumpsLeft--;
-                Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
-                rb.AddForce(forceToAdd, ForceMode2D.Impulse);
-                jumpTimer = 0;
-                isAttemptingToJump = false;
-                checkJumpMultiplier = true;
-                turnTimer = 0;
-                canMove = true;
-                canFlip = true;
-                hasWallJumped = true;
-                wallJumpTimer = wallJumpTimerSet;
-                lastWallJumpDirection = -facingDirection;
-
-            }
-        }
-
-        private void CheckMovementDirection()
-        {
-            if (isFacingRight && movementInputDirection < 0)
-            {
-                Flip();
-            }
-            else if (!isFacingRight && movementInputDirection > 0)
-            {
-                Flip();
-            }
-
-            if (Mathf.Abs(rb.velocity.x) >= 0.01f)
-            {
-                isWalking = true;
-            }
-            else
-            {
-                isWalking = false;
-            }
-        }
-
-
-
-        public bool GetDashStatus()
-        {
-            return isDashing;
-        }
-        private void AttempToDash()
-        {
-            isDashing = true;
-            dashTimeLeft = dashTime;
-            lastDash = Time.time;
-        }
-
-
-
-        private void CheckDash()
-        {
-            if (isDashing)
-            {
-                if (dashTimeLeft > 0)
-                {
-                    canFlip = false;
-                    canMove = false;
-                    rb.velocity = new Vector2(dashSpeed * facingDirection, 0);
-                    dashTimeLeft -= Time.deltaTime;
-                }
-
-                if (dashTimeLeft <= 0)
-                {
-                    isDashing = false;
-                    canFlip = true;
-                    canMove = true;
-
-                }
-            }
-        }
-
-
-        private void CheckLedgeClimb()
-        {
-            if (ledgeDetected && !canClimbLedge)
-            {
-                canClimbLedge = true;
-                if (isFacingRight)
-                {
-                    ledgePos1 = new Vector2(Mathf.Floor(ledgePosBot.x + wallCheckDistance) - ledgeClimbXOffset1, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset1);
-                    ledgePos2 = new Vector2(Mathf.Floor(ledgePosBot.x + wallCheckDistance) + ledgeClimbXOffset2, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset2);
-                }
-                else
-                {
-                    ledgePos1 = new Vector2(Mathf.Ceil(ledgePosBot.x - wallCheckDistance) + ledgeClimbXOffset1, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset1);
-                    ledgePos2 = new Vector2(Mathf.Ceil(ledgePosBot.x - wallCheckDistance) - ledgeClimbXOffset2, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset2);
-                }
-                canMove = false;
-                canFlip = false;
-                anim.SetBool("canClimbLedge", canClimbLedge);
-            }
-            if (canClimbLedge)
-            {
-                transform.position = ledgePos1;
-            }
-
-        }
-
-        public void FinishLedgeClimb()
-        {
-            canClimbLedge = false;
-            transform.position = ledgePos2;
-            canMove = true;
-            canFlip = true;
-            ledgeDetected = false;
-            anim.SetBool("canClimbLedge", canClimbLedge);
-
-        }
-
-
-
-        public void Knockback(int direction)
-        {
-            knockback = true;
-            knockbackStartTime = Time.time;
-            rb.velocity = new Vector2(knockbackSpeed.x * direction, knockbackSpeed.y);
-        }
-
-
-        private void CheckKnockback()
-        {
-            if (Time.time >= knockbackDuration + knockbackStartTime && knockback)
-            {
-                knockback = false;
-                rb.velocity = new Vector2(0.0f, rb.velocity.y);
-            }
-        }
-
-        private void CheckIfWallSliding()
-        {
-            if (isTouchingWall && movementInputDirection == facingDirection && rb.velocity.y < 0 && !canClimbLedge)
-            {
-                isWallSliding = true;
-            }
-            else
-            {
-                isWallSliding = false;
-            }
-        }
-
-        private void Flip()
-        {
-            if (canFlip)
-            {
-                facingDirection *= -1;
-                isFacingRight = !isFacingRight;
-                transform.Rotate(0.0f, 180.0f, 0.0f);
-            }
-        }
-        public void DisableFlip()
-        {
-            canFlip = false;
-        }
-
-
-        public void EnableFlip()
-        {
-            canFlip = true;
-        }
-
-
-        private void CheckSurroundings()
-        {
-            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-
-            isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
-
-            isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
-            if (isTouchingWall && !isTouchingLedge && !ledgeDetected)
-            {
-                ledgeDetected = true;
-                ledgePosBot = wallCheck.position;
-            }
-        }
-
-
-
-
-
-
-        // Health modificaion functions
-
-
-        public void TakeDamage(float damageValue)
-        {
-            playerData.playerHP -= damageValue;
-            Debug.Log("dameage ");
-        }
-
-        public void TakeHeal(float healValue)
-        {
-            playerData.playerHP += healValue;
-        }
-
-
-
-        // mana modificaion functions
-
-        public void DecreaseMana(float decreaseValue)
-        {
-            playerData.playerMana -= decreaseValue;
-        }
-
-        public void IncreaseMana(float increaseValue)
-        {
-            playerData.playerHP += increaseValue;
-        }
-
-
-
-        // Score modificaion functions
-
-        public void DecreaseScore(float decreaseValue)
-        {
-            playerData.playerScore -= decreaseValue;
-        }
-
-        public void IncreaseScore(float increaseValue)
-        {
-            playerData.playerScore += increaseValue;
-        }
-
-
-
-        // play partical System
-
-        void CreateDust()
-        {
-            dust.Play();
-        }
-
-
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
-            Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
-        }*/
-
+ 
     [SerializeField] private PlayerData PD;
 
 
@@ -613,6 +61,28 @@ public class PlayerOldControlles : MonoBehaviour
     [SerializeField] private float knockbackDuration;
     [SerializeField] private Vector2 knockbackSpeed;
 
+
+    [Header("Extra for the player")]
+
+    [SerializeField] private float hangTimeSet = 0.1f;
+
+    [SerializeField] private float jumpBufferLenght = 0.1f;
+
+    [SerializeField] ParticleSystem dust;
+
+
+    [Header("Music")]
+    [SerializeField] private string walkSound;
+    [SerializeField] private string jumpSound;
+
+
+
+
+    public delegate void onestringdelegate(string song);
+    internal static event onestringdelegate PlaySoundEvent;
+
+
+
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -624,7 +94,8 @@ public class PlayerOldControlles : MonoBehaviour
     private float lastImageXpos;
     private float lastDash = -100f;
     private float knockbackStartTime;
-
+    private float hangTime;
+    private float jumpBufferTime;
 
 
     private bool isFacingRight = true;
@@ -659,6 +130,14 @@ public class PlayerOldControlles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        foreach (var item in PD.abilities)
+        {
+            item.abilityActive = false;
+            item.abilityGained = false;
+        }
+        PD.playerHP = 100;
+        PD.playerMana = 100;
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         amountOfJumpsLeft = amountOfJumps;
@@ -755,6 +234,91 @@ public class PlayerOldControlles : MonoBehaviour
                 AttempToDash();
             Debug.Log("Dash");
         }
+
+
+
+      /*  if (isGrounded || isTouchingWall)
+        {
+            hangTime = hangTimeSet;
+            amountOfJumpsLeft = amountOfJumps;
+        }
+        else
+        {
+            hangTime -= Time.deltaTime;
+        }*/
+
+       /* // chek Jump Buffer
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpBufferTime = jumpBufferLenght;
+        }
+        else
+        {
+            jumpBufferTime -= Time.fixedDeltaTime;
+        }
+
+        if (jumpBufferTime >= 0)
+        {
+            if (hangTime > 0)
+            {
+                NormalJump();
+                jumpBufferTime = 0;
+            }
+            else if (amountOfJumpsLeft >= 0 && PD.abilities[1].abilityGained && PD.playerMana >= PD.abilities[1].abilityCost)
+            {
+                NormalJump();
+                jumpBufferTime = 0;
+            }
+        }*/
+
+        if (Input.GetButtonDown("Horizontal") && isTouchingWall)
+        {
+            if (!isGrounded && movementInputDirection != facingDirection)
+            {
+                canMove = false;
+                canFlip = false;
+
+                turnTimer = turnTimerSet;
+            }
+        }
+        if (turnTimer >= 0)
+        {
+            turnTimer -= Time.deltaTime;
+
+            if (turnTimer <= 0)
+            {
+                canMove = true;
+                canFlip = true;
+            }
+        }
+
+
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            amountOfJumpsLeft--;
+            PlaySoundEvent.Invoke(jumpSound);
+
+        }
+
+        if (Input.GetButton("Dash"))
+        {
+            //  check for the mana value is able to dash or not
+            if (Time.time >= (lastDash + dashCoolDown) && PD.abilities[0].abilityGained && PD.playerMana >= PD.abilities[0].abilityCost)
+                AttempToDash();
+        }
+
+        if (isWalking)
+        {
+            PlaySoundEvent.Invoke(walkSound);
+
+        }
+
+
+
+
+
 
     }
 
