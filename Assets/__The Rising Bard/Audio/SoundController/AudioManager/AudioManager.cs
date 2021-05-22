@@ -12,11 +12,11 @@ public class AudioManager : MonoBehaviour
 
 
     public static AudioManager instance;
-
-
+    [SerializeField]AudioMixerGroup sfxMixer;
+ 
+ 
 
     public Sound[] sounds;
-    public List<Sound> MyList;
 
 
 
@@ -45,13 +45,12 @@ public class AudioManager : MonoBehaviour
     }
     void Awake()
     {
-        
         sounds = new Sound[clips.Length];
 
         for (int i = 0; i < clips.Length; i++)
         {
             sounds[i] = new Sound()
-            { source = gameObject.AddComponent<AudioSource>(), clip = clips[i], name = clips[i].name };
+            { source = gameObject.AddComponent<AudioSource>(), clip = clips[i], name = clips[i].name,mixerGroup= sfxMixer };
         }
 
         if (instance != null)
@@ -76,8 +75,11 @@ public class AudioManager : MonoBehaviour
             }
 
         }
-    }
+ ;
 
+
+    }
+ 
     public void Play(string sound)
     {
 
