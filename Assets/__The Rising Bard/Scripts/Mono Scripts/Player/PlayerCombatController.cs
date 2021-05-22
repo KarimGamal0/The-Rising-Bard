@@ -1,17 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCombatController : MonoBehaviour
 {
-
-    public delegate void zeroParamE();
-    public static event zeroParamE playerDeathE;
-
-
-
-
     [SerializeField] private bool combatEnabled;
     [SerializeField] private float inputTimer;
 
@@ -21,13 +13,7 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private float attack1Damage;
     [SerializeField] private LayerMask whatIsDamageable;
 
-    [SerializeField] private GameObject deathChunkParticle;
-    [SerializeField] private GameObject deathBloodParticle;
 
-
- 
-
-    private bool deathFlag=false;
     private bool gotInput;
     private bool isAttacking;
     private bool isFirstAttack;
@@ -38,7 +24,6 @@ public class PlayerCombatController : MonoBehaviour
 
     private Animator anim;
     private PlayerOldControlles POC;
-    [SerializeField] private PlayerData PD;
     //private PlayerStats PS;
 
 
@@ -49,26 +34,12 @@ public class PlayerCombatController : MonoBehaviour
         POC = GetComponent<PlayerOldControlles>();
         //PS = GetComponent<PlayerStats>();
     }
-
-    private void OnDisable()
-    {
-        FallingObstacle.playerDeathE -= Die;
-
-    }
-
-    private void OnEnable()
-    {
-        FallingObstacle.playerDeathE += Die;
-    }
     // Update is called once per frame
     void Update()
     {
         CheckCombatInput();
         CheckAttacks();
- 
     }
-
-
 
     private void CheckCombatInput()
     {
@@ -132,34 +103,17 @@ public class PlayerCombatController : MonoBehaviour
             {
                 direction = -1;
             }
-            POC.Knockback(direction);
+            //POC.Knockback(direction);
         }
-        PD.playerHP -= attackDetails[0];
-        if (PD.playerHP <= 0)
-            Die();
     }
 
- 
 
     private void FinishAttack1()
     {
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
         anim.SetBool("attack1", false);
-    }  
-    private void Die()
-    {
-        Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
-        Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
-        GetComponent<SpriteRenderer>().enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
-        
-         playerDeathE.Invoke();
-      //  Destroy(gameObject);
     }
-
-
-
 
     private void OnDrawGizmos()
     {

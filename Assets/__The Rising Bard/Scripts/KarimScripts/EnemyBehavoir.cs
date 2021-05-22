@@ -5,57 +5,24 @@ using UnityEngine.UI;
 
 public class EnemyBehavoir : MonoBehaviour
 {
-    [SerializeField] Transform hitPostion;
-    [SerializeField] Transform hitParticles;
-
-    [SerializeField] HelthBarController helthBarController;
-    [SerializeField] float hurtCooldownSet = .5f;
-
-    [Header("Enemy Stats")]
-    [SerializeField] float m_moveSpeed;
-    [SerializeField] float maxHelth;
-    [SerializeField] float m_attackDistance; // Minimum distance for attack
-    [SerializeField] float m_cooldownTimer; // time of cooldown between attacks
-
-    [Header("Player Detection")]
     [SerializeField] Transform m_rayCast;
-    [SerializeField] float m_rayCastDistance;
-    [SerializeField] float m_rayCastLenght;
     [SerializeField] LayerMask m_rayCastMask;
+    [SerializeField] float m_rayCastLenght;
+    [SerializeField] float m_attackDistance; // Minimum distance for attack
+    [SerializeField] float m_moveSpeed;
+    [SerializeField] float m_timer; // time of cooldown between attacks
+    [SerializeField] float maxHelth;
+    [SerializeField] HelthBarController helthBarController;
 
-    [Header("GroundDetection")]
-    [SerializeField] Transform m_groundDetection;
-    [SerializeField] float m_groundhitDistance = 2.0f;
-    [SerializeField] LayerMask m_groundLayers;
-    RaycastHit2D groundInfo;
-
-    [Header("Knockback")]
+/*    [Header("Knockback")]
     [SerializeField] private Vector2 knockbackSpeed;
-    [SerializeField] private float knockbackDuration;
+    [SerializeField] private float knockbackDuration;*/
 
     [Header("Death")]
     [SerializeField] private GameObject hitParticle;
     [SerializeField] private GameObject deathChunkParticle;
     [SerializeField] private GameObject deathBloodParticle;
 
-    [Header("Player touch")]
-    [SerializeField] private LayerMask whatIsPlayer;
-    [SerializeField] private Transform touchDamageCheck;
-    [SerializeField] private float touchDamageCooldown;
-    [SerializeField] private float touchDamage;
-    [SerializeField] private float touchDamageWidth;
-    [SerializeField] private float touchDamageHeight;
-
-
-    private Vector2 movement;
-    private Vector2 touchDamageBotLeft;
-    private Vector2 touchDamageTopRight;
-
-    private float lastTouchDamageTime;
-    private float knockbackStartTime;
-
-
-    private float[] attackDetails = new float[2];
 
     RaycastHit2D m_hit;
     Transform m_target;
@@ -68,44 +35,39 @@ public class EnemyBehavoir : MonoBehaviour
     private float currentHealth;
     private int damageDirection;
 
-    private int facingDirection = -1;
+    [SerializeField] float hurtCollDownSet = .5f;
+    private float hurtCollDown ;
 
-    private float hurtCooldown;
 
     Vector2 rayCastDirection = Vector2.left;
-    Rigidbody2D rb;
 
     private void Awake()
     {
-        m_intTimer = m_cooldownTimer;
-        currentHealth = maxHelth;
-        hurtCooldown = hurtCooldownSet;
-
+        m_intTimer = m_timer;
         m_animtor = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHelth;
+        hurtCollDown = hurtCollDownSet;
     }
 
     void Update()
     {
-        helthBarController.SetHealthAmount(currentHealth, maxHelth);
-
-        groundInfo = Physics2D.Raycast(m_groundDetection.position, Vector2.down, m_groundhitDistance, m_groundLayers);
-
-        if (currentHealth <= 0)
+        helthBarController.SetHealthAmount(currentHealth,maxHelth);
+        if(currentHealth<=0)
         {
             Die();
         }
-
+        // Debug.Log(m_inRange);
         RaycastDebugger();
 
-        //ExtDebug.DrawBoxCastBox(m_rayCast.position, new Vector3(2, 2, 0), Quaternion.Euler(0f, 0f, 180.0f), rayCastDirection, 5, Color.green);
+        ExtDebug.DrawBoxCastBox(m_rayCast.position, new Vector3(2, 2, 0), Quaternion.Euler(0f, 0f, 180.0f), rayCastDirection, 5, Color.green);
         if (m_inRange)
         {
             //m_hit = Physics2D.Raycast(m_rayCast.position, rayCastDirection, m_rayCastLenght, m_rayCastMask);
             m_hit = Physics2D.BoxCast(m_rayCast.position, new Vector2(2, 2), 0.0f, rayCastDirection, 5, m_rayCastMask);
+            //RaycastDebugger();
         }
 
-        if (m_hit.collider != null && groundInfo.collider == true)
+        if (m_hit.collider != null)
         {
             EnemyLogic();
         }
@@ -114,25 +76,19 @@ public class EnemyBehavoir : MonoBehaviour
             m_inRange = false;
         }
 
-        if (m_inRange == false || groundInfo.collider == false)
+        if (m_inRange == false)
         {
             m_animtor.SetBool("canWalk", false);
             StopAttack();
         }
-
         if (m_animtor.GetBool("isHurt") == true)
-        {
-            hurtCooldown -= Time.deltaTime;
-        }
-
-        if (hurtCooldown <= 0)
+            hurtCollDown -= Time.deltaTime;
+        if (hurtCollDown <= 0)
         {
             m_animtor.SetBool("isHurt", false);
-            hurtCooldown = hurtCooldownSet;
+            hurtCollDown = hurtCollDownSet;
         }
-
         Debug.Log(m_animtor.GetBool("isHurt"));
-        CheckTouchDamage();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -169,7 +125,7 @@ public class EnemyBehavoir : MonoBehaviour
     void Move()
     {
         m_animtor.SetBool("canWalk", true);
-        if (!m_animtor.GetCurrentAnimatorStateInfo(0).IsName("Jester_Attack_anim"))
+        if (!m_animtor.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
         {
             Vector2 targetPosition = new Vector2(m_target.position.x, this.transform.position.y);
 
@@ -179,7 +135,7 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Attack()
     {
-        m_cooldownTimer = m_intTimer;
+        m_timer = m_intTimer;
         m_attackMode = true;
 
         m_animtor.SetBool("canWalk", false);
@@ -188,12 +144,12 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Cooldown()
     {
-        m_cooldownTimer -= Time.deltaTime;
+        m_timer -= Time.deltaTime;
 
-        if (m_cooldownTimer <= 0 && m_cooling && m_attackMode)
+        if (m_timer <= 0 && m_cooling && m_attackMode)
         {
             m_cooling = false;
-            m_cooldownTimer = m_intTimer;
+            m_timer = m_intTimer;
         }
     }
 
@@ -204,6 +160,7 @@ public class EnemyBehavoir : MonoBehaviour
 
         m_animtor.SetBool("Attack", false);
     }
+
 
     void RaycastDebugger()
     {
@@ -229,36 +186,23 @@ public class EnemyBehavoir : MonoBehaviour
         {
             rotation.y = 0.0f;
             rayCastDirection = Vector2.left;
-            facingDirection = -1;
         }
         else
         {
             rotation.y = 180.0f;
             rayCastDirection = Vector2.right;
-            facingDirection = 1;
         }
 
         transform.eulerAngles = rotation;
     }
 
-    private void CheckAttackHitBox()
-    {
-        Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(hitPostion.position, m_rayCastDistance, m_rayCastMask);
-
-        attackDetails[0] = 10;
-        attackDetails[1] = transform.position.x;
-        foreach (Collider2D collider in detectedObjects)
-        {
-            collider.transform.SendMessage("Damage", attackDetails);
-            //Instantiate hit particle
-        }
-    }
 
     private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0];
-        Instantiate(hitParticle, hitParticles.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+        Instantiate(hitParticle,transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
         m_animtor.SetBool("isHurt", true);
+        
 
         if (attackDetails[1] > transform.position.x)
         {
@@ -268,55 +212,14 @@ public class EnemyBehavoir : MonoBehaviour
         {
             damageDirection = 1;
         }
-        EnterKnockbackState();
     }
-
-    private void EnterKnockbackState()
-    {
-        // knockbackStartTime = Time.time;
-        movement.Set(knockbackSpeed.x * damageDirection, knockbackSpeed.y);
-        rb.AddForce(movement);
-    }
-
     private void Die()
     {
         Debug.Log("Die");
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         Destroy(gameObject);
+        
     }
 
-    private void CheckTouchDamage()
-    {
-
-        if (Time.time >= lastTouchDamageTime + touchDamageCooldown)
-        {
-
-            touchDamageBotLeft.Set(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-            touchDamageTopRight.Set(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-
-            Collider2D hit = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight, whatIsPlayer);
-            if (hit != null)
-            {
-                lastTouchDamageTime = Time.time;
-                attackDetails[0] = touchDamage;
-                attackDetails[1] = transform.position.x;
-                hit.SendMessage("Damage", attackDetails);
-            }
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(hitPostion.position, m_rayCastDistance);
-        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-
-        Gizmos.DrawLine(botLeft, botRight);
-        Gizmos.DrawLine(botRight, topRight);
-        Gizmos.DrawLine(topRight, topLeft);
-        Gizmos.DrawLine(topLeft, botLeft);
-    }
 }

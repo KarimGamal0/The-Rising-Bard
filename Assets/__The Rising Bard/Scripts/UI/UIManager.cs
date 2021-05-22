@@ -11,14 +11,11 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     GameObject mainmenuPanel;
     [SerializeField]
-    GameObject settingsPanel; 
-    [SerializeField]
-    GameObject credit;
+    GameObject settingsPanel;
     private void Awake()
     {
         mainmenuPanel.SetActive(true);
         settingsPanel.SetActive(false);
-        credit.SetActive(false);
     }
     public void Settings()
     {
@@ -26,19 +23,13 @@ public class UIManager : MonoBehaviour
         settingsPanel.SetActive(true);
 
     }
-    public void Credit()
-    {
-        mainmenuPanel.SetActive(false);
-        credit.SetActive(true);
-    }
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Level 1");
 
     }
     public void QuitGame()
     {
         Application.Quit();
-    } 
-
+    }
 }

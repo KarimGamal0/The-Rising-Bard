@@ -62,9 +62,9 @@ public class TempEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        /*if(collision.GetComponent<PlayerControlles>()!=null)
+        if(collision.GetComponent<PlayerControlles>()!=null)
         {
             helthPlayerChange.Raise();
-        }*/
+        }
     }
 }

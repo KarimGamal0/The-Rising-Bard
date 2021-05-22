@@ -10,7 +10,7 @@ public class ItemPickSoundHandler : MonoBehaviour
     [SerializeField] string itemPickSound;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       PlaySoundEvent.Invoke(itemPickSound);
+        PlaySoundEvent.Invoke(itemPickSound);
        Destroy(gameObject);
 
     }

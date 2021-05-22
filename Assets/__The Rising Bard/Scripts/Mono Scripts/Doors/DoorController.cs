@@ -15,33 +15,32 @@ public class DoorController : MonoBehaviour
     {
         textOpen.SetActive(false);
         anim = gameObject.GetComponent<Animator>();
-        playerEnterd = false;
-        isDoorOpend = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerEnterd)
+        Debug.Log(Input.GetKeyDown(KeyCode.O)+ " o ");
+        if (Input.GetKeyDown(KeyCode.O) && playerEnterd)
         {
             openDoor.Raise();
             isDoorOpend = true;
         }
-        anim.SetBool("isDoorOpen", isDoorOpend);
+        anim.SetBool("isDoorOpen",isDoorOpend);
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!isDoorOpend && collision.tag == "Player")
-
+        if(!isDoorOpend)
+        textOpen.SetActive(true);
+        if (collision.tag=="Player")
         {
             Debug.Log("Player");
             playerEnterd = true;
-            textOpen.SetActive(true);
         }
-       
-       
     }
 
-
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        textOpen.SetActive(false);
+    }
 }
