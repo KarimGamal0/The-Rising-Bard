@@ -1064,7 +1064,7 @@ public class PlayerOldControlles : MonoBehaviour
     private void Flip()
     {
         Debug.Log("Flip");
-        if (!isWallSliding && canFlip && !knockback)
+        if (!isWallSliding && canFlip && !knockback && !ledgeDetected)
         {
             facingDirection *= -1;
             isFacingRight = !isFacingRight;
