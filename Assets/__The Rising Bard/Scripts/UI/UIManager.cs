@@ -17,13 +17,16 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         mainmenuPanel.SetActive(true);
-        settingsPanel.SetActive(false);
+        settingsPanel.GetComponent<Canvas>().enabled=(false);
+        settingsPanel.SetActive(true);
+
         credit.SetActive(false);
     }
     public void Settings()
     {
         mainmenuPanel.SetActive(false);
-        settingsPanel.SetActive(true);
+        settingsPanel.GetComponent<Canvas>().enabled = (true);
+
 
     }
     public void Credit()
