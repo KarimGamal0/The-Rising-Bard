@@ -355,8 +355,7 @@ AnimatorState:
   m_Name: W_WallSlide
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -5714994619158850160}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -467,7 +466,6 @@ AnimatorStateMachine:
   - {fileID: 8412731814047103612}
   - {fileID: 1527329690614833893}
   - {fileID: 1955598771416374130}
-  - {fileID: 6157920838415125787}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
@@ -594,9 +592,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: isGrounded
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWallSliding
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isAttacking

@@ -154,7 +154,7 @@ public class PlayerOldControlles : MonoBehaviour
         CheckMovementDirection();
         UpdateAnimations();
         CheckIfCanJump();
-        CheckIfWallSliding();
+       //CheckIfWallSliding();
         CheckJump();
        // CheckLedgeClimb();
         CheckDash();
@@ -177,7 +177,7 @@ public class PlayerOldControlles : MonoBehaviour
         anim.SetBool("isWalking", isWalking);
         anim.SetBool("isGrounded", isGrounded);
         anim.SetFloat("yVelocity", rb.velocity.y);
-        anim.SetBool("isWallSliding", isWallSliding);
+       // anim.SetBool("isWallSliding", isWallSliding);
     }
 
 
