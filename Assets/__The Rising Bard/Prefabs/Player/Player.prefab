@@ -413,6 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6b08d6b722ecf49baaf45a9f1e5d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthChange: {fileID: 11400000, guid: 88580f0752405234da4e439ea8edb516, type: 2}
   combatEnabled: 1
   inputTimer: 0.2
   attack1HitBoxPos: {fileID: 7537674935191869151}

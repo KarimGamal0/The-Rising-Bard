@@ -8,28 +8,37 @@ public class HealthBar : MonoBehaviour
 
     [SerializeField] Slider BloodSlider;
     [SerializeField] Slider ManaSlider;
+    [SerializeField] PlayerData playerData;
 
-    public void SetMaxHealth(int health)
+    private void OnEnable()
     {
-        BloodSlider.maxValue = health;
-        BloodSlider.value = health;
+        SetMaxHealth();
+        SetMaxMana();
     }
 
-    public void SetHealth(int health)
+
+    public void SetMaxHealth()
     {
-        BloodSlider.value = health;
+        BloodSlider.maxValue = 100;
+        BloodSlider.value = playerData.playerHP;
     }
 
-    public void SetMaxMana(int mana)
+    public void ChangeHealth()
     {
-        ManaSlider.maxValue = mana;
-        ManaSlider.value = mana;
+        BloodSlider.value = playerData.playerHP ;
     }
 
-    public void SetMana(int mana)
+    public void SetMaxMana()
     {
-        ManaSlider.value = mana;
+        ManaSlider.maxValue = 100;
+        ManaSlider.value = playerData.playerMana;
     }
+
+    public void ChangeMana()
+    {
+        ManaSlider.value = playerData.playerMana ;
+    }
+
 
 
 }

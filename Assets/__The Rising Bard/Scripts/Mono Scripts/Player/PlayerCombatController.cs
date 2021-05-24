@@ -9,7 +9,7 @@ public class PlayerCombatController : MonoBehaviour
     public delegate void zeroParamE();
     public static event zeroParamE playerDeathE;
 
-
+    [SerializeField] GameEvent healthChange;
 
 
     [SerializeField] private bool combatEnabled;
@@ -135,6 +135,7 @@ public class PlayerCombatController : MonoBehaviour
             POC.Knockback(direction);
         }
         PD.playerHP -= attackDetails[0];
+        healthChange.Raise();
         if (PD.playerHP <= 0)
             Die();
     }

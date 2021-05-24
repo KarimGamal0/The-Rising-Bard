@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83.32324, y: -1.2825317}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
   m_SizeDelta: {x: 1646, y: 526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2138441180797486447
@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138441181708446563}
   - component: {fileID: 2138441181708446562}
+  - component: {fileID: 7238152689787023203}
   m_Layer: 5
   m_Name: Health Bar
   m_TagString: Untagged
@@ -184,11 +185,11 @@ RectTransform:
   m_Father: {fileID: 2138441181906171960}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -153.56, y: 149.69}
-  m_SizeDelta: {x: 425.526, y: 26.748}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 791.7949, y: 271.7698}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &2138441181708446562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +204,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BloodSlider: {fileID: 2138441182458136357}
   ManaSlider: {fileID: 2138441182642035321}
+  playerData: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
+--- !u!114 &7238152689787023203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138441181708446564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7986838f1b5073a479e83477d0221ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 88580f0752405234da4e439ea8edb516, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2138441181708446562}
+        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
+        m_MethodName: ChangeHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2138441181906171964
 GameObject:
   m_ObjectHideFlags: 0
