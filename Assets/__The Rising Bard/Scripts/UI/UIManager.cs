@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     GameObject settingsPanel; 
     [SerializeField]
     GameObject credit;
+
     private void Awake()
     {
         mainmenuPanel.SetActive(true);
@@ -43,5 +44,10 @@ public class UIManager : MonoBehaviour
     {
         Application.Quit();
     } 
+
+    public void callMainMemu()
+    {
+
+    }
 
 }

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2530302442061028465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PasueMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -474,7 +474,6 @@ GameObject:
   - component: {fileID: 2530302442061028466}
   - component: {fileID: 2530302442061028464}
   - component: {fileID: 2530302442061028467}
-  - component: {fileID: 2530302442061028465}
   m_Layer: 5
   m_Name: Pause Panel
   m_TagString: Untagged
@@ -491,7 +490,7 @@ RectTransform:
   m_GameObject: {fileID: 2530302442061028477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_Children:
   - {fileID: 2530302442849936786}
   m_Father: {fileID: 0}
@@ -540,19 +539,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2530302442061028465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2530302442061028477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf11030da5f176f4da53eca2ba011b4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 2530302442061028477}
 --- !u!1 &2530302442266424546
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +867,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2530302442061028465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PasueMenu, Assembly-CSharp
         m_MethodName: ExitToMainMenu
         m_Mode: 1
