@@ -169,8 +169,11 @@ public class EnemyBehavoir : MonoBehaviour
     void Move()
     {
         m_animtor.SetBool("canWalk", true);
+
+
         if (!m_animtor.GetCurrentAnimatorStateInfo(0).IsName("Jester_Attack_anim"))
         {
+            Debug.Log("Move");
             Vector2 targetPosition = new Vector2(m_target.position.x, this.transform.position.y);
 
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, m_moveSpeed * Time.deltaTime);
