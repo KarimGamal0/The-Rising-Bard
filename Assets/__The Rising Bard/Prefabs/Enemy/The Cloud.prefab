@@ -253,7 +253,7 @@ MonoBehaviour:
   hurtCooldownSet: 0.25
   m_moveSpeed: 2
   maxHelth: 50
-  m_attackDistance: 0.5
+  m_attackDistance: 0.7
   m_cooldownTimer: 0.7
   m_rayCast: {fileID: 9081986462945589344}
   m_rayCastDistance: 0.15
