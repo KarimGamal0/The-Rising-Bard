@@ -53,7 +53,7 @@ public class PasueMenu : MonoBehaviour
     }
     public void ExitToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
         //Application.Quit();
     }
 }
