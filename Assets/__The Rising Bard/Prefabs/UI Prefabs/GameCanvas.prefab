@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &559809274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138441181708446564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7986838f1b5073a479e83477d0221ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 32f1019c19bf22d468769e083c701ffb, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2138441181708446562}
+        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
+        m_MethodName: ChangeMana
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2138441181906171964
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 8811570781787800802}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 2138441181708446564}
   text: {fileID: 0}
 --- !u!1001 &926558679453362830
 PrefabInstance:
@@ -234,11 +262,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+--- !u!1 &2138441181708446564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1258343613508813290, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+  m_PrefabInstance: {fileID: 926558679453362830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2138441181708446563 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1258343613508813293, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
   m_PrefabInstance: {fileID: 926558679453362830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2138441181708446562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1258343613508813292, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+  m_PrefabInstance: {fileID: 926558679453362830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138441181708446564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8b47f468a4bea4285b253db521b515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6437205562734516383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,6 +322,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -376.2049
       objectReference: {fileID: 0}
+    - target: {fileID: 2530302441490389253, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2530302441771480362, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -293,6 +341,10 @@ PrefabInstance:
     - target: {fileID: 2530302441771480362, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530302441771480363, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_Pivot.x
@@ -384,6 +436,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028477, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530302442266424544, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442266424547, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}

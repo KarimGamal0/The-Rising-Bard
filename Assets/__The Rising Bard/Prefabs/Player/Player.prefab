@@ -364,6 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
+  manaChange: {fileID: 11400000, guid: 32f1019c19bf22d468769e083c701ffb, type: 2}
   movementSpeed: 3.5
   jumpForce: 14
   groundCheck: {fileID: 7537674934568653328}

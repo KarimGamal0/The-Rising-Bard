@@ -336,11 +336,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42e4455af1881f04da935d6c09086aec, type: 3}
---- !u!1 &559809273 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2138441181708446564, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-  m_PrefabInstance: {fileID: 1494764040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1056460517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -659,22 +654,6 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1738235434}
-    - target: {fileID: 5113477183085008160, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 559809273}
-    - target: {fileID: 8811570781216768410, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811570781506121140, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811570781984287871, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
 --- !u!1 &1738235434 stripped

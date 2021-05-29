@@ -7,6 +7,7 @@ public class PlayerOldControlles : MonoBehaviour
 {
  
     [SerializeField] private PlayerData PD;
+    [SerializeField] GameEvent manaChange;
 
 
     [Header("Movement Compenet")]
@@ -176,6 +177,7 @@ public class PlayerOldControlles : MonoBehaviour
 
         anim.SetBool("isWalking", isWalking);
         anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isDash", isDashing);
         anim.SetFloat("yVelocity", rb.velocity.y);
        // anim.SetBool("isWallSliding", isWallSliding);
     }
@@ -227,14 +229,6 @@ public class PlayerOldControlles : MonoBehaviour
             checkJumpMultiplier = false;
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
         }
-
-        if (Input.GetButton("Dash"))
-        {
-            if (Time.time >= (lastDash + dashCoolDown))
-                AttempToDash();
-            Debug.Log("Dash");
-        }
-
 
 
       /*  if (isGrounded || isTouchingWall)
@@ -305,8 +299,14 @@ public class PlayerOldControlles : MonoBehaviour
         if (Input.GetButton("Dash"))
         {
             //  check for the mana value is able to dash or not
+            Debug.Log(PD.abilities[0].abilityGained);
             if (Time.time >= (lastDash + dashCoolDown) && PD.abilities[0].abilityGained && PD.playerMana >= PD.abilities[0].abilityCost)
+            {
                 AttempToDash();
+                PD.playerMana -= PD.abilities[0].abilityCost;
+                manaChange.Raise();
+                isDashing = true;
+            }
         }
 
         if (isWalking)
@@ -326,11 +326,11 @@ public class PlayerOldControlles : MonoBehaviour
 
     private void AttempToDash()
     {
-        isDashing = true;
+        //isDashing = true;
         dashTimeLeft = dashTime;
         lastDash = Time.time;
 
-        lastImageXpos = transform.position.x;
+       
     }
 
 
