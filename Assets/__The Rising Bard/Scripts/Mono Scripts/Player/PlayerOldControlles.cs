@@ -231,7 +231,7 @@ public class PlayerOldControlles : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
         }
 
-
+        // TODO : adding extra to player
         /*  if (isGrounded || isTouchingWall)
           {
               hangTime = hangTimeSet;
