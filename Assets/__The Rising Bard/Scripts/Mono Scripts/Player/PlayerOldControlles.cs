@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerOldControlles : MonoBehaviour
 {
- 
+
     [SerializeField] private PlayerData PD;
     [SerializeField] GameEvent manaChange;
 
@@ -155,9 +155,10 @@ public class PlayerOldControlles : MonoBehaviour
         CheckMovementDirection();
         UpdateAnimations();
         CheckIfCanJump();
-       //CheckIfWallSliding();
+        CheckIfWallSliding();
+        // TODO: change the animator values
         CheckJump();
-       // CheckLedgeClimb();
+        // CheckLedgeClimb();
         CheckDash();
         CheckKnockback();
     }
@@ -179,7 +180,7 @@ public class PlayerOldControlles : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isDash", isDashing);
         anim.SetFloat("yVelocity", rb.velocity.y);
-       // anim.SetBool("isWallSliding", isWallSliding);
+        anim.SetBool("isWallSliding", isWallSliding);
     }
 
 
@@ -231,39 +232,39 @@ public class PlayerOldControlles : MonoBehaviour
         }
 
 
-      /*  if (isGrounded || isTouchingWall)
-        {
-            hangTime = hangTimeSet;
-            amountOfJumpsLeft = amountOfJumps;
-        }
-        else
-        {
-            hangTime -= Time.deltaTime;
-        }*/
+        /*  if (isGrounded || isTouchingWall)
+          {
+              hangTime = hangTimeSet;
+              amountOfJumpsLeft = amountOfJumps;
+          }
+          else
+          {
+              hangTime -= Time.deltaTime;
+          }*/
 
-       /* // chek Jump Buffer
-        if (Input.GetButtonDown("Jump"))
-        {
-            jumpBufferTime = jumpBufferLenght;
-        }
-        else
-        {
-            jumpBufferTime -= Time.fixedDeltaTime;
-        }
+        /* // chek Jump Buffer
+         if (Input.GetButtonDown("Jump"))
+         {
+             jumpBufferTime = jumpBufferLenght;
+         }
+         else
+         {
+             jumpBufferTime -= Time.fixedDeltaTime;
+         }
 
-        if (jumpBufferTime >= 0)
-        {
-            if (hangTime > 0)
-            {
-                NormalJump();
-                jumpBufferTime = 0;
-            }
-            else if (amountOfJumpsLeft >= 0 && PD.abilities[1].abilityGained && PD.playerMana >= PD.abilities[1].abilityCost)
-            {
-                NormalJump();
-                jumpBufferTime = 0;
-            }
-        }*/
+         if (jumpBufferTime >= 0)
+         {
+             if (hangTime > 0)
+             {
+                 NormalJump();
+                 jumpBufferTime = 0;
+             }
+             else if (amountOfJumpsLeft >= 0 && PD.abilities[1].abilityGained && PD.playerMana >= PD.abilities[1].abilityCost)
+             {
+                 NormalJump();
+                 jumpBufferTime = 0;
+             }
+         }*/
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
         {
@@ -330,7 +331,7 @@ public class PlayerOldControlles : MonoBehaviour
         dashTimeLeft = dashTime;
         lastDash = Time.time;
 
-       
+
     }
 
 
@@ -371,7 +372,7 @@ public class PlayerOldControlles : MonoBehaviour
 
         isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
-       // isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
+        // isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
 
         /*if (isTouchingWall && !isTouchingLedge && !ledgeDetected)
@@ -682,6 +683,6 @@ public class PlayerOldControlles : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
 
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
-       // Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
+        // Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
     }
 }
