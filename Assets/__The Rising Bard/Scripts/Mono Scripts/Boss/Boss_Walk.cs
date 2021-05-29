@@ -33,9 +33,7 @@ public class Boss_Walk : StateMachineBehaviour
 
         if(Vector2.Distance(player.position,rb2d.position) <= attackRange)
         {
-            Debug.Log("Attack 2");
             animator.SetTrigger("Attack");
-       
         }
     }
 
