@@ -181,6 +181,7 @@ public class PlayerOldControlles : MonoBehaviour
         anim.SetBool("isDash", isDashing);
         anim.SetFloat("yVelocity", rb.velocity.y);
         anim.SetBool("isWallSliding", isWallSliding);
+        anim.SetBool("isHit", knockback);
     }
 
 
@@ -529,6 +530,7 @@ public class PlayerOldControlles : MonoBehaviour
         knockback = true;
         knockbackStartTime = Time.time;
         rb.velocity = new Vector2(knockbackSpeed.x * direction, knockbackSpeed.y);
+
     }
 
 
