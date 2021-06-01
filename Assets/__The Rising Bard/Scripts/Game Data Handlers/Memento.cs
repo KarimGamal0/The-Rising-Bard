@@ -25,7 +25,7 @@ public class Memento : MonoBehaviour
         get { return playerMana; }
     }
 
- 
+
 
 
     #region Ctor to save player data in memo 
