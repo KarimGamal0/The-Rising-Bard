@@ -9,19 +9,18 @@ public class Door : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (doorOpend)
+        if (doorOpend && postionX<=0.95)
         {
             postionX = transform.position.x;
-            postionX += .05f;
+            postionX += .02f;
             transform.position = new Vector3(postionX, transform.position.y, transform.position.z);
+            
         }
     }
 
     public void OpenDoor()
     {
         doorOpend = true;
-        Destroy(gameObject, 2.5f);
-
     }
 
 }
