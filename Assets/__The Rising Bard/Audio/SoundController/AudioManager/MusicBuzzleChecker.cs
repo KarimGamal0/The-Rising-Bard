@@ -5,6 +5,10 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class MusicBuzzleChecker : MonoBehaviour
 {
+   [SerializeField] Transform teleportArea;
+   [SerializeField] GameObject playerObject;
+   [SerializeField] string wrongMusicSound;
+   [SerializeField] string winMusic;
     public GameObject[] puzzlePlats;
     List<string> savedClipsNames = new List<string>();
 
@@ -15,6 +19,7 @@ public class MusicBuzzleChecker : MonoBehaviour
 
 
 
+ 
     private void Awake()
     {
         BuzzleMusicHandler.BuzzleRecordEvent += RecordBuzzle;
@@ -65,6 +70,7 @@ public class MusicBuzzleChecker : MonoBehaviour
     {
 
         int counter = 0;
+        bool winState = false;
         for (int i = 0; i < puzzlePlats.Length; i++)
         {
  
@@ -75,15 +81,23 @@ public class MusicBuzzleChecker : MonoBehaviour
                 if (puzzlePlats.Length== counter)
                 {
                     Debug.Log("opening door");
+                    AudioManager.instance.Play(winMusic);
+
                     deActivatePlatforms();
                     counter = 0;
+                    winState = true;
+
                 }
             }
             else
             {
+
                 Debug.Log("respwaning");
+                AudioManager.instance.Play(wrongMusicSound);
                 StartCoroutine(ActivatePlatforms());
             }
+            TeleportPlayer(winState);
+
         }
     }
     void deActivatePlatforms()
@@ -123,6 +137,19 @@ public class MusicBuzzleChecker : MonoBehaviour
         {
             puzzlePlats[i].GetComponent<Light2D>().enabled = false ;
 
+        }
+    }
+
+    void TeleportPlayer(bool winstate)
+    {
+        if (winstate==true)
+        {
+         playerObject.transform.position = teleportArea.position;
+        }
+        else
+        {
+            playerObject.transform.position =new Vector3( this.transform.position.x+ this.GetComponent<BoxCollider2D>().size.x, this.transform.position.y,this.transform.position.z);
+            //restor your pos after the key pos (I dont want to collide with the key when I get respwan)
         }
     }
 }

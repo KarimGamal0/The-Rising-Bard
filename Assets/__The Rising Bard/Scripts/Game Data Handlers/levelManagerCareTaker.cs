@@ -9,7 +9,8 @@ public class levelManagerCareTaker : MonoBehaviour
     [SerializeField] PlayerData PD;
     private Dictionary<string, Memento> mementoDic = new Dictionary<string, Memento>();
     public static levelManagerCareTaker instance;
-
+    public PlayerOldControlles player;
+  //  public PlayerOldControlles player;
     private void Awake()
     {
         if (instance != null)
@@ -46,7 +47,7 @@ public class levelManagerCareTaker : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Ensure u have check points in yout scene ");
+            Debug.Log("Ensure u have check points in yout scene ");
             return null;
         }
     }
@@ -54,13 +55,9 @@ public class levelManagerCareTaker : MonoBehaviour
 
     IEnumerator OnRestart()
     {
-
-
-        yield return new WaitForSeconds(1);//null;
-        PD.playerHP = 100;
-        PD.playerMana = 100;
-        PD.playerScore = 100;
-        // Destroy(playerobj);
+ 
+        yield return new WaitForSeconds(1);
+        PD.restoreOrignalData();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
@@ -70,14 +67,50 @@ public class levelManagerCareTaker : MonoBehaviour
         StartCoroutine(OnRestart());
     }
 
+
+    void PlayerisDead()
+    {
+        StartCoroutine(OnPlayerDeath());
+    }
+
+
+    IEnumerator OnPlayerDeath()
+    {
+        player.GetComponent<SpriteRenderer>().enabled = false;   //hide player from enemy then fall down . no collide you will fall
+        player.GetComponent<BoxCollider2D>().enabled = false;    //hide player from enemy then fall down . no collide you will fall
+        yield return new WaitForSeconds(2);//null;
+
+        Debug.Log("OnPlayerDeath player is diead ?? event called ");
+
+
+        player.GetComponent<SpriteRenderer>().enabled = true;
+        player.GetComponent<BoxCollider2D>().enabled = true;
+        var lastCheckPointData = get($"{CheckPointMain.lastCheckPoint}");
+
+
+        if (!(System.Object.ReferenceEquals(lastCheckPointData, null)) )
+        {
+            player.GetMementoFromCareTaker(lastCheckPointData);//restore data stored in check point
+
+        }
+        else//if no check points  restart the level and the scene 
+        {
+            RestartGame();
+            Debug.Log("  restarting game no check points");
+            //restarting game no check points
+        }
+
+    }
+
+
     private void OnEnable()
     {
-        PlayerCombatController.playerDeathE += RestartGame;
+        PlayerCombatController.playerDeathE += PlayerisDead;
     }
 
     private void OnDisable()
     {
-        PlayerCombatController.playerDeathE -= RestartGame;
+        PlayerCombatController.playerDeathE -= PlayerisDead;
     }
 
 

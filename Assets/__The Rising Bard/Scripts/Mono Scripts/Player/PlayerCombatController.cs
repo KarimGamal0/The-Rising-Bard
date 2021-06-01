@@ -152,14 +152,14 @@ public class PlayerCombatController : MonoBehaviour
     {
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
-        GetComponent<SpriteRenderer>().enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
-        
+       //GetComponent<SpriteRenderer>().enabled = false;
+       //GetComponent<BoxCollider2D>().enabled = false;
+       
          playerDeathE.Invoke();
       //  Destroy(gameObject);
     }
 
-
+    
 
 
     private void OnDrawGizmos()
