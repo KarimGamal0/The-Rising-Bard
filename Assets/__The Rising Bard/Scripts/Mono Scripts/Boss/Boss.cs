@@ -31,7 +31,7 @@ public class Boss : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        else
+        else 
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
@@ -55,7 +55,7 @@ public class Boss : MonoBehaviour
 
         animator.SetTrigger("isHurt");
 
-        if(currentHealth <= 50)
+        if (currentHealth <= 50)
         {
             Debug.Log("State 2");
             animator.SetBool("isStateTwo", true);
