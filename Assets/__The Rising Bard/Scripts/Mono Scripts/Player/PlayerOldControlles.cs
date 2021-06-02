@@ -116,6 +116,7 @@ public class PlayerOldControlles : MonoBehaviour
     private bool ledgeDetected;
     private bool isDashing;
     private bool knockback;
+    private bool lastFrameInGround;
 
 
     private int amountOfJumpsLeft;
