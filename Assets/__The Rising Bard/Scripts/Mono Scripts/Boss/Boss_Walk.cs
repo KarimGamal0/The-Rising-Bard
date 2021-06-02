@@ -13,6 +13,8 @@ public class Boss_Walk : StateMachineBehaviour
     Rigidbody2D rb2d;
     Boss boss;
 
+
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -31,10 +33,9 @@ public class Boss_Walk : StateMachineBehaviour
 
         rb2d.position = newPos;
 
-        if(Vector2.Distance(player.position,rb2d.position) <= attackRange)
+        if (Vector2.Distance(player.position, rb2d.position) <= attackRange)
         {
             animator.SetTrigger("Attack");
-       
         }
     }
 
