@@ -69,6 +69,8 @@ public class PlayerOldControlles : MonoBehaviour
 
     [SerializeField] private float jumpBufferLenght = 0.1f;
 
+    [SerializeField] private float fallDamagePerSec = 0.05f;
+
     [SerializeField] ParticleSystem dust;
 
 
@@ -97,6 +99,7 @@ public class PlayerOldControlles : MonoBehaviour
     private float knockbackStartTime;
     private float hangTime;
     private float jumpBufferTime;
+    private float fallDamageTimer;
 
 
     private bool isFacingRight = true;
@@ -115,7 +118,7 @@ public class PlayerOldControlles : MonoBehaviour
     private bool ledgeDetected;
     private bool isDashing;
     private bool knockback;
-    private bool lastFrameInGround;
+    private bool lastFrameInGround = true;
 
 
     private int amountOfJumpsLeft;
@@ -224,7 +227,27 @@ public class PlayerOldControlles : MonoBehaviour
                 canFlip = true;
             }
         }
+        if (isGrounded || isWallSliding )
+        {
+            lastFrameInGround = true;
+        }
+        else
+        {
+            lastFrameInGround = false;
+        }
 
+        if(!lastFrameInGround)
+        {
+            fallDamageTimer += Time.deltaTime;
+        }
+        else
+        {
+            fallDamageTimer = 0;
+        }
+        if(fallDamageTimer >= 0.65)
+        {
+            PD.playerHP -= (fallDamageTimer -0.65f) * fallDamagePerSec;
+        }
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
         {
