@@ -8,7 +8,6 @@ public class FirstCameraPostionSwitch : MonoBehaviour
     internal static event MyDelegate firstCameraPostionSwitchEvent;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //TODO : INVOKE EVENT FOR WITCH CAMERA
         firstCameraPostionSwitchEvent.Invoke();
     }
 }

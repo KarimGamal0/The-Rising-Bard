@@ -39,7 +39,6 @@ public class PlayerCombatController : MonoBehaviour
     private Animator anim;
     private PlayerOldControlles POC;
     [SerializeField] private PlayerData PD;
-    //private PlayerStats PS;
 
 
     private void Start()
@@ -47,20 +46,23 @@ public class PlayerCombatController : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
         POC = GetComponent<PlayerOldControlles>();
-        //PS = GetComponent<PlayerStats>();
     }
 
-    private void OnDisable()
-    {
-        FallingObstacle.playerDeathE -= Die;
-
-    }
 
     private void OnEnable()
     {
         FallingObstacle.playerDeathE += Die;
+        PlayerDeath.playerDaeth += Die;
     }
-    // Update is called once per frame
+
+
+    private void OnDisable()
+    {
+        FallingObstacle.playerDeathE -= Die;
+        PlayerDeath.playerDaeth -= Die;
+    }
+
+
     void Update()
     {
         CheckCombatInput();
@@ -76,7 +78,6 @@ public class PlayerCombatController : MonoBehaviour
         {
             if (combatEnabled)
             {
-                //Attempt combat
                 gotInput = true;
                 lastInputTime = Time.time;
             }
@@ -100,7 +101,6 @@ public class PlayerCombatController : MonoBehaviour
         }
         if (Time.time >= lastInputTime + inputTimer)
         {
-            // wait for new input
             gotInput = false;
         }
     }
@@ -114,7 +114,6 @@ public class PlayerCombatController : MonoBehaviour
         foreach (Collider2D collider in detectedObjects)
         {
             collider.transform.SendMessage("Damage", attackDetails);
-            //Instantiate hit particle
         }
     }
 

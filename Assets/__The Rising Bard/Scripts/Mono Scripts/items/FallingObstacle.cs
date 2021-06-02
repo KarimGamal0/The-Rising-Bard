@@ -32,7 +32,6 @@ public class FallingObstacle : MonoBehaviour
         {
             if (rb.velocity != Vector2.zero)
             {
-
                 playerDeathE.Invoke();
             }
         }
