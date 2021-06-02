@@ -107,7 +107,6 @@ public class PlayerOldControlles : MonoBehaviour
     private bool isTouchingWall;
     private bool isWallSliding;
     private bool isAttemptingToJump;
-    private bool checkJumpMultiplier;
     private bool canMove;
     private bool canFlip;
     private bool hasWallJumped;
@@ -157,7 +156,6 @@ public class PlayerOldControlles : MonoBehaviour
         UpdateAnimations();
         CheckIfCanJump();
         CheckIfWallSliding();
-        // TODO: change the animator values
         CheckJump();
         // CheckLedgeClimb();
         CheckDash();
@@ -227,46 +225,6 @@ public class PlayerOldControlles : MonoBehaviour
             }
         }
 
-        if (checkJumpMultiplier && !Input.GetButton("Jump"))
-        {
-            checkJumpMultiplier = false;
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
-        }
-
-        // TODO : adding extra to player
-        /*  if (isGrounded || isTouchingWall)
-          {
-              hangTime = hangTimeSet;
-              amountOfJumpsLeft = amountOfJumps;
-          }
-          else
-          {
-              hangTime -= Time.deltaTime;
-          }*/
-
-        /* // chek Jump Buffer
-         if (Input.GetButtonDown("Jump"))
-         {
-             jumpBufferTime = jumpBufferLenght;
-         }
-         else
-         {
-             jumpBufferTime -= Time.fixedDeltaTime;
-         }
-
-         if (jumpBufferTime >= 0)
-         {
-             if (hangTime > 0)
-             {
-                 NormalJump();
-                 jumpBufferTime = 0;
-             }
-             else if (amountOfJumpsLeft >= 0 && PD.abilities[1].abilityGained && PD.playerMana >= PD.abilities[1].abilityCost)
-             {
-                 NormalJump();
-                 jumpBufferTime = 0;
-             }
-         }*/
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
         {
@@ -397,7 +355,6 @@ public class PlayerOldControlles : MonoBehaviour
 
         if (isTouchingWall)
         {
-            checkJumpMultiplier = false;
             canWallJump = true;
         }
 
@@ -442,7 +399,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         if (jumpTimer > 0)
         {
-            //WallJump
+         
             if (!isGrounded && isTouchingWall && movementInputDirection != 0 && movementInputDirection != facingDirection)
             {
                 WallJump();
@@ -570,7 +527,6 @@ public class PlayerOldControlles : MonoBehaviour
             amountOfJumpsLeft--;
             jumpTimer = 0;
             isAttemptingToJump = false;
-            checkJumpMultiplier = true;
         }
     }
 
@@ -590,7 +546,6 @@ public class PlayerOldControlles : MonoBehaviour
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
             jumpTimer = 0;
             isAttemptingToJump = false;
-            checkJumpMultiplier = true;
             turnTimer = 0;
             canMove = true;
             canFlip = true;
