@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Boss : MonoBehaviour
 
     [SerializeField]
     Transform player;
+
+    [SerializeField] Slider healthSlider;
 
     [SerializeField] float attackRadius;
     [SerializeField] Transform hitBox;
@@ -22,6 +25,8 @@ public class Boss : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
+        healthSlider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
     }
 
@@ -52,12 +57,16 @@ public class Boss : MonoBehaviour
     public void Damage(float[] playerAttackDetails)
     {
         currentHealth -= playerAttackDetails[0];
+        healthSlider.value = currentHealth;
 
         animator.SetTrigger("isHurt");
+        if (currentHealth <= 0)
+        {
+            animator.SetBool("isDead", true);
+        }
 
         if (currentHealth <= 50)
         {
-            Debug.Log("State 2");
             animator.SetBool("isStateTwo", true);
         }
     }
