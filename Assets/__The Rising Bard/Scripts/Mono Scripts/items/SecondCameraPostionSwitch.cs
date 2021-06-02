@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SecondCameraPostionSwitch : MonoBehaviour
 {
+    public delegate void MyDelegate();
+    internal static event MyDelegate secondCameraPostionSwitchEvent;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //TODO : INVOKE EVENT FOR WITCH CAMERA
-
+        secondCameraPostionSwitchEvent.Invoke();
     }
 }

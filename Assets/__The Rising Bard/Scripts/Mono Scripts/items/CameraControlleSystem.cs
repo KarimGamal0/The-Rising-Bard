@@ -9,6 +9,16 @@ public class CameraControlleSystem : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera firstCM;
     [SerializeField] CinemachineVirtualCamera secondCM;
 
+    private void OnEnable()
+    {
+        FirstCameraPostionSwitch.firstCameraPostionSwitchEvent += SwitchToFirstCam;
+        SecondCameraPostionSwitch.secondCameraPostionSwitchEvent += SwitchToSecondCam;
+    }
+    private void OnDisable()
+    {
+        FirstCameraPostionSwitch.firstCameraPostionSwitchEvent -= SwitchToFirstCam;
+        SecondCameraPostionSwitch.secondCameraPostionSwitchEvent -= SwitchToSecondCam;
+    }
     public void SwitchToFirstCam()
     {
         firstCM.Priority = 10;
