@@ -5,10 +5,10 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class MusicBuzzleChecker : MonoBehaviour
 {
-   [SerializeField] Transform teleportArea;
-   [SerializeField] GameObject playerObject;
-   [SerializeField] string wrongMusicSound;
-   [SerializeField] string winMusic;
+    [SerializeField] Transform teleportArea;
+    [SerializeField] GameObject playerObject;
+    [SerializeField] string wrongMusicSound;
+    [SerializeField] string winMusic;
     public GameObject[] puzzlePlats;
     List<string> savedClipsNames = new List<string>();
 
@@ -33,7 +33,7 @@ public class MusicBuzzleChecker : MonoBehaviour
         GetComponent<Collider2D>().isTrigger = true;
         CLoseLights();
     }
- 
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -61,7 +61,7 @@ public class MusicBuzzleChecker : MonoBehaviour
     void RecordBuzzle(string buzzleCLipString)
     {
         savedClipsNames.Add(buzzleCLipString);
-        if (savedClipsNames.Count==puzzlePlats.Length)
+        if (savedClipsNames.Count == puzzlePlats.Length)
         {
             Debug.Log("Checking");
             CheckBuzzleResults();
@@ -77,12 +77,12 @@ public class MusicBuzzleChecker : MonoBehaviour
         bool winState = false;
         for (int i = 0; i < puzzlePlats.Length; i++)
         {
- 
-            if (puzzlePlats[i].GetComponent<BuzzleMusicHandler>().itemPickSound == savedClipsNames[i]) 
+
+            if (puzzlePlats[i].GetComponent<BuzzleMusicHandler>().itemPickSound == savedClipsNames[i])
             {
                 counter++;
 
-                if (puzzlePlats.Length== counter)
+                if (puzzlePlats.Length == counter)
                 {
                     Debug.Log("opening door");
                     AudioManager.instance.Play(winMusic);
@@ -114,7 +114,7 @@ public class MusicBuzzleChecker : MonoBehaviour
         }
         this.gameObject.SetActive(false);
     }
- 
+
 
     void RestartData()
     {
@@ -128,31 +128,33 @@ public class MusicBuzzleChecker : MonoBehaviour
 
         for (int i = 0; i < puzzlePlats.Length; i++)
         {
-           
-                puzzlePlats[i].SetActive(true);
-  
+
+            puzzlePlats[i].SetActive(true);
+
 
         }
     }
 
-   void  CLoseLights()
+    void CLoseLights()
     {
         for (int i = 0; i < puzzlePlats.Length; i++)
         {
-            puzzlePlats[i].GetComponent<Light2D>().enabled = false ;
+            puzzlePlats[i].GetComponent<Light2D>().enabled = false;
 
         }
     }
 
     void TeleportPlayer(bool winstate)
     {
-        if (winstate==true)
+        if (winstate == true)
         {
-         playerObject.transform.position = teleportArea.position;
+            playerObject.transform.position = teleportArea.position;
+            this.gameObject.SetActive(true);
+            StartCoroutine(ActivatePlatforms());
         }
         else
         {
-            playerObject.transform.position =new Vector3( this.transform.position.x+ this.GetComponent<BoxCollider2D>().size.x, this.transform.position.y,this.transform.position.z);
+            playerObject.transform.position = new Vector3(this.transform.position.x + this.GetComponent<BoxCollider2D>().size.x, this.transform.position.y, this.transform.position.z);
             //restor your pos after the key pos (I dont want to collide with the key when I get respwan)
         }
     }

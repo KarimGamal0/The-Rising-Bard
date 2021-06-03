@@ -91,7 +91,7 @@ public class levelManagerCareTaker : MonoBehaviour
         player.GetComponent<BoxCollider2D>().enabled = true;
         var lastCheckPointData = get($"{CheckPointMain.lastCheckPoint}");
 
-        firstCameraPostionSwitchEvent.Invoke();
+        firstCameraPostionSwitchEvent?.Invoke();
 
 
         if (!(System.Object.ReferenceEquals(lastCheckPointData, null)) )
