@@ -308,6 +308,8 @@ public class EnemyBehavoir : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+
+
         Gizmos.DrawWireSphere(hitPostion.position, m_rayCastDistance);
         Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
         Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
