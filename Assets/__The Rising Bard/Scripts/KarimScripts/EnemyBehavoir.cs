@@ -254,7 +254,7 @@ public class EnemyBehavoir : MonoBehaviour
         }
     }
 
-    private void Damage(float[] attackDetails)
+   private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0];
         Instantiate(hitParticle, hitParticles.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
