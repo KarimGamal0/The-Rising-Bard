@@ -22,12 +22,27 @@ public class Boss : MonoBehaviour
     float maxHealth = 100;
     float currentHealth;
 
+    bool m_inRange;
+    bool m_stateTwoPlayed = false;
+
     void Start()
     {
         currentHealth = maxHealth;
 
         healthSlider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if(currentHealth <= 50 && m_stateTwoPlayed == false)
+        { 
+            Debug.Log("state 2 change");
+            animator.SetBool("isStateTwo", true);
+          
+            animator.Play("Rapiada_State_Change_anim");
+            m_stateTwoPlayed = true;
+        }
     }
 
     public void LookAtPlayer()
@@ -65,10 +80,10 @@ public class Boss : MonoBehaviour
             animator.SetBool("isDead", true);
         }
 
-        if (currentHealth <= 50)
-        {
-            animator.SetBool("isStateTwo", true);
-        }
+        //if (currentHealth <= 50)
+        //{
+        //    animator.SetBool("isStateTwo", true);
+        //}
     }
 
     public void FinishHit()
@@ -80,4 +95,25 @@ public class Boss : MonoBehaviour
     {
         Gizmos.DrawWireSphere(hitBox.position, attackRadius);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("in range");
+            m_inRange = true;
+            animator.SetBool("inRange", m_inRange);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("off range");
+            m_inRange = false;
+            animator.SetBool("inRange", m_inRange);
+        }
+    }
+
 }
