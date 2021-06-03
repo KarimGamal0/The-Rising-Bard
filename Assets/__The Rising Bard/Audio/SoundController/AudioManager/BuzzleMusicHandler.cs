@@ -17,15 +17,16 @@ public class BuzzleMusicHandler : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         numOfNotes++;
         PlaySoundEvent.Invoke(itemPickSound);
         BuzzleRecordEvent.Invoke(itemPickSound);
 
-
         gameObject.SetActive(false);
-        Debug.Log(collision.gameObject.name);
-        
-      //  Destroy(gameObject);
+
+        // Debug.Log(collision.gameObject.name);
+
+        //  Destroy(gameObject);
 
     }
     public void ExternalPlaySound()

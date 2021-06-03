@@ -19,10 +19,14 @@ public class MusicBuzzleChecker : MonoBehaviour
 
 
 
- 
-    private void Awake()
+
+    private void OnEnable()
     {
         BuzzleMusicHandler.BuzzleRecordEvent += RecordBuzzle;
+    }
+    private void OnDisable()
+    {
+        BuzzleMusicHandler.BuzzleRecordEvent -= RecordBuzzle;
     }
     private void Start()
     {
@@ -120,7 +124,7 @@ public class MusicBuzzleChecker : MonoBehaviour
 
     IEnumerator ActivatePlatforms()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         for (int i = 0; i < puzzlePlats.Length; i++)
         {
