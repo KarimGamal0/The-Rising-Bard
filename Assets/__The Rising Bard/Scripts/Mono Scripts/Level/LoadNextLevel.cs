@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadNextLevel : MonoBehaviour
 {
-    public void LoadNextScene()
+    public delegate void MyDelegate();
+    internal static event MyDelegate loadNextLevel;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        loadNextLevel.Invoke();
     }
 }

@@ -130,7 +130,7 @@ public class PlayerOldControlles : MonoBehaviour
     private Vector2 ledgePos2;
 
 
-
+        private float[] attackDetails = new float[2];
     // Start is called before the first frame update
     void Start()
     {
@@ -227,7 +227,9 @@ public class PlayerOldControlles : MonoBehaviour
                 canFlip = true;
             }
         }
-        if (isGrounded || isWallSliding )
+
+         // todo : Adding hange time
+        /*if (isGrounded || isWallSliding )
         {
             lastFrameInGround = true;
         }
@@ -246,8 +248,9 @@ public class PlayerOldControlles : MonoBehaviour
         }
         if(fallDamageTimer >= 0.65)
         {
-            PD.playerHP -= (fallDamageTimer -0.65f) * fallDamagePerSec;
-        }
+            PD.playerHP -= (fallDamageTimer ) * fallDamagePerSec;
+
+        }*/
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
         {

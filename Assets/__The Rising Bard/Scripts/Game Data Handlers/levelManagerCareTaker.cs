@@ -10,7 +10,11 @@ public class levelManagerCareTaker : MonoBehaviour
     private Dictionary<string, Memento> mementoDic = new Dictionary<string, Memento>();
     public static levelManagerCareTaker instance;
     public PlayerOldControlles player;
-  //  public PlayerOldControlles player;
+
+
+    public delegate void MyDelegate();
+    internal static event MyDelegate firstCameraPostionSwitchEvent;
+    //  public PlayerOldControlles player;
     private void Awake()
     {
         if (instance != null)
@@ -87,6 +91,8 @@ public class levelManagerCareTaker : MonoBehaviour
         player.GetComponent<BoxCollider2D>().enabled = true;
         var lastCheckPointData = get($"{CheckPointMain.lastCheckPoint}");
 
+        firstCameraPostionSwitchEvent.Invoke();
+
 
         if (!(System.Object.ReferenceEquals(lastCheckPointData, null)) )
         {
@@ -100,20 +106,26 @@ public class levelManagerCareTaker : MonoBehaviour
             //restarting game no check points
         }
 
+
     }
 
 
     private void OnEnable()
     {
         PlayerCombatController.playerDeathE += PlayerisDead;
+        LoadNextLevel.loadNextLevel += LoadNextScene;
     }
 
     private void OnDisable()
     {
         PlayerCombatController.playerDeathE -= PlayerisDead;
+        LoadNextLevel.loadNextLevel -= LoadNextScene;
     }
 
-
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
 
 }

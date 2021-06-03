@@ -134,12 +134,16 @@ public class PlayerCombatController : MonoBehaviour
             POC.Knockback(direction);
         }
         PD.playerHP -= attackDetails[0];
+        HealthChangeAction();
+    }
+
+    private void HealthChangeAction()
+    {
         healthChange.Raise();
         if (PD.playerHP <= 0)
             Die();
     }
 
- 
 
     private void FinishAttack1()
     {

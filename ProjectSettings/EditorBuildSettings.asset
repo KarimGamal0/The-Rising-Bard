@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/__The Rising Bard/Scenes/Mainmenu.unity
     guid: 49960a4806c9e7c419ed581f40aa48cd
-  - enabled: 0
+  - enabled: 1
     path: Assets/__The Rising Bard/Scenes/KarimScene.unity
     guid: 3f6bae1aeeb929140b27688ca9c5654c
-  - enabled: 0
+  - enabled: 1
     path: Assets/__The Rising Bard/Scenes/Level1.unity
     guid: f961f82e619736c47a72eca8ccced30e
   - enabled: 1

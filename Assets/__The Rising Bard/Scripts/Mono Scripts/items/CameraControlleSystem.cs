@@ -11,11 +11,13 @@ public class CameraControlleSystem : MonoBehaviour
 
     private void OnEnable()
     {
+        levelManagerCareTaker.firstCameraPostionSwitchEvent += SwitchToSecondCam;
         FirstCameraPostionSwitch.firstCameraPostionSwitchEvent += SwitchToFirstCam;
         SecondCameraPostionSwitch.secondCameraPostionSwitchEvent += SwitchToSecondCam;
     }
     private void OnDisable()
     {
+        levelManagerCareTaker.firstCameraPostionSwitchEvent -= SwitchToSecondCam;
         FirstCameraPostionSwitch.firstCameraPostionSwitchEvent -= SwitchToFirstCam;
         SecondCameraPostionSwitch.secondCameraPostionSwitchEvent -= SwitchToSecondCam;
     }
