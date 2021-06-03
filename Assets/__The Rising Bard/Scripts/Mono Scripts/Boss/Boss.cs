@@ -40,7 +40,7 @@ public class Boss : MonoBehaviour
             Debug.Log("state 2 change");
             animator.SetBool("isStateTwo", true);
           
-            animator.Play("Rapiada_State_Change_anim");
+            //animator.Play("Rapiada_State_Change_anim");
             m_stateTwoPlayed = true;
         }
     }
