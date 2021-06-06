@@ -20,17 +20,17 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5146546239069875691, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+      value: {fileID: 3581500862942607514, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
     - time: 0.083333336
-      value: {fileID: -3254384714860358951, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+      value: {fileID: 5396636905903945828, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
     - time: 0.16666667
-      value: {fileID: 8976682549023141138, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+      value: {fileID: -404385320688754034, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
     - time: 0.25
-      value: {fileID: 358053907672064689, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+      value: {fileID: -1801757713628082981, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
     - time: 0.33333334
-      value: {fileID: -5629551379265930984, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+      value: {fileID: -8553572017709650818, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
     - time: 0.41666666
-      value: {fileID: -3395494617456055772, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+      value: {fileID: -3489549669013716634, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,12 +50,12 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5146546239069875691, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
-    - {fileID: -3254384714860358951, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
-    - {fileID: 8976682549023141138, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
-    - {fileID: 358053907672064689, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
-    - {fileID: -5629551379265930984, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
-    - {fileID: -3395494617456055772, guid: 81202c8eec920e04dbf03aed7cb90779, type: 3}
+    - {fileID: 3581500862942607514, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
+    - {fileID: 5396636905903945828, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
+    - {fileID: -404385320688754034, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
+    - {fileID: -1801757713628082981, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
+    - {fileID: -8553572017709650818, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
+    - {fileID: -3489549669013716634, guid: 7c960d916283904438926bfe6dfa5474, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -88,7 +88,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.083333336
+  - time: 0.25
     functionName: CheckAttackHitBox
     data: 
     objectReferenceParameter: {fileID: 0}

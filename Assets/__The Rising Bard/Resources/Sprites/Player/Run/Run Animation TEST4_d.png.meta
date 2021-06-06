@@ -1,40 +1,43 @@
 fileFormatVersion: 2
-guid: d2e050e99a4b3a64a873e8f8d586e9f5
+guid: 1454422680f00984ba22c98bfbfa18b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1778171604891230935
-    second: landing_0
+      213: -6560926900213418741
+    second: Run Animation TEST4_d_0
   - first:
-      213: -8266078457159027492
-    second: landing_1
+      213: 1290881274216674347
+    second: Run Animation TEST4_d_1
   - first:
-      213: 346002565792098887
-    second: landing_2
+      213: -1843934059051379890
+    second: Run Animation TEST4_d_2
   - first:
-      213: -3504602311617232239
-    second: landing_3
+      213: 1366228543598079049
+    second: Run Animation TEST4_d_3
   - first:
-      213: -6282905822108588823
-    second: landing_4
+      213: 5949223301727005197
+    second: Run Animation TEST4_d_4
   - first:
-      213: -4473409839888126070
-    second: landing_5
+      213: -3607683242503860256
+    second: Run Animation TEST4_d_5
   - first:
-      213: 8230276557420638340
-    second: landing_6
+      213: -2461151320438718837
+    second: Run Animation TEST4_d_6
   - first:
-      213: -3698381973662662135
-    second: landing_7
+      213: 4306108965196564961
+    second: Run Animation TEST4_d_7
   - first:
-      213: 3646737637817677492
-    second: landing_8
+      213: 472650096772791241
+    second: Run Animation TEST4_d_8
   - first:
-      213: -4349840066817821985
-    second: landing_9
+      213: -5161268987513640234
+    second: Run Animation TEST4_d_9
   - first:
-      213: 7452051418474502596
-    second: landing_10
+      213: -1252604751756034708
+    second: Run Animation TEST4_d_10
+  - first:
+      213: 1304093752478210633
+    second: Run Animation TEST4_d_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: landing_0
+      name: Run Animation TEST4_d_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2753
-        width: 866
-        height: 1343
+        y: 3202
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d95c4b85aa257e0800000000000000
-      internalID: -1778171604891230935
+      spriteID: b05797bdeb7e2f4a0800000000000000
+      internalID: -6560926900213418741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_1
+      name: Run Animation TEST4_d_1
       rect:
         serializedVersion: 2
-        x: 866
-        y: 2753
-        width: 866
-        height: 1343
+        x: 767
+        y: 3202
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd4f683507df84d80800000000000000
-      internalID: -8266078457159027492
+      spriteID: b2473e4fda12ae110800000000000000
+      internalID: 1290881274216674347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_2
+      name: Run Animation TEST4_d_2
       rect:
         serializedVersion: 2
-        x: 1732
-        y: 2753
-        width: 866
-        height: 1343
+        x: 1534
+        y: 3202
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a6969108f3dc400800000000000000
-      internalID: 346002565792098887
+      spriteID: e439ffc2eb70966e0800000000000000
+      internalID: -1843934059051379890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_3
+      name: Run Animation TEST4_d_3
       rect:
         serializedVersion: 2
-        x: 2598
-        y: 2753
-        width: 866
-        height: 1343
+        x: 2301
+        y: 3202
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192ca0904c62d5fc0800000000000000
-      internalID: -3504602311617232239
+      spriteID: 94ca92f2f91d5f210800000000000000
+      internalID: 1366228543598079049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_4
+      name: Run Animation TEST4_d_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1410
-        width: 866
-        height: 1343
+        x: 3068
+        y: 3202
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,83 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e4ebfb6172aec8a0800000000000000
-      internalID: -6282905822108588823
+      spriteID: d0a2ae49213ef8250800000000000000
+      internalID: 5949223301727005197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_5
-      rect:
-        serializedVersion: 2
-        x: 866
-        y: 1410
-        width: 866
-        height: 1343
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8f2bb6a3714be1c0800000000000000
-      internalID: -4473409839888126070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: landing_6
-      rect:
-        serializedVersion: 2
-        x: 1732
-        y: 1410
-        width: 866
-        height: 1343
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48038405ce0d73270800000000000000
-      internalID: 8230276557420638340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: landing_7
-      rect:
-        serializedVersion: 2
-        x: 2598
-        y: 1410
-        width: 866
-        height: 1343
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90201289035bcacc0800000000000000
-      internalID: -3698381973662662135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: landing_8
+      name: Run Animation TEST4_d_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 67
-        width: 866
-        height: 1343
+        y: 2308
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b67b237f80db9230800000000000000
-      internalID: 3646737637817677492
+      spriteID: 0ef8d6c843feeedc0800000000000000
+      internalID: -3607683242503860256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_9
+      name: Run Animation TEST4_d_6
       rect:
         serializedVersion: 2
-        x: 866
-        y: 67
-        width: 866
-        height: 1343
+        x: 767
+        y: 2308
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd2ff83718342a3c0800000000000000
-      internalID: -4349840066817821985
+      spriteID: b8e34cee9eb38ddd0800000000000000
+      internalID: -2461151320438718837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: landing_10
+      name: Run Animation TEST4_d_7
       rect:
         serializedVersion: 2
-        x: 1732
-        y: 67
-        width: 866
-        height: 1343
+        x: 1534
+        y: 2308
+        width: 767
+        height: 894
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,8 +312,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c95e1e48410b6760800000000000000
-      internalID: 7452051418474502596
+      spriteID: 1e98aa20a4f52cb30800000000000000
+      internalID: 4306108965196564961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation TEST4_d_8
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 2308
+        width: 767
+        height: 894
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb323142c03f8600800000000000000
+      internalID: 472650096772791241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation TEST4_d_9
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 2308
+        width: 767
+        height: 894
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da6201933d7f58b0800000000000000
+      internalID: -5161268987513640234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation TEST4_d_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1414
+        width: 767
+        height: 894
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d7d976d9add9ee0800000000000000
+      internalID: -1252604751756034708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation TEST4_d_11
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1414
+        width: 767
+        height: 894
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a1546cb52191210800000000000000
+      internalID: 1304093752478210633
       vertices: []
       indices: 
       edges: []
@@ -387,7 +411,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: a155a5b0734f5ab4592b08fb59623eb2, type: 3}
+      name: _NormalMap
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
