@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Boss : MonoBehaviour
+public class BossTina : MonoBehaviour
 {
     Animator animator;
 
@@ -13,10 +13,12 @@ public class Boss : MonoBehaviour
     [SerializeField] Slider healthSlider;
 
     [SerializeField] float attackRadius;
-    [SerializeField] Transform hitBox;
+    //[SerializeField] Transform hitBox;
     [SerializeField] LayerMask playersMask;
     [SerializeField] float damageAmout;
-    
+
+    [SerializeField] Transform shootingPoint;
+    [SerializeField] GameObject Bullet;
 
     float[] attackDetails = new float[2];
 
@@ -36,11 +38,11 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
-        if(currentHealth <= 50 && m_stateTwoPlayed == false)
-        { 
+        if (currentHealth <= 50 && m_stateTwoPlayed == false)
+        {
             Debug.Log("state 2 change");
             animator.SetBool("isStateTwo", true);
-          
+
             //animator.Play("Rapiada_State_Change_anim");
             m_stateTwoPlayed = true;
         }
@@ -52,22 +54,32 @@ public class Boss : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        else 
+        else
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 
-    public void Attack()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(hitBox.position, attackRadius, playersMask);
-        attackDetails[0] = damageAmout;
-        attackDetails[1] = transform.position.x;
+    //public void Attack()
+    //{
+    //    Collider2D[] colliders = Physics2D.OverlapCircleAll(hitBox.position, attackRadius, playersMask);
+    //    attackDetails[0] = damageAmout;
+    //    attackDetails[1] = transform.position.x;
 
-        foreach (Collider2D collider in colliders)
-        {
-            collider.transform.SendMessage("Damage", attackDetails);
-        }
+    //    foreach (Collider2D collider in colliders)
+    //    {
+    //        collider.transform.SendMessage("Damage", attackDetails);
+    //    }
+    //}
+
+    public void Shoot()
+    {
+
+        Instantiate(Bullet, shootingPoint.position - new Vector3(Random.Range(0f, 5f), Random.Range(0f, 3f), 0), shootingPoint.rotation, shootingPoint);
+        Instantiate(Bullet, shootingPoint.position - new Vector3(Random.Range(0f, 5f), 0, 0), shootingPoint.rotation, shootingPoint);
+        Instantiate(Bullet, shootingPoint.position + new Vector3(Random.Range(0f, 5f), 0, 0), shootingPoint.rotation, shootingPoint);
+        Instantiate(Bullet, shootingPoint.position + new Vector3(Random.Range(0f, 5f), Random.Range(0f, 3f), 0), shootingPoint.rotation, shootingPoint);
+
     }
 
     public void Damage(float[] playerAttackDetails)
@@ -94,7 +106,7 @@ public class Boss : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(hitBox.position, attackRadius);
+        //Gizmos.DrawWireSphere(hitBox.position, attackRadius);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -116,5 +128,4 @@ public class Boss : MonoBehaviour
             animator.SetBool("inRange", m_inRange);
         }
     }
-
 }

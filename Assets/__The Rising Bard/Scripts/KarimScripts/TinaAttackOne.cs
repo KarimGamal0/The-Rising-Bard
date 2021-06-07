@@ -11,14 +11,14 @@ public class TinaAttackOne : StateMachineBehaviour
 
     Transform player;
     Rigidbody2D rb2d;
-    Boss boss;
+    BossTina boss;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb2d = animator.GetComponent<Rigidbody2D>();
-        boss = animator.GetComponent<Boss>();
+        boss = animator.GetComponent<BossTina>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

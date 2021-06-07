@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087168198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.37, y: 5.24, z: 0}
+  m_LocalPosition: {x: 5.81, y: 5.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1081215741937912679}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1081215741937912696}
   - component: {fileID: 1081215741937912697}
   - component: {fileID: 1081215741937912698}
-  - component: {fileID: 1182448934}
+  - component: {fileID: 6237286558069445036}
   m_Layer: 0
   m_Name: Tina
   m_TagString: Untagged
@@ -215,7 +215,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1182448934
+--- !u!114 &6237286558069445036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,17 +224,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1081215741937912699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f06b4b8b54d36b418f924fb12be6f26, type: 3}
+  m_Script: {fileID: 11500000, guid: 41e751dca0366344496286716b4197d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   healthSlider: {fileID: 0}
   attackRadius: 0
-  hitBox: {fileID: 0}
   playersMask:
     serializedVersion: 2
     m_Bits: 512
   damageAmout: 0
+  shootingPoint: {fileID: 1087168199}
+  Bullet: {fileID: 6216679005462487333, guid: 194ea4cbde8aca7409bcb821d27e42d6, type: 3}
 --- !u!1 &1983428676531439169
 GameObject:
   m_ObjectHideFlags: 0
