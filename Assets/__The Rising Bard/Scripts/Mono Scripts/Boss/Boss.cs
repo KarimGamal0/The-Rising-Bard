@@ -29,7 +29,7 @@ public class Boss : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        healthSlider.maxValue = maxHealth;
+        //healthSlider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
     }
 
