@@ -10,8 +10,7 @@ public class PasueMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     [SerializeField]
     GameObject healthBar;
-    [SerializeField]
-    GameObject text;
+
 
 
 
