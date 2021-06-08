@@ -13,7 +13,7 @@ public class BossTina : MonoBehaviour
     [SerializeField] Slider healthSlider;
 
     [SerializeField] float attackRadius;
-    //[SerializeField] Transform hitBox;
+    [SerializeField] Transform hitBox;
     [SerializeField] LayerMask playersMask;
     [SerializeField] float damageAmout;
 
@@ -32,7 +32,7 @@ public class BossTina : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        //healthSlider.maxValue = maxHealth;
+        healthSlider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
     }
 
@@ -60,17 +60,17 @@ public class BossTina : MonoBehaviour
         }
     }
 
-    //public void Attack()
-    //{
-    //    Collider2D[] colliders = Physics2D.OverlapCircleAll(hitBox.position, attackRadius, playersMask);
-    //    attackDetails[0] = damageAmout;
-    //    attackDetails[1] = transform.position.x;
+    public void Attack()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(hitBox.position, attackRadius, playersMask);
+        attackDetails[0] = damageAmout;
+        attackDetails[1] = transform.position.x;
 
-    //    foreach (Collider2D collider in colliders)
-    //    {
-    //        collider.transform.SendMessage("Damage", attackDetails);
-    //    }
-    //}
+        foreach (Collider2D collider in colliders)
+        {
+            collider.transform.SendMessage("Damage", attackDetails);
+        }
+    }
 
     public void Shoot()
     {
@@ -84,6 +84,7 @@ public class BossTina : MonoBehaviour
 
     public void Damage(float[] playerAttackDetails)
     {
+        Debug.Log("Damage Tina");
         currentHealth -= playerAttackDetails[0];
         healthSlider.value = currentHealth;
 
@@ -106,7 +107,7 @@ public class BossTina : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        //Gizmos.DrawWireSphere(hitBox.position, attackRadius);
+        Gizmos.DrawWireSphere(hitBox.position, attackRadius);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
