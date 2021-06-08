@@ -24,11 +24,11 @@ public class CameraControlleSystem : MonoBehaviour
     public void SwitchToFirstCam()
     {
         firstCM.Priority = 10;
-        secondCM.Priority = 1;
+        secondCM.Priority = 2;
     }
     public void SwitchToSecondCam()
     {
-        firstCM.Priority = 1;
+        firstCM.Priority = 2;
         secondCM.Priority = 10;
     }
 }
