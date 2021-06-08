@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
     private float postionX;
     private bool doorOpend = false;
 
+    
     private void FixedUpdate()
     {
         if (doorOpend && postionX<=0.95)
