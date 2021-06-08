@@ -241,7 +241,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3188380639909388133}
-  - component: {fileID: 2164279555519264825}
   m_Layer: 0
   m_Name: ShootingPoint
   m_TagString: Untagged
@@ -263,19 +262,3 @@ Transform:
   m_Father: {fileID: 1885389741186215152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2164279555519264825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6181817090377137189}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ff0dc718f6f694eb3c2cd3e833a9cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_player: {fileID: 0}
-  m_offset: -90
-  m_projectile: {fileID: 951952830235330699, guid: 38f2e49c1ec30914f8a3b500b8c6917b, type: 3}
-  m_startTimeBetweenShots: 2
