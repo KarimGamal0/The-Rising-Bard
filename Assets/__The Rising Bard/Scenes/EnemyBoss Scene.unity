@@ -1882,6 +1882,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1885389741186215154, guid: 64ee2fc763c39f344bdcbfac0dbb7d8a, type: 3}
+      propertyPath: m_player
+      value: 
+      objectReference: {fileID: 1814599248}
+    - target: {fileID: 1885389741186215154, guid: 64ee2fc763c39f344bdcbfac0dbb7d8a, type: 3}
       propertyPath: m_moveSpots.Array.data[0]
       value: 
       objectReference: {fileID: 933438472}
@@ -1912,7 +1916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274512787014319255, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6936897695665982667, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: m_RootOrder

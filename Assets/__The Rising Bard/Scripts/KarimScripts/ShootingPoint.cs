@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShootingPoint : MonoBehaviour
 {
+
+
     [SerializeField] Transform m_player;
     [SerializeField] float m_offset;
 
@@ -11,7 +13,7 @@ public class ShootingPoint : MonoBehaviour
 
     float m_timeBetweenShots;
     [SerializeField] float m_startTimeBetweenShots;
-    
+
 
     void Update()
     {
