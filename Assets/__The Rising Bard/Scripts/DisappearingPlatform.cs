@@ -13,6 +13,7 @@ public class DisappearingPlatform : MonoBehaviour
         enabled = true;  
     }
 
+
     // Update is called once per frame
     void Update()
     {
