@@ -1765,36 +1765,15 @@ PrefabInstance:
       value: Tina
       objectReference: {fileID: 0}
     - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
-      propertyPath: hitBox
-      value: 
-      objectReference: {fileID: 1081215743110730648}
-    - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1814599248}
     - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
-      propertyPath: attackRadius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 464282803}
-    - target: {fileID: 6878214601772242452, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6878214601772242452, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.82
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
---- !u!4 &1081215743110730648 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6878214601772242452, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
-  m_PrefabInstance: {fileID: 1081215743110730647}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3415717742954805564
 PrefabInstance:
   m_ObjectHideFlags: 0
