@@ -18,6 +18,7 @@ public class PlayerData : ScriptableObject
     public float playerHP = 100;
     public float playerMana = 100;
     public float playerScore = 0;
+    public bool isPlayerStop = false;
     public void restoreOrignalData()
     {
         playerHP = 100;

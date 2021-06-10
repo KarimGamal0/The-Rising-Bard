@@ -62,6 +62,11 @@ public class PlayerOldControlles : MonoBehaviour
     [SerializeField] private float knockbackDuration;
     [SerializeField] private Vector2 knockbackSpeed;
 
+    [Header("Rope Compenet")]
+    [SerializeField] private Transform RopeCheck;
+    [SerializeField] private LayerMask whatIsRope;
+    [SerializeField] private float ropeCheckDistance;
+
 
     [Header("Extra for the player")]
 
@@ -100,6 +105,7 @@ public class PlayerOldControlles : MonoBehaviour
     private float hangTime;
     private float jumpBufferTime;
     private float fallDamageTimer;
+    private float ropeInputDirection;
 
 
     private bool isFacingRight = true;
@@ -119,6 +125,8 @@ public class PlayerOldControlles : MonoBehaviour
     private bool isDashing;
     private bool knockback;
     private bool lastFrameInGround = true;
+    private bool isRopeCliming;
+    private bool isTouchingRope;
 
 
     private int amountOfJumpsLeft;
@@ -130,17 +138,11 @@ public class PlayerOldControlles : MonoBehaviour
     private Vector2 ledgePos2;
 
 
-        private float[] attackDetails = new float[2];
+    private float[] attackDetails = new float[2];
     // Start is called before the first frame update
     void Start()
     {
-        foreach (var item in PD.abilities)
-        {
-            item.abilityActive = false;
-            item.abilityGained = false;
-        }
-        PD.playerHP = 100;
-        PD.playerMana = 100;
+
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -154,23 +156,30 @@ public class PlayerOldControlles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckInput();
-        CheckMovementDirection();
-        UpdateAnimations();
-        CheckIfCanJump();
-        CheckIfWallSliding();
-        CheckJump();
-        // CheckLedgeClimb();
-        CheckDash();
-        CheckKnockback();
+        if (!PD.isPlayerStop)
+        {
+            CheckInput();
+            CheckMovementDirection();
+            UpdateAnimations();
+            CheckIfCanJump();
+            CheckIfWallSliding();
+            CheckJump();
+            // CheckLedgeClimb();
+            CheckDash();
+            CheckKnockback();
+        }
     }
 
 
 
     private void FixedUpdate()
     {
-        ApplyMovement();
-        CheckSurroundings();
+        if (!PD.isPlayerStop)
+        {
+            ApplyMovement();
+            CheckSurroundings();
+            ApplyRopeMovement();
+        }
     }
 
 
@@ -192,6 +201,7 @@ public class PlayerOldControlles : MonoBehaviour
     private void CheckInput()
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
+        ropeInputDirection = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -228,7 +238,7 @@ public class PlayerOldControlles : MonoBehaviour
             }
         }
 
-         // todo : Adding hange time
+        // todo : Adding hange time
         /*if (isGrounded || isWallSliding )
         {
             lastFrameInGround = true;
@@ -272,6 +282,7 @@ public class PlayerOldControlles : MonoBehaviour
                 canFlip = true;
             }
         }
+
 
 
 
@@ -358,6 +369,8 @@ public class PlayerOldControlles : MonoBehaviour
 
         isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
+        isTouchingRope = Physics2D.Raycast(RopeCheck.position, transform.right, ropeCheckDistance, whatIsRope);
+
         // isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
 
 
@@ -425,7 +438,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         if (jumpTimer > 0)
         {
-         
+
             if (!isGrounded && isTouchingWall && movementInputDirection != 0 && movementInputDirection != facingDirection)
             {
                 WallJump();
@@ -606,6 +619,21 @@ public class PlayerOldControlles : MonoBehaviour
         }
     }
 
+    private void ApplyRopeMovement()
+    {
+
+        if (isTouchingRope && !knockback && ropeInputDirection !=0)
+        {
+            isRopeCliming = true;
+            rb.velocity = new Vector2( rb.velocity.x , movementSpeed * ropeInputDirection);
+        }
+        else
+        {
+            isRopeCliming = false;
+        }
+
+
+    }
 
     public int GetFacingDirection()
     {
@@ -667,6 +695,8 @@ public class PlayerOldControlles : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
 
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
+
+        Gizmos.DrawLine(RopeCheck.position, new Vector3(RopeCheck.position.x + ropeCheckDistance, RopeCheck.position.y, RopeCheck.position.z));
         // Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
     }
 }

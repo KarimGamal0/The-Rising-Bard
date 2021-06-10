@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1433425852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433425853}
+  m_Layer: 9
+  m_Name: RopeCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433425853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433425852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: 0.572, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7537674935522300346}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6274763604230744580
 GameObject:
   m_ObjectHideFlags: 0
@@ -54,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7181918461712688262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06300068, y: 1.102, z: 0}
+  m_LocalPosition: {x: -0.042, y: 0.601, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
@@ -231,6 +261,7 @@ Transform:
   - {fileID: 3988337807890998007}
   - {fileID: 6627103875636012024}
   - {fileID: 962964645515708008}
+  - {fileID: 1433425853}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -274,12 +305,12 @@ SpriteRenderer:
   m_SortingLayerID: -635523501
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 300144608726860825, guid: ff6c303ba7613524da733d534705a1cd, type: 3}
+  m_Sprite: {fileID: -411866495789504100, guid: f5beaa1ce0c105b4fb4623d3499ca1ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.2016666, y: 1.5}
+  m_Size: {x: 0.5966667, y: 1.3566667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -342,8 +373,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.2016666, y: 1.5}
-    newSize: {x: 2.2016666, y: 1.5}
+    oldSize: {x: 0.5966667, y: 1.3566667}
+    newSize: {x: 0.5966667, y: 1.3566667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -374,7 +405,7 @@ MonoBehaviour:
   groundCheckRadius: 0.132
   amountOfJumps: 2
   wallCheck: {fileID: 6627103875636012024}
-  wallCheckDistance: 0.35
+  wallCheckDistance: 0.25
   wallSlideSpeed: 1
   moveFoecOnAir: 20
   airDragMultiplier: 0.95
@@ -397,6 +428,11 @@ MonoBehaviour:
   dashCoolDown: 2.5
   knockbackDuration: 0.1
   knockbackSpeed: {x: 10, y: 5}
+  RopeCheck: {fileID: 1433425853}
+  whatIsRope:
+    serializedVersion: 2
+    m_Bits: 2048
+  ropeCheckDistance: 0.3
   hangTimeSet: 0.1
   jumpBufferLenght: 0.1
   fallDamagePerSec: 0.1
@@ -419,7 +455,7 @@ MonoBehaviour:
   combatEnabled: 1
   inputTimer: 0.2
   attack1HitBoxPos: {fileID: 7537674935191869151}
-  attack1Radius: 0.4
+  attack1Radius: 0.45
   attack1Damage: 10
   whatIsDamageable:
     serializedVersion: 2
