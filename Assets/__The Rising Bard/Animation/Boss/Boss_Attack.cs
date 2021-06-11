@@ -5,8 +5,6 @@ using UnityEngine;
 public class Boss_Attack : StateMachineBehaviour
 {
     [SerializeField]
-    float speed = 2.5f;
-    [SerializeField]
     float attackRange = 3;
 
     Transform player;

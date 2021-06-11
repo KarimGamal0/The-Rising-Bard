@@ -17,9 +17,11 @@ public class Boss : MonoBehaviour
     [SerializeField] LayerMask playersMask;
     [SerializeField] float damageAmout;
 
+    Vector2 direction;
+
     float[] attackDetails = new float[2];
 
-    float maxHealth = 100;
+    [SerializeField] float maxHealth = 60;
     float currentHealth;
 
     bool m_inRange;
@@ -50,11 +52,19 @@ public class Boss : MonoBehaviour
         if (player.position.x <= transform.position.x)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
+            direction = Vector2.left;
         }
         else 
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
+            direction = Vector2.right;
+
         }
+    }
+
+    public Vector2 GetDirection()
+    {
+        return direction;
     }
 
     public void Attack()
