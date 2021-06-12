@@ -72,6 +72,8 @@ public class EnemyBehavoir : MonoBehaviour
     Vector2 rayCastDirection = Vector2.left;
     Rigidbody2D rb;
 
+    [SerializeField] float damgeTaken;
+
     private void Awake()
     {
         m_intTimer = m_cooldownTimer;
@@ -256,7 +258,7 @@ public class EnemyBehavoir : MonoBehaviour
 
    private void Damage(float[] attackDetails)
     {
-        currentHealth -= attackDetails[0];
+        currentHealth -= attackDetails[0] * damgeTaken;
         Instantiate(hitParticle, hitParticles.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
         m_animtor.SetBool("isHurt", true);
 

@@ -31,6 +31,13 @@ public class BossTina : MonoBehaviour
 
     Vector2 direction;
 
+    [Header("Death")]
+    [SerializeField] private GameObject hitParticle;
+    [SerializeField] private GameObject deathChunkParticle;
+    [SerializeField] private GameObject deathBloodParticle;
+
+
+
     [Header("Player touch")]
     [SerializeField] private LayerMask whatIsPlayer;
     [SerializeField] private Transform touchDamageCheck;
@@ -43,6 +50,8 @@ public class BossTina : MonoBehaviour
     private Vector2 touchDamageTopRight;
 
     private float lastTouchDamageTime;
+
+    [SerializeField] float damgeTaken;
 
     void Start()
     {
@@ -105,7 +114,7 @@ public class BossTina : MonoBehaviour
     public void Damage(float[] playerAttackDetails)
     {
         Debug.Log("Damage Tina");
-        currentHealth -= playerAttackDetails[0];
+        currentHealth -= playerAttackDetails[0] * damgeTaken;
         healthSlider.value = currentHealth;
 
         animator.SetTrigger("isHurt");
@@ -125,20 +134,16 @@ public class BossTina : MonoBehaviour
         animator.SetBool("isHurt", false);
     }
 
-    private void OnDrawGizmos()
+
+    private void Die()
     {
-        Gizmos.DrawWireSphere(hitBox.position, attackRadius);
-
-        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-
-        Gizmos.DrawLine(botLeft, botRight);
-        Gizmos.DrawLine(botRight, topRight);
-        Gizmos.DrawLine(topRight, topLeft);
-        Gizmos.DrawLine(topLeft, botLeft);
+        Debug.Log("Die");
+        Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
+        Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
+        Destroy(gameObject);
     }
+
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -183,5 +188,21 @@ public class BossTina : MonoBehaviour
                 hit.SendMessage("Damage", attackDetails);
             }
         }
+    }
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(hitBox.position, attackRadius);
+
+        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+
+        Gizmos.DrawLine(botLeft, botRight);
+        Gizmos.DrawLine(botRight, topRight);
+        Gizmos.DrawLine(topRight, topLeft);
+        Gizmos.DrawLine(topLeft, botLeft);
     }
 }

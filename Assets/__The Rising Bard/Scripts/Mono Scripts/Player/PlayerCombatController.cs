@@ -18,7 +18,7 @@ public class PlayerCombatController : MonoBehaviour
     [Header("HitBox Compenet")]
     [SerializeField] private Transform attack1HitBoxPos;
     [SerializeField] private float attack1Radius;
-    [SerializeField] private float attack1Damage;
+    [SerializeField] private float attack1Damage = 1;
     [SerializeField] private LayerMask whatIsDamageable;
 
     [SerializeField] private GameObject deathChunkParticle;

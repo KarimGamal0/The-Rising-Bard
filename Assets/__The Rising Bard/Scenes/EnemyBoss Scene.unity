@@ -1835,6 +1835,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1814599248}
+    - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 464282803}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
 --- !u!1001 &1885389740307858023
@@ -1921,9 +1929,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2023208652, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6891245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023208652, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.16958135
+      objectReference: {fileID: 0}
     - target: {fileID: 2274512787014319255, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: m_Name
       value: Rapiada
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274512787014319255, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3040799492714157323, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: m_Color.a
@@ -1978,9 +1998,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1814599248}
     - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: hitParticle
+      value: 
+      objectReference: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
+    - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 464282803}
+    - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: deathBloodParticle
+      value: 
+      objectReference: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
+    - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: deathChunkParticle
+      value: 
+      objectReference: {fileID: 3380558688841995781, guid: a5c684d0103b17743ae4629a09cb3187, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f03435e8b3531ef49896fa319595328f, type: 3}
 --- !u!1001 &5161782203672252127

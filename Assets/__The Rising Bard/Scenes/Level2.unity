@@ -367,10 +367,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7537674934231397944, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7537674935522300224, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: m_Name
       value: Player
@@ -418,18 +414,6 @@ PrefabInstance:
     - target: {fileID: 7537674935522300346, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7537674935522300349, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: m_Size.x
-      value: 1.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 7537674935522300349, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: m_Size.y
-      value: 1.6716666
-      objectReference: {fileID: 0}
-    - target: {fileID: 7537674935522300349, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 740f025201a216b468535a7343a274cb, type: 3}

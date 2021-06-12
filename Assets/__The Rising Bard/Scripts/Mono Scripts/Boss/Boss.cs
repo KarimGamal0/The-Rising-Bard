@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,14 @@ public class Boss : MonoBehaviour
     bool m_inRange;
     bool m_stateTwoPlayed = false;
 
+
+    [Header("Death")]
+    [SerializeField] private GameObject hitParticle;
+    [SerializeField] private GameObject deathChunkParticle;
+    [SerializeField] private GameObject deathBloodParticle;
+
+
+
     [Header("Player touch")]
     [SerializeField] private LayerMask whatIsPlayer;
     [SerializeField] private Transform touchDamageCheck;
@@ -40,7 +49,9 @@ public class Boss : MonoBehaviour
     private Vector2 touchDamageTopRight;
 
     private float lastTouchDamageTime;
-    private float knockbackStartTime;
+
+    [SerializeField] float damgeTaken;
+
 
     void Start()
     {
@@ -98,13 +109,15 @@ public class Boss : MonoBehaviour
 
     public void Damage(float[] playerAttackDetails)
     {
-        currentHealth -= playerAttackDetails[0];
+        Debug.Log("Damage");
+        currentHealth -= playerAttackDetails[0] * damgeTaken;
         healthSlider.value = currentHealth;
 
         animator.SetTrigger("isHurt");
         if (currentHealth <= 0)
         {
             animator.SetBool("isDead", true);
+            Die();
         }
 
         //if (currentHealth <= 50)
@@ -113,25 +126,20 @@ public class Boss : MonoBehaviour
         //}
     }
 
+    private void Die()
+    {
+        Debug.Log("Die");
+        Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
+        Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
+        Destroy(gameObject);
+    }
+
     public void FinishHit()
     {
         animator.SetBool("isHurt", false);
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(hitBox.position, attackRadius);
 
-        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
-        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
-
-        Gizmos.DrawLine(botLeft, botRight);
-        Gizmos.DrawLine(botRight, topRight);
-        Gizmos.DrawLine(topRight, topLeft);
-        Gizmos.DrawLine(topLeft, botLeft);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -171,6 +179,21 @@ public class Boss : MonoBehaviour
                 hit.SendMessage("Damage", attackDetails);
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(hitBox.position, attackRadius);
+
+        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+
+        Gizmos.DrawLine(botLeft, botRight);
+        Gizmos.DrawLine(botRight, topRight);
+        Gizmos.DrawLine(topRight, topLeft);
+        Gizmos.DrawLine(topLeft, botLeft);
     }
 
 }

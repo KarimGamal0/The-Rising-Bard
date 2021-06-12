@@ -9,10 +9,13 @@ public class Bullet : MonoBehaviour
     public float distance;
     public int damage;
     public LayerMask whatIsSolid;
+    [SerializeField] float damgeAmountToPlayer;
 
+    private float[] attackDetails = new float[2];
     void Start()
     {
         Invoke("DestroyProjectile", m_lifeTime);
+        attackDetails[0] = damgeAmountToPlayer;
     }
 
     void Update()
@@ -23,6 +26,8 @@ public class Bullet : MonoBehaviour
             if (hitInfo.collider.CompareTag("Player"))
             {
                 //Player Damage
+                attackDetails[1] = transform.position.x;
+                hitInfo.collider.SendMessage("Damage", attackDetails);
             }
             DestroyProjectile();
         }
