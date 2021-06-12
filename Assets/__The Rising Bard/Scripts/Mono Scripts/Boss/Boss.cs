@@ -27,6 +27,20 @@ public class Boss : MonoBehaviour
     bool m_inRange;
     bool m_stateTwoPlayed = false;
 
+    [Header("Player touch")]
+    [SerializeField] private LayerMask whatIsPlayer;
+    [SerializeField] private Transform touchDamageCheck;
+    [SerializeField] private float touchDamageCooldown;
+    [SerializeField] private float touchDamage;
+    [SerializeField] private float touchDamageWidth;
+    [SerializeField] private float touchDamageHeight;
+
+    private Vector2 touchDamageBotLeft;
+    private Vector2 touchDamageTopRight;
+
+    private float lastTouchDamageTime;
+    private float knockbackStartTime;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -45,6 +59,8 @@ public class Boss : MonoBehaviour
             //animator.Play("Rapiada_State_Change_anim");
             m_stateTwoPlayed = true;
         }
+
+        CheckTouchDamage();
     }
 
     public void LookAtPlayer()
@@ -104,6 +120,16 @@ public class Boss : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(hitBox.position, attackRadius);
+
+        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+
+        Gizmos.DrawLine(botLeft, botRight);
+        Gizmos.DrawLine(botRight, topRight);
+        Gizmos.DrawLine(topRight, topLeft);
+        Gizmos.DrawLine(topLeft, botLeft);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -123,6 +149,26 @@ public class Boss : MonoBehaviour
             Debug.Log("off range");
             m_inRange = false;
             animator.SetBool("inRange", m_inRange);
+        }
+    }
+
+    private void CheckTouchDamage()
+    {
+
+        if (Time.time >= lastTouchDamageTime + touchDamageCooldown)
+        {
+
+            touchDamageBotLeft.Set(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
+            touchDamageTopRight.Set(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
+
+            Collider2D hit = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight, whatIsPlayer);
+            if (hit != null)
+            {
+                lastTouchDamageTime = Time.time;
+                attackDetails[0] = touchDamage;
+                attackDetails[1] = transform.position.x;
+                hit.SendMessage("Damage", attackDetails);
+            }
         }
     }
 
