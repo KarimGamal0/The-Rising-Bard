@@ -121,6 +121,7 @@ public class BossTina : MonoBehaviour
         if (currentHealth <= 0)
         {
             animator.SetBool("isDead", true);
+            Die();
         }
 
         //if (currentHealth <= 50)

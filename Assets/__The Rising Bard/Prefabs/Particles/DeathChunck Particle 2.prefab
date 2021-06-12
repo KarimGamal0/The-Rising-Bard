@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3380558688841995782}
   - component: {fileID: -467065472319447026}
   m_Layer: 0
-  m_Name: DeathChunck Jasser Particle
+  m_Name: DeathChunck Particle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1539,7 +1539,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -7049121085661692388, guid: 0da89610c3f20b340b679e7516800f89, type: 3}
+    - sprite: {fileID: 5815346444209245126, guid: 15d767c2c8d08a945aa88b91e74804e1, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4836,7 +4836,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 734879849
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 2
   m_RenderMode: 0
   m_SortMode: 0

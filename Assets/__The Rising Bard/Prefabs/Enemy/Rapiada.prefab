@@ -209,7 +209,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -372,6 +372,9 @@ MonoBehaviour:
     m_Bits: 512
   damageAmout: 5
   maxHealth: 60
+  hitParticle: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
+  deathChunkParticle: {fileID: 3380558688841995781, guid: a5c684d0103b17743ae4629a09cb3187, type: 3}
+  deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
@@ -380,6 +383,7 @@ MonoBehaviour:
   touchDamage: 10
   touchDamageWidth: 0.61
   touchDamageHeight: 2.12
+  damgeTaken: 0
 --- !u!61 &2023208652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -393,7 +397,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.21420479, y: 1.88}
+  m_Offset: {x: -0.16958135, y: 1.88}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -404,7 +408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7792001, y: 3.76}
+  m_Size: {x: 1.6891245, y: 3.76}
   m_EdgeRadius: 0
 --- !u!1 &4494244403019275289
 GameObject:

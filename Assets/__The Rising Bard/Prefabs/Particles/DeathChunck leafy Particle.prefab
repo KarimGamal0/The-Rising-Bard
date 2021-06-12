@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3380558688841995782}
   - component: {fileID: -467065472319447026}
   m_Layer: 0
-  m_Name: DeathChunckParticle
+  m_Name: DeathChunck leafy Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,8 +116,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 2
+      scalar: 3
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -285,7 +285,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.4
+      scalar: 0.3
       minScalar: 0.1
       maxCurve:
         serializedVersion: 2
@@ -1539,7 +1539,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 5815346444209245126, guid: 15d767c2c8d08a945aa88b91e74804e1, type: 3}
+    - sprite: {fileID: 6784997625380264223, guid: 3b2792f110dabb344a5c1328ca7a87d8, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4836,7 +4836,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 734879849
-  m_SortingLayer: 4
+  m_SortingLayer: -2
   m_SortingOrder: 2
   m_RenderMode: 0
   m_SortMode: 0

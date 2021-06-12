@@ -110,7 +110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9081986462317408226
 Transform:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 734879849
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 6188708077132932856, guid: b44086f3d1669284cb24c8efbb1cb0e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -248,6 +248,7 @@ MonoBehaviour:
   touchDamage: 10
   touchDamageWidth: 0.41
   touchDamageHeight: 1.14
+  damgeTaken: 10
 --- !u!95 &9081986462317408158
 Animator:
   serializedVersion: 3
@@ -503,11 +504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6461081180867942637, guid: 1299d2d345e97194ea4e916a8e6743d7, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6461081180867942637, guid: 1299d2d345e97194ea4e916a8e6743d7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6490550199598754541, guid: 1299d2d345e97194ea4e916a8e6743d7, type: 3}
       propertyPath: m_Name
