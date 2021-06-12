@@ -42,14 +42,14 @@ public class TinaWalk : StateMachineBehaviour
 
         if (m_distance <= maxAttackRange && m_distance >= minAttackRange && !animator.GetBool("isStateTwo"))
         {
-            animator.SetBool("InRangeAttackOne", true);
+            animator.SetBool("inRangeAttackOne", true);
             animator.SetBool("inRangeAttackTransforming", false);
             animator.SetTrigger("Attack");
         }
         else if (m_distance <= minAttackRange && !animator.GetBool("isStateTwo"))
         {
             animator.SetBool("inRangeAttackTransforming", true);
-            animator.SetBool("InRangeAttackOne", false);
+            animator.SetBool("inRangeAttackOne", false);
             animator.SetTrigger("Attack");
         }
         else if (m_distance <= minAttackRangeTwo && animator.GetBool("isStateTwo"))

@@ -41,12 +41,12 @@ public class TinaIdle : StateMachineBehaviour
         {
             Debug.Log("Min");
             animator.SetBool("inRangeAttackTransforming", true);
-            animator.SetBool("InRangeAttackOne", false);
+            animator.SetBool("inRangeAttackOne", false);
             animator.SetTrigger("Attack");
         }
         else if (m_distance <= maxAttackRange && m_distance >= minAttackRange)
         {
-            animator.SetBool("InRangeAttackOne", true);
+            animator.SetBool("inRangeAttackOne", true);
             animator.SetBool("inRangeAttackTransforming", false);
             animator.SetTrigger("Attack");
         }
