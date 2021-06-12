@@ -17,7 +17,7 @@ public class Boss : MonoBehaviour
     [SerializeField] Transform hitBox;
     [SerializeField] LayerMask playersMask;
     [SerializeField] float damageAmout;
-    
+
 
     Vector2 direction;
 
@@ -52,6 +52,7 @@ public class Boss : MonoBehaviour
 
     [SerializeField] float damgeTaken;
 
+    [SerializeField] GameObject dashEffect;
 
     void Start()
     {
@@ -73,6 +74,7 @@ public class Boss : MonoBehaviour
         }
 
         CheckTouchDamage();
+
     }
 
     public void LookAtPlayer()
@@ -179,6 +181,16 @@ public class Boss : MonoBehaviour
                 hit.SendMessage("Damage", attackDetails);
             }
         }
+    }
+
+    public void DashEffectActive()
+    {
+        dashEffect.SetActive(true);
+    }
+
+    public void DashEffectNotActive()
+    {
+        dashEffect.SetActive(false);
     }
 
     private void OnDrawGizmos()

@@ -1833,16 +1833,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1081215741937912699, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 6216679005462487333, guid: 194ea4cbde8aca7409bcb821d27e42d6, type: 3}
     - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1814599248}
-    - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
-      propertyPath: damgeTaken
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6237286558069445036, guid: 55ca9e3dfd200244e9c0409635004705, type: 3}
       propertyPath: healthSlider
       value: 
@@ -1989,10 +1989,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1814599248}
-    - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
-      propertyPath: damgeTaken
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: healthSlider
       value: 
