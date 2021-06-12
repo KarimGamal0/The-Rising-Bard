@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &857100574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857100575}
+  m_Layer: 7
+  m_Name: Touch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &857100575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857100574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19, y: 0.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1081215741937912679}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087168198
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +182,7 @@ Transform:
   - {fileID: 3500891528297724144}
   - {fileID: 1087168199}
   - {fileID: 6878214601772242452}
+  - {fileID: 857100575}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -216,7 +247,7 @@ Animator:
   m_GameObject: {fileID: 1081215741937912699}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0f8f67ce2b211a4da4423c5f634dbb9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 710b611e45acc2c488e6bd420ca02872, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -245,7 +276,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6237286558069445036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +300,14 @@ MonoBehaviour:
   shootingPoint: {fileID: 1087168199}
   Bullet: {fileID: 6216679005462487333, guid: 194ea4cbde8aca7409bcb821d27e42d6, type: 3}
   maxHealth: 60
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 512
+  touchDamageCheck: {fileID: 857100575}
+  touchDamageCooldown: 0.2
+  touchDamage: 10
+  touchDamageWidth: 0.8
+  touchDamageHeight: 1.1
 --- !u!61 &3578083299897203791
 BoxCollider2D:
   m_ObjectHideFlags: 0
