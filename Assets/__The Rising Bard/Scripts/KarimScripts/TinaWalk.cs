@@ -78,6 +78,7 @@ public class TinaWalk : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("Attack");
+        animator.SetBool("isCoolingDownFinished", false);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
