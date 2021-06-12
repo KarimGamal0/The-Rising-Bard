@@ -268,6 +268,7 @@ MonoBehaviour:
   damageAmout: 10
   shootingPoint: {fileID: 1087168199}
   Bullet: {fileID: 6216679005462487333, guid: 194ea4cbde8aca7409bcb821d27e42d6, type: 3}
+  maxHealth: 60
 --- !u!61 &3578083299897203791
 BoxCollider2D:
   m_ObjectHideFlags: 0

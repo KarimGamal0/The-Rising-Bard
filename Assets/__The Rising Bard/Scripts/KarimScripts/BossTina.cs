@@ -22,7 +22,7 @@ public class BossTina : MonoBehaviour
 
     float[] attackDetails = new float[2];
 
-    float maxHealth = 100;
+    [SerializeField] float maxHealth = 100;
     float currentHealth;
 
     bool m_inRange;

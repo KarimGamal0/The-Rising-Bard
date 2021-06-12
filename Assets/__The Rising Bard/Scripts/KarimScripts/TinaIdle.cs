@@ -6,6 +6,7 @@ public class TinaIdle : StateMachineBehaviour
 {
     [SerializeField]
     float speed = 2.5f;
+
     [SerializeField]
     float maxAttackRange;
     [SerializeField]
@@ -20,6 +21,7 @@ public class TinaIdle : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("Idle");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb2d = animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<Boss>();
@@ -28,20 +30,24 @@ public class TinaIdle : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Debug.Log((int)Vector2.Distance(player.position, rb2d.position));
 
         m_distance = Vector2.Distance(player.position, rb2d.position);
 
-        if (m_distance <= maxAttackRange && m_distance >= minAttackRange)
+        Debug.Log("Start");
+        Debug.Log((int)Vector2.Distance(player.position, rb2d.position));
+        Debug.Log("End");
+
+        if (m_distance <= minAttackRange)
+        {
+            Debug.Log("Min");
+            animator.SetBool("inRangeAttackTransforming", true);
+            animator.SetBool("InRangeAttackOne", false);
+            animator.SetTrigger("Attack");
+        }
+        else if (m_distance <= maxAttackRange && m_distance >= minAttackRange)
         {
             animator.SetBool("InRangeAttackOne", true);
             animator.SetBool("inRangeAttackTransforming", false);
-            animator.SetTrigger("Attack");
-        }
-        else if (m_distance <= minAttackRange)
-        {
-            animator.SetBool("inRangeAttackTransforming", true);
-            animator.SetBool("InRangeAttackOne", false);
             animator.SetTrigger("Attack");
         }
     }
@@ -49,9 +55,10 @@ public class TinaIdle : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.SetBool("inRangeAttackTransforming", false);
-        animator.SetBool("InRangeAttackOne", false);
-        animator.ResetTrigger("Attack");
+        Debug.Log(animator.GetBool("inRangeAttackTransforming"));
+        // animator.SetBool("inRangeAttackTransforming", false);
+        //animator.SetBool("InRangeAttackOne", false);
+        //animator.ResetTrigger("Attack");
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

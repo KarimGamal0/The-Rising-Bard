@@ -9,8 +9,12 @@ public class TinaWalk : StateMachineBehaviour
 
     [SerializeField]
     float maxAttackRange;
+
     [SerializeField]
     float minAttackRange;
+
+    [SerializeField]
+    float minAttackRangeTwo;
 
     Transform player;
     Rigidbody2D rb2d;
@@ -32,24 +36,31 @@ public class TinaWalk : StateMachineBehaviour
     {
         boss.LookAtPlayer();
 
-        Vector2 target = new Vector2(player.position.x, rb2d.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, Time.fixedDeltaTime);
 
-        rb2d.position = newPos;
 
         m_distance = Vector2.Distance(player.position, rb2d.position);
 
-        if (m_distance <= maxAttackRange && m_distance >= minAttackRange)
+        if (m_distance <= maxAttackRange && m_distance >= minAttackRange && !animator.GetBool("isStateTwo"))
         {
             animator.SetBool("InRangeAttackOne", true);
             animator.SetBool("inRangeAttackTransforming", false);
             animator.SetTrigger("Attack");
         }
-        else if (m_distance <= minAttackRange)
+        else if (m_distance <= minAttackRange && !animator.GetBool("isStateTwo"))
         {
             animator.SetBool("inRangeAttackTransforming", true);
             animator.SetBool("InRangeAttackOne", false);
             animator.SetTrigger("Attack");
+        }
+        else if (m_distance <= minAttackRangeTwo && animator.GetBool("isStateTwo"))
+        {
+            animator.SetTrigger("Attack");
+        }
+        else
+        {
+            Vector2 target = new Vector2(player.position.x, rb2d.position.y);
+            Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, speed * Time.fixedDeltaTime);
+            rb2d.position = newPos;
         }
 
         //if (m_distance <= attackRange)
