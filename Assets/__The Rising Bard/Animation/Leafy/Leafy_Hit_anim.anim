@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rapiada_State_Change_anim
+  m_Name: Leafy_Hit_anim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -4448836678283123455, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+      value: {fileID: 5634581339788699258, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
     - time: 0.2
-      value: {fileID: 2351183389857263426, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+      value: {fileID: -6086040873383096126, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
     - time: 0.4
-      value: {fileID: 8827148847592961522, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+      value: {fileID: 6356123012737101657, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
     - time: 0.6
-      value: {fileID: -4181827890756247299, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+      value: {fileID: -6243354341574495637, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -4448836678283123455, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - {fileID: 2351183389857263426, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - {fileID: 8827148847592961522, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - {fileID: -4181827890756247299, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+    - {fileID: 5634581339788699258, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
+    - {fileID: -6086040873383096126, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
+    - {fileID: 6356123012737101657, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
+    - {fileID: -6243354341574495637, guid: 13ebbb13f610125469289795f8bdad39, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss_Attack : StateMachineBehaviour
+public class Dash : StateMachineBehaviour
 {
-    [SerializeField]
-    float attackRange = 3;
+    [SerializeField] float dashSpeed;
+    [SerializeField] float attackRange = 3;
 
     Transform player;
     Rigidbody2D rb2d;
     Boss boss;
-
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -22,24 +21,25 @@ public class Boss_Attack : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        boss.LookAtPlayer();
-
-        Vector2 target = new Vector2(player.position.x, rb2d.position.y);
 
         if (Vector2.Distance(player.position, rb2d.position) <= attackRange)
         {
-            animator.SetBool("isAttacking",true);
+            rb2d.velocity = Vector2.zero;
         }
         else
         {
+            rb2d.velocity = boss.GetDirection() * dashSpeed;
             animator.SetBool("isAttacking", false);
+            animator.SetBool("isCoolingDownFinished", false);
         }
+
     }
+
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
+        //animator.SetBool("isCoolingDownFinished", false);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

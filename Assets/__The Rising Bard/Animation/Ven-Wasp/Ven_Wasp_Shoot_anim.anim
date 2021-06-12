@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rapiada_State_Change_anim
+  m_Name: Ven_Wasp_Shoot_anim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,18 +20,16 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -4448836678283123455, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+      value: {fileID: -8579383616859872509, guid: b2fb7aac9804a4e4499690df5561f6de, type: 3}
+    - time: 0.1
+      value: {fileID: -3195778659285706345, guid: b2fb7aac9804a4e4499690df5561f6de, type: 3}
     - time: 0.2
-      value: {fileID: 2351183389857263426, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - time: 0.4
-      value: {fileID: 8827148847592961522, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - time: 0.6
-      value: {fileID: -4181827890756247299, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+      value: {fileID: -2056517413597550680, guid: b2fb7aac9804a4e4499690df5561f6de, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 5
+  m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,16 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -4448836678283123455, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - {fileID: 2351183389857263426, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - {fileID: 8827148847592961522, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
-    - {fileID: -4181827890756247299, guid: 7f5ecbc8fa36bcb4f9339e149ceb0d64, type: 3}
+    - {fileID: -8579383616859872509, guid: b2fb7aac9804a4e4499690df5561f6de, type: 3}
+    - {fileID: -3195778659285706345, guid: b2fb7aac9804a4e4499690df5561f6de, type: 3}
+    - {fileID: -2056517413597550680, guid: b2fb7aac9804a4e4499690df5561f6de, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8
+    m_StopTime: 0.3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -74,4 +71,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.2
+    functionName: StopShooting
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

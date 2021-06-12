@@ -28,14 +28,16 @@ public class Boss_Walk : StateMachineBehaviour
     {
         boss.LookAtPlayer();
 
-        Vector2 target = new Vector2(player.position.x, rb2d.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, Time.fixedDeltaTime);
-
-        rb2d.position = newPos;
-
         if (Vector2.Distance(player.position, rb2d.position) <= attackRange)
         {
+            Debug.Log(Vector2.Distance(player.position, rb2d.position));
             animator.SetTrigger("Attack");
+        }
+        else
+        {
+            Vector2 target = new Vector2(player.position.x, rb2d.position.y);
+            Vector2 newPos = Vector2.MoveTowards(rb2d.position, target, speed * Time.fixedDeltaTime);
+            rb2d.position = newPos;
         }
     }
 
@@ -43,6 +45,7 @@ public class Boss_Walk : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("Attack");
+        
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
