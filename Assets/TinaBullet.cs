@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class TinaBullet : MonoBehaviour
 {
-    [SerializeField] float m_speed;
+
     [SerializeField] float m_lifeTime;
     public float distance;
     public int damage;
@@ -33,7 +33,6 @@ public class Bullet : MonoBehaviour
             DestroyProjectile();
         }
 
-        transform.Translate(Vector2.up * m_speed * Time.deltaTime);
     }
 
     void DestroyProjectile()
