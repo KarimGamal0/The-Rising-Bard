@@ -1974,6 +1974,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1814599248}
     - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: maxHealth
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 464282803}
