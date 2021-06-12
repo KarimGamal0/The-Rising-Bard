@@ -16,6 +16,7 @@ public class Boss : MonoBehaviour
     [SerializeField] Transform hitBox;
     [SerializeField] LayerMask playersMask;
     [SerializeField] float damageAmout;
+    
 
     float[] attackDetails = new float[2];
 
@@ -29,7 +30,7 @@ public class Boss : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        healthSlider.maxValue = maxHealth;
+        //healthSlider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
     }
 
