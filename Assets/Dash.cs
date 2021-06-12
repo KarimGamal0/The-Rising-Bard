@@ -29,6 +29,7 @@ public class Dash : StateMachineBehaviour
         else
         {
             rb2d.velocity = boss.GetDirection() * dashSpeed;
+
             animator.SetBool("isAttacking", false);
             animator.SetBool("isCoolingDownFinished", false);
         }
