@@ -5,22 +5,19 @@ using UnityEngine;
 public class FanScript : MonoBehaviour
 {
 
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rb;
     private void Start()
     {
-        rigidbody2D.GetComponent<Rigidbody2D>();
+        rb.GetComponent<Rigidbody2D>();
     }
-    void OnTriggerStay2D(Collider c)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Object is in trigger");
-       
 
-        if (c.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-          rigidbody2D.AddForce(-Vector2.left * 20000 * Time.deltaTime);
-
+            rb.AddForce(-Vector2.left * 20000 * Time.deltaTime);
         }
-
-
     }
+
+    
 }

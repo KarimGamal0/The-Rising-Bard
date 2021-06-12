@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 
-public class Patrol : MonoBehaviour
+public class PatrolBall : MonoBehaviour
 {
 
     public float speed = 2f;

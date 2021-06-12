@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
         mainmenuPanel.SetActive(true);
         settingsPanel.GetComponent<Canvas>().enabled=(false);
         settingsPanel.SetActive(true);
-
+        levelManager = FindObjectOfType<levelManagerCareTaker>();
         credit.SetActive(false);
     }
     public void Settings()

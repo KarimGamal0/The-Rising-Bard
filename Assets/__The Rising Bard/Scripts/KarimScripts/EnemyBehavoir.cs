@@ -72,7 +72,9 @@ public class EnemyBehavoir : MonoBehaviour
     Vector2 rayCastDirection = Vector2.left;
     Rigidbody2D rb;
 
+    [Header("DamageInfo")]
     [SerializeField] float damgeTaken;
+    [SerializeField] float damgeJasserToPlayer;
 
     private void Awake()
     {
@@ -247,7 +249,7 @@ public class EnemyBehavoir : MonoBehaviour
     {
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(hitPostion.position, m_rayCastDistance, m_rayCastMask);
 
-        attackDetails[0] = 10;
+        attackDetails[0] = damgeJasserToPlayer;
         attackDetails[1] = transform.position.x;
         foreach (Collider2D collider in detectedObjects)
         {
