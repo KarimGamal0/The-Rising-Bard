@@ -58,4 +58,20 @@ public class PlayerData : ScriptableObject
         }
     }
 
+    public void setLevelData(int levelnum)
+    {
+        if (levelnum==2)
+        {
+            startFirstLevelData();
+        }
+        else if (levelnum==3)
+        {
+            startSecondLevelData();
+        }
+        else if (levelnum==4)
+        {
+            startThirdLevelData();
+        }
+    }
+
 }

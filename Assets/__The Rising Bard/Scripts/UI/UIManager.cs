@@ -7,13 +7,17 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-
+    [SerializeField]
+    PlayerData PD;
     [SerializeField]
     GameObject mainmenuPanel;
     [SerializeField]
     GameObject settingsPanel; 
     [SerializeField]
     GameObject credit;
+    [SerializeField]
+    levelManagerCareTaker levelManager;
+
 
     private void Awake()
     {
@@ -37,7 +41,8 @@ public class UIManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        levelManager.checkLevelData();
+        //SceneManager.LoadScene(1);
 
     }
     public void QuitGame()

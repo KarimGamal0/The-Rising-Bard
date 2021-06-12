@@ -28,7 +28,6 @@ public class levelManagerCareTaker : MonoBehaviour
         }
 
 
-
     }
     public void add(Memento checkPointSnap, string key)
     {
@@ -125,8 +124,29 @@ public class levelManagerCareTaker : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetInt("CurrentLevel", SceneManager.GetActiveScene().buildIndex + 1);
+        PD.setLevelData(PlayerPrefs.GetInt("CurrentLevel"));
+
     }
 
+    public void checkLevelData()
+    {
+
+        if (PlayerPrefs.HasKey("CurrentLevel") == false)
+        {
+            // RestartGame();
+            PD.startFirstLevelData();
+            SceneManager.LoadScene(1);//dialog
+
+        }
+        else
+        {
+
+
+            SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentLevel"));
+            PD.setLevelData(PlayerPrefs.GetInt("CurrentLevel"));
+        }
+    }    
 
 }
 
