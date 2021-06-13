@@ -23,6 +23,15 @@ public class Dialog : MonoBehaviour
     [SerializeField]
     GameObject continueButton;
 
+    [SerializeField]
+    GameObject palnel1;
+
+    [SerializeField]
+    GameObject palnel2;
+
+    [SerializeField]
+    GameObject palnel3;
+
     int index;
 
     void Start()
@@ -37,7 +46,19 @@ public class Dialog : MonoBehaviour
             isSentenceFinished = true;
             StartCoroutine(DelayButtonDisplay());
         }
-        
+        if (setntences.Length == 4)
+        {
+            palnel2.SetActive(true);
+        }
+        if (setntences.Length > 4)
+        {
+            palnel3.SetActive(true);
+        }
+        else
+        {
+            palnel1.SetActive(true);
+        }
+
     }
 
     IEnumerator DelayButtonDisplay()
@@ -76,4 +97,6 @@ public class Dialog : MonoBehaviour
             continueButton.SetActive(false);
         }
     }
+  
+
 }
