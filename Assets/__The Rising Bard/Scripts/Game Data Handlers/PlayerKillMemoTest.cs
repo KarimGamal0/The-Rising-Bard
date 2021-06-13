@@ -21,7 +21,7 @@ public class PlayerKillMemoTest : MonoBehaviour
                 PlayerOldControlles player = collision.GetComponent<PlayerOldControlles>();
                 if (player)
                 {
-                    Memento memo=new Memento(-1,-1,new Vector2(1,2));
+                    Memento memo=new Memento(new Vector2(1,2));
                     if (useCustomCheckPoint)
                     {
                         memo = levelManager.get($"{checkPoint.checkPointName}");

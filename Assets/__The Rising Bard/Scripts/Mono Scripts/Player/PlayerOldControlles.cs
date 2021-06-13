@@ -408,7 +408,7 @@ public class PlayerOldControlles : MonoBehaviour
             Flip();
         }
 
-        if (Mathf.Abs(rb.velocity.x) >= 0.02f)
+        if (Mathf.Abs(rb.velocity.x) >= 0.06f)
         {
             isWalking = true;
         }
@@ -661,18 +661,15 @@ public class PlayerOldControlles : MonoBehaviour
         canMove = true;
     }
 
-    public Memento GiveCurrentMemoToCareTaker()
+    public Memento GiveCurrentMemoToCareTaker( )
     {
-        return new Memento(PD.playerHP, PD.playerMana, transform.position);
+        return new Memento( transform.position);
     }
 
     public void GetMementoFromCareTaker(Memento memento)
     {
 
-        PD.playerHP = memento.PlayerHP;
-        PD.playerMana = memento.PlayerMana;
         transform.position = memento.PlayerPosition;
-
 
     }
 

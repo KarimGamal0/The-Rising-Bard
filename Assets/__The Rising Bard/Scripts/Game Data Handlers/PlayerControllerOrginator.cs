@@ -365,7 +365,7 @@ public class PlayerControllerOrginator : MonoBehaviour
 
     public Memento GiveCurrentMemoToCareTaker()
     {
-        return new Memento(playerData.playerHP, playerData.playerMana, transform.position);
+        return new Memento(transform.position);
     }
 
     public void GetMementoFromCareTaker(Memento memento)

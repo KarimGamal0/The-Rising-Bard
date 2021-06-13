@@ -27,8 +27,9 @@ public class CheckPointMain : MonoBehaviour
                 PlayerOldControlles player = collision.GetComponent<PlayerOldControlles>();
                 if (player)
                 {
+                    
                     lastCheckPoint = checkPointName;
-                    var memo = player.GiveCurrentMemoToCareTaker();
+                    var memo = new Memento(transform.position);
                     levelManager.add(memo, $"{checkPointName}");
                     recordOneTime = true;
                     Debug.Log("checkpointsaved " + checkPointName);
