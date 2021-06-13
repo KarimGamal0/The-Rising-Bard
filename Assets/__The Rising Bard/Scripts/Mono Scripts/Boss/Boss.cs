@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
@@ -54,6 +55,9 @@ public class Boss : MonoBehaviour
 
     [SerializeField] GameObject dashEffect;
 
+
+    [SerializeField] UnityEvent chestEvent;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -64,11 +68,11 @@ public class Boss : MonoBehaviour
     {
         healthSlider.SetHealthAmount(currentHealth, maxHealth);
 
-        if(currentHealth <= 50 && m_stateTwoPlayed == false)
-        { 
+        if (currentHealth <= 50 && m_stateTwoPlayed == false)
+        {
             Debug.Log("state 2 change");
             animator.SetBool("isStateTwo", true);
-          
+
             //animator.Play("Rapiada_State_Change_anim");
             m_stateTwoPlayed = true;
         }
@@ -84,7 +88,7 @@ public class Boss : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
             direction = Vector2.left;
         }
-        else 
+        else
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
             direction = Vector2.right;
@@ -130,6 +134,9 @@ public class Boss : MonoBehaviour
     private void Die()
     {
         Debug.Log("Die");
+
+        chestEvent.Invoke();
+
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         Destroy(gameObject);
@@ -139,8 +146,6 @@ public class Boss : MonoBehaviour
     {
         animator.SetBool("isHurt", false);
     }
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
