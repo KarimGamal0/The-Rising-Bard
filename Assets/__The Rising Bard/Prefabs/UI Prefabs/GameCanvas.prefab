@@ -606,6 +606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5517536838389683991, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 59ffe5318e8d3c347834373ee1ee7821, type: 3}
     - target: {fileID: 7361211280249393067, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
