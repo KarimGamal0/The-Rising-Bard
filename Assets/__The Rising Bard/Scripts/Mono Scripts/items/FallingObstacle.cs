@@ -2,49 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class FallingObstacle : MonoBehaviour
 {
     public delegate void zeroParamE();
     public static event zeroParamE playerDeathE;
 
-    [SerializeField] float timerSet;
-    Rigidbody2D rb;
-    // Use this for initialization
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-    }
+    [SerializeField] float timerSetEntre;
+    [SerializeField] float timerSetExit;
 
+    private Animator anim;
+    private void Awake()
+    {
+        anim =GetComponent<Animator>();
+    }
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            StartCoroutine(wait());
+            StartCoroutine(waitAfterEntre());
         }
-
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            StartCoroutine(waitAfterExit());
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            if (rb.velocity != Vector2.zero)
-            {
-                playerDeathE.Invoke();
-            }
+                playerDeathE.Invoke(); 
         }
-
-
-
     }
 
-    IEnumerator wait()
+    IEnumerator waitAfterEntre()
     {
+        yield return new WaitForSeconds(timerSetEntre);
+        anim.SetBool("PlayerIn", true);
+    }
 
-        yield return new WaitForSeconds(timerSet); ;
-        rb.isKinematic = false;
+    IEnumerator waitAfterExit()
+    {
+        yield return new WaitForSeconds(timerSetExit);
+        anim.SetBool("PlayerIn", false);
     }
 
 
