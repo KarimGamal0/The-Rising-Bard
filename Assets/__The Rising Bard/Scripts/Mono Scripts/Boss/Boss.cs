@@ -11,7 +11,7 @@ public class Boss : MonoBehaviour
     [SerializeField]
     Transform player;
 
-    [SerializeField] Slider healthSlider;
+    [SerializeField] HelthBarController healthSlider;
 
     [SerializeField] float attackRadius;
     [SerializeField] Transform hitBox;
@@ -23,7 +23,7 @@ public class Boss : MonoBehaviour
 
     float[] attackDetails = new float[2];
 
-    [SerializeField] float maxHealth = 60;
+    [SerializeField] float maxHealth = 100;
     float currentHealth;
 
     bool m_inRange;
@@ -57,13 +57,13 @@ public class Boss : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-
-        //healthSlider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        healthSlider.SetHealthAmount(currentHealth, maxHealth);
+
         if(currentHealth <= 50 && m_stateTwoPlayed == false)
         { 
             Debug.Log("state 2 change");
@@ -113,7 +113,6 @@ public class Boss : MonoBehaviour
     {
         Debug.Log("Damage");
         currentHealth -= playerAttackDetails[0] * damgeTaken;
-        //healthSlider.value = currentHealth;
 
         animator.SetTrigger("isHurt");
         if (currentHealth <= 0)
