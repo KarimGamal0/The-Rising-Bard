@@ -88,7 +88,7 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(m_animtor.GetBool("canWalk"));
+
         helthBarController.SetHealthAmount(currentHealth, maxHelth);
 
         groundInfo = Physics2D.Raycast(m_groundDetection.position, Vector2.down, m_groundhitDistance, m_groundLayers);
@@ -139,7 +139,6 @@ public class EnemyBehavoir : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.tag);
 
         if (collision.gameObject.tag == "Player")
         {

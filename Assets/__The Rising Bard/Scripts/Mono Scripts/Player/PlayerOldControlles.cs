@@ -408,7 +408,7 @@ public class PlayerOldControlles : MonoBehaviour
             Flip();
         }
 
-        if (Mathf.Abs(rb.velocity.x) >= 0.06f)
+        if (Mathf.Abs(rb.velocity.x) >= 0.09f)
         {
             isWalking = true;
         }

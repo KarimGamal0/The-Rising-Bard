@@ -24,6 +24,8 @@ public class DestryingPlatfrom : MonoBehaviour
         
         yield return new WaitForSeconds(waitSec);
         anim.SetBool("destroy", true);
+        Debug.Log("Destroy");
+
 
     }
 }
