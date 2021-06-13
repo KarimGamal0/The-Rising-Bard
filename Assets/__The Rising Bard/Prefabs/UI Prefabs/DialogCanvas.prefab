@@ -440,6 +440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4140990828397391456, guid: 16d3039af64b1794b9db021eb5568153, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8823817435063892850, guid: 16d3039af64b1794b9db021eb5568153, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -541,6 +545,10 @@ PrefabInstance:
     - target: {fileID: 6480710893164996282, guid: a331b8dcd2e0b8b43ac981797c398ac7, type: 3}
       propertyPath: m_Name
       value: Panel 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480710893164996282, guid: a331b8dcd2e0b8b43ac981797c398ac7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7128598854804394675, guid: a331b8dcd2e0b8b43ac981797c398ac7, type: 3}
       propertyPath: m_Pivot.x
@@ -727,6 +735,10 @@ PrefabInstance:
     - target: {fileID: 8305519438267216071, guid: 65bd5ca4a71bd09449d59e56de308d5c, type: 3}
       propertyPath: m_Name
       value: Panel 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305519438267216071, guid: 65bd5ca4a71bd09449d59e56de308d5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65bd5ca4a71bd09449d59e56de308d5c, type: 3}
