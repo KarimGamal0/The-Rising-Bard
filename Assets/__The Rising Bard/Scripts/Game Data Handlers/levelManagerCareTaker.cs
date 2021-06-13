@@ -131,7 +131,6 @@ public class levelManagerCareTaker : MonoBehaviour
 
     public void checkLevelData()
     {
-
         if (PlayerPrefs.HasKey("CurrentLevel") == false)
         {
             // RestartGame();
