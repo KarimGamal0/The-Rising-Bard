@@ -258,7 +258,7 @@ public class EnemyBehavoir : MonoBehaviour
         }
     }
 
-   private void Damage(float[] attackDetails)
+    private void Damage(float[] attackDetails)
     {
         currentHealth -= attackDetails[0] * damgeTaken;
         Instantiate(hitParticle, hitParticles.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
@@ -324,5 +324,7 @@ public class EnemyBehavoir : MonoBehaviour
         Gizmos.DrawLine(botRight, topRight);
         Gizmos.DrawLine(topRight, topLeft);
         Gizmos.DrawLine(topLeft, botLeft);
+
+        Debug.DrawRay(m_groundDetection.position, Vector2.down * m_groundhitDistance, Color.red);
     }
 }

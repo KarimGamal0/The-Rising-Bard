@@ -113,7 +113,7 @@ public class Boss : MonoBehaviour
     {
         Debug.Log("Damage");
         currentHealth -= playerAttackDetails[0] * damgeTaken;
-        healthSlider.value = currentHealth;
+        //healthSlider.value = currentHealth;
 
         animator.SetTrigger("isHurt");
         if (currentHealth <= 0)
