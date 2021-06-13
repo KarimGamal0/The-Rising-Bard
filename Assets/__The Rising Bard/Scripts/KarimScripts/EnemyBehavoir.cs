@@ -88,6 +88,7 @@ public class EnemyBehavoir : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(m_animtor.GetBool("canWalk"));
         helthBarController.SetHealthAmount(currentHealth, maxHelth);
 
         groundInfo = Physics2D.Raycast(m_groundDetection.position, Vector2.down, m_groundhitDistance, m_groundLayers);
@@ -103,7 +104,7 @@ public class EnemyBehavoir : MonoBehaviour
         if (m_inRange)
         {
             //m_hit = Physics2D.Raycast(m_rayCast.position, rayCastDirection, m_rayCastLenght, m_rayCastMask);
-            m_hit = Physics2D.BoxCast(m_rayCast.position, new Vector2(2, 2), 0.0f, rayCastDirection, 5, m_rayCastMask);
+            m_hit = Physics2D.BoxCast(m_rayCast.position, new Vector2(2, 2), 0.0f, rayCastDirection, 20 /*5*/, m_rayCastMask);
         }
 
         if (m_hit.collider != null && groundInfo.collider == true)
@@ -138,6 +139,8 @@ public class EnemyBehavoir : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.tag);
+
         if (collision.gameObject.tag == "Player")
         {
             m_target = collision.gameObject.transform;
@@ -149,6 +152,7 @@ public class EnemyBehavoir : MonoBehaviour
     void EnemyLogic()
     {
         m_distance = Vector2.Distance(transform.position, m_target.transform.position);
+        Debug.Log(m_distance);
 
         if (m_distance > m_attackDistance)
         {
