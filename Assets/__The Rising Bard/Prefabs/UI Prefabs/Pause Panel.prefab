@@ -275,6 +275,7 @@ GameObject:
   - component: {fileID: 2530302442061028466}
   - component: {fileID: 2530302442061028464}
   - component: {fileID: 2530302442061028467}
+  - component: {fileID: 3188026168616184372}
   m_Layer: 5
   m_Name: Pause Panel
   m_TagString: Untagged
@@ -340,6 +341,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3188026168616184372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530302442061028477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf11030da5f176f4da53eca2ba011b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 4556599438152598232}
+  healthBar: {fileID: 0}
 --- !u!1 &3923092495103153553
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2455838984868235840, guid: 63b68f80931a86a40aa0d14a778a055d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59ffe5318e8d3c347834373ee1ee7821, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -724,9 +739,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 3188026168616184372}
+        m_TargetAssemblyTypeName: PasueMenu, Assembly-CSharp
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,12 +806,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 20
-    m_Bottom: 20
+    m_Left: 100
+    m_Right: 100
+    m_Top: 100
+    m_Bottom: 100
   m_ChildAlignment: 4
-  m_Spacing: 0
+  m_Spacing: 100
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -924,9 +939,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 3188026168616184372}
+        m_TargetAssemblyTypeName: PasueMenu, Assembly-CSharp
+        m_MethodName: ExitToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
