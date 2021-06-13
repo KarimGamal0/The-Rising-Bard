@@ -1,0 +1,2028 @@
+fileFormatVersion: 2
+guid: 3b40da085a9ac6547a33dad9f0eedafc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5177528106876703695
+    second: ZBrush Document_0
+  - first:
+      213: 4250375294798483671
+    second: ZBrush Document_1
+  - first:
+      213: 6364068244844074301
+    second: ZBrush Document_2
+  - first:
+      213: 4764229175595250474
+    second: ZBrush Document_3
+  - first:
+      213: 4514918912584915826
+    second: ZBrush Document_4
+  - first:
+      213: -766921655941295875
+    second: ZBrush Document_5
+  - first:
+      213: 8641583867161953820
+    second: ZBrush Document_6
+  - first:
+      213: 3519206072036461044
+    second: ZBrush Document_7
+  - first:
+      213: 6237431862959982953
+    second: ZBrush Document_8
+  - first:
+      213: 1865037748056883760
+    second: ZBrush Document_9
+  - first:
+      213: -3979622890896295132
+    second: ZBrush Document_10
+  - first:
+      213: 7425620028613143864
+    second: ZBrush Document_11
+  - first:
+      213: -1131774717477115729
+    second: ZBrush Document_12
+  - first:
+      213: 7565230437711135757
+    second: ZBrush Document_13
+  - first:
+      213: -852993044537477674
+    second: ZBrush Document_14
+  - first:
+      213: 6575980659249642085
+    second: ZBrush Document_15
+  - first:
+      213: -5225256785609706465
+    second: ZBrush Document_16
+  - first:
+      213: -7863804117753226817
+    second: ZBrush Document_17
+  - first:
+      213: 2009387172698857530
+    second: ZBrush Document_18
+  - first:
+      213: 1843032054147718352
+    second: ZBrush Document_19
+  - first:
+      213: -8189392785341047264
+    second: ZBrush Document_20
+  - first:
+      213: 5512123016961831379
+    second: ZBrush Document_21
+  - first:
+      213: 6628741803510337075
+    second: ZBrush Document_22
+  - first:
+      213: -6100820105740958218
+    second: ZBrush Document_23
+  - first:
+      213: 1363395077291536964
+    second: ZBrush Document_24
+  - first:
+      213: 55643521781434229
+    second: ZBrush Document_25
+  - first:
+      213: -9202411446428271591
+    second: ZBrush Document_26
+  - first:
+      213: -381699919194688295
+    second: ZBrush Document_27
+  - first:
+      213: -2836253943229058744
+    second: ZBrush Document_28
+  - first:
+      213: -1514909212810462235
+    second: ZBrush Document_29
+  - first:
+      213: -644562537245087469
+    second: ZBrush Document_30
+  - first:
+      213: 6208887060677278309
+    second: ZBrush Document_31
+  - first:
+      213: -8235239089713123621
+    second: ZBrush Document_32
+  - first:
+      213: -6194124020263392252
+    second: ZBrush Document_33
+  - first:
+      213: 727644227300320692
+    second: ZBrush Document_34
+  - first:
+      213: -1015923557259239485
+    second: ZBrush Document_35
+  - first:
+      213: 1081085090463246425
+    second: ZBrush Document_36
+  - first:
+      213: 5881784005947422327
+    second: ZBrush Document_37
+  - first:
+      213: -2489919211173359911
+    second: ZBrush Document_38
+  - first:
+      213: 8399706303457056796
+    second: ZBrush Document_39
+  - first:
+      213: 8312787284953580880
+    second: ZBrush Document_40
+  - first:
+      213: 556305833204311414
+    second: ZBrush Document_41
+  - first:
+      213: -5545810597616704410
+    second: ZBrush Document_42
+  - first:
+      213: 6316527975376328775
+    second: ZBrush Document_43
+  - first:
+      213: 4162498288326645385
+    second: ZBrush Document_44
+  - first:
+      213: 7717856600343909253
+    second: ZBrush Document_45
+  - first:
+      213: 7397717143646065484
+    second: ZBrush Document_46
+  - first:
+      213: -3854229639038075846
+    second: ZBrush Document_47
+  - first:
+      213: -8886303347335671064
+    second: ZBrush Document_48
+  - first:
+      213: -2831556569292409667
+    second: ZBrush Document_49
+  - first:
+      213: 3442679190957603154
+    second: ZBrush Document_50
+  - first:
+      213: 4703885399737655040
+    second: ZBrush Document_51
+  - first:
+      213: 917040378249256824
+    second: ZBrush Document_52
+  - first:
+      213: 4648824668885400774
+    second: ZBrush Document_53
+  - first:
+      213: -4760080310433618827
+    second: ZBrush Document_54
+  - first:
+      213: -4326777836923570500
+    second: ZBrush Document_55
+  - first:
+      213: -6591136572772706895
+    second: ZBrush Document_56
+  - first:
+      213: 310317153205299272
+    second: ZBrush Document_57
+  - first:
+      213: 1139592644130787907
+    second: ZBrush Document_58
+  - first:
+      213: -5867655771151607985
+    second: ZBrush Document_59
+  - first:
+      213: -5749126000179413155
+    second: ZBrush Document_60
+  - first:
+      213: -6819808144741312791
+    second: ZBrush Document_61
+  - first:
+      213: -8965979496554991031
+    second: ZBrush Document_62
+  - first:
+      213: -3153703642163793038
+    second: ZBrush Document_63
+  - first:
+      213: 4352505257135604008
+    second: ZBrush Document_64
+  - first:
+      213: 9031279736043410844
+    second: ZBrush Document_65
+  - first:
+      213: 988785608212166575
+    second: ZBrush Document_66
+  - first:
+      213: 8880587873609492557
+    second: ZBrush Document_67
+  - first:
+      213: 547546814502315654
+    second: ZBrush Document_68
+  - first:
+      213: 3633899149335552534
+    second: ZBrush Document_69
+  - first:
+      213: 5185442869379421097
+    second: ZBrush Document_70
+  - first:
+      213: -6615058042381663690
+    second: ZBrush Document_71
+  - first:
+      213: 211809368495640871
+    second: ZBrush Document_72
+  - first:
+      213: 702806869116572603
+    second: ZBrush Document_73
+  - first:
+      213: -7014301469181418007
+    second: ZBrush Document_74
+  - first:
+      213: 8053095753870497285
+    second: ZBrush Document_75
+  - first:
+      213: -7411800551423521177
+    second: ZBrush Document_76
+  - first:
+      213: -2968940584172301869
+    second: ZBrush Document_77
+  - first:
+      213: 6458260805029291853
+    second: ZBrush Document_78
+  - first:
+      213: -3415377742490961485
+    second: ZBrush Document_79
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZBrush Document_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c63075e99b528b0800000000000000
+      internalID: -5177528106876703695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d05f88afcd5cfa30800000000000000
+      internalID: 4250375294798483671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d355644b956b15850800000000000000
+      internalID: 6364068244844074301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2338e77131fd1240800000000000000
+      internalID: 4764229175595250474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b115674d638ae30800000000000000
+      internalID: 4514918912584915826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0901731d85b55f0800000000000000
+      internalID: -766921655941295875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c164feafdb21de770800000000000000
+      internalID: 8641583867161953820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f98127e64bb6d030800000000000000
+      internalID: 3519206072036461044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969ce666b3fcf8650800000000000000
+      internalID: 6237431862959982953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03200a153f1f1e910800000000000000
+      internalID: 1865037748056883760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 792
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bfc10d01a85c8c0800000000000000
+      internalID: -3979622890896295132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d238ac21a1d0760800000000000000
+      internalID: 7425620028613143864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8220f04e02b40f0800000000000000
+      internalID: -1131774717477115729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04ceb330091df860800000000000000
+      internalID: 7565230437711135757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5f678685f8924f0800000000000000
+      internalID: -852993044537477674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56af96c8193924b50800000000000000
+      internalID: 6575980659249642085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14b88953a82c77b0800000000000000
+      internalID: -5225256785609706465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_17
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb99012b1d72ed290800000000000000
+      internalID: -7863804117753226817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_18
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3021f4ccf6c2eb10800000000000000
+      internalID: 2009387172698857530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc122173e3c39910800000000000000
+      internalID: 1843032054147718352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_20
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e9997a6ae695e80800000000000000
+      internalID: -8189392785341047264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1b340fdaefe7c40800000000000000
+      internalID: 5512123016961831379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e040abc850efb50800000000000000
+      internalID: 6628741803510337075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5cfb6ff68855ba0800000000000000
+      internalID: -6100820105740958218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4427a766990cbe210800000000000000
+      internalID: 1363395077291536964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57785ddfc7fa5c000800000000000000
+      internalID: 55643521781434229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c77a2cb877a4080800000000000000
+      internalID: -9202411446428271591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4fa9122fde3baf0800000000000000
+      internalID: -381699919194688295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f705d01a93a8d0800000000000000
+      internalID: -2836253943229058744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_29
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb3777e816f9fae0800000000000000
+      internalID: -1514909212810462235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_30
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3196bf399cd0e07f0800000000000000
+      internalID: -644562537245087469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_31
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a3036b2e56a2650800000000000000
+      internalID: 6208887060677278309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdeec391ead86bd80800000000000000
+      internalID: -8235239089713123621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c6c7d750d0a0aa0800000000000000
+      internalID: -6194124020263392252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5691bc19c191a00800000000000000
+      internalID: 727644227300320692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf9c9248e6b6e1f0800000000000000
+      internalID: -1015923557259239485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95868057929c00f00800000000000000
+      internalID: 1081085090463246425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776f110f36b40a150800000000000000
+      internalID: 5881784005947422327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_38
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de479a6ba7027dd0800000000000000
+      internalID: -2489919211173359911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_39
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18da232160c19470800000000000000
+      internalID: 8399706303457056796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_40
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055ca0d1ef3fc5370800000000000000
+      internalID: 8312787284953580880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_41
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675ee96353568b700800000000000000
+      internalID: 556305833204311414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_42
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664a579f4a25903b0800000000000000
+      internalID: -5545810597616704410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_43
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7489f1a2ab0d8a750800000000000000
+      internalID: 6316527975376328775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98691eda32a24c930800000000000000
+      internalID: 4162498288326645385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58317e2efa55b1b60800000000000000
+      internalID: 7717856600343909253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4357df1c88f9a660800000000000000
+      internalID: 7397717143646065484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c7a5a5096038ac0800000000000000
+      internalID: -3854229639038075846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_48
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e251bfef228da480800000000000000
+      internalID: -8886303347335671064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4f6ed6d4a44b8d0800000000000000
+      internalID: -2831556569292409667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25938aceb7ad6cf20800000000000000
+      internalID: 3442679190957603154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f528b49de874140800000000000000
+      internalID: 4703885399737655040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f9c368d5bf9bc00800000000000000
+      internalID: 917040378249256824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_53
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccbcf3e761f38040800000000000000
+      internalID: 4648824668885400774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_54
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574e54a7d2cc0fdb0800000000000000
+      internalID: -4760080310433618827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb633284b7234f3c0800000000000000
+      internalID: -4326777836923570500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b51cc955349784a0800000000000000
+      internalID: -6591136572772706895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84823848ec77e4400800000000000000
+      internalID: 310317153205299272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3425016d875a0df00800000000000000
+      internalID: 1139592644130787907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_59
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47dc301a26e19ea0800000000000000
+      internalID: -5867655771151607985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_60
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ff75eec500730b0800000000000000
+      internalID: -5749126000179413155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_61
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6d06010ac2b51a0800000000000000
+      internalID: -6819808144741312791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_62
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9427764d621729380800000000000000
+      internalID: -8965979496554991031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_63
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273b8f91f3bcb34d0800000000000000
+      internalID: -3153703642163793038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_64
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82186968874376c30800000000000000
+      internalID: 4352505257135604008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c951d06f11d855d70800000000000000
+      internalID: 9031279736043410844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_66
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa73188954fd8bd00800000000000000
+      internalID: 988785608212166575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_67
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48a223ae9f2e3b70800000000000000
+      internalID: 8880587873609492557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686ae404de6499700800000000000000
+      internalID: 547546814502315654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_69
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6126db9e5043e6230800000000000000
+      internalID: 3633899149335552534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_70
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a35178e0d466f740800000000000000
+      internalID: 5185442869379421097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_71
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632004f22c79234a0800000000000000
+      internalID: -6615058042381663690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_72
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72158499f7f70f200800000000000000
+      internalID: 211809368495640871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_73
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3d563bf1fd0c900800000000000000
+      internalID: 702806869116572603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_74
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5e0f52af138ae90800000000000000
+      internalID: -7014301469181418007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_75
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50658a7cbe752cf60800000000000000
+      internalID: 8053095753870497285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_76
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 24
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e4b5afaaef32990800000000000000
+      internalID: -7411800551423521177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1479
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d15b21d4443cc6d0800000000000000
+      internalID: -2968940584172301869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1479
+        height: 920
+      alignment: 9
+      pivot: {x: 0.51056814, y: 0.44266057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47699e1cf950a950800000000000000
+      internalID: 6458260805029291853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush Document_79
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9fc05e9042a90d0800000000000000
+      internalID: -3415377742490961485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

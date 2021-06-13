@@ -8,13 +8,12 @@ public class ItemPickSoundHandler : MonoBehaviour
     public delegate void  MyDelegate(string song);
     internal static event MyDelegate PlaySoundEvent;
     [SerializeField] string itemPickSound;
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-       PlaySoundEvent.Invoke(itemPickSound);
-       Destroy(gameObject);
-
+        PlaySoundEvent.Invoke(itemPickSound);
+        Destroy(gameObject);
     }
-
 
 
 

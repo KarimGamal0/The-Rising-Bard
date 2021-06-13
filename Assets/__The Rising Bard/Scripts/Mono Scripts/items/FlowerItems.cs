@@ -23,9 +23,12 @@ public class FlowerItems : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach (Transform child in transform)
+        if (collision.gameObject.tag == "Player")
         {
-            child.gameObject.SetActive(true);
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(true);
+            }
         }
     }
 }

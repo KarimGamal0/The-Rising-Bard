@@ -1,0 +1,2508 @@
+fileFormatVersion: 2
+guid: a95cf5e6883a3c94d9b1767a0c42455d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6291881337719621995
+    second: ZBrush _rock1_0
+  - first:
+      213: -3792571215091658717
+    second: ZBrush _rock1_1
+  - first:
+      213: 146496060908006810
+    second: ZBrush _rock1_2
+  - first:
+      213: 6755596270330151453
+    second: ZBrush _rock1_3
+  - first:
+      213: -7305700667946857351
+    second: ZBrush _rock1_4
+  - first:
+      213: 3637908187978720313
+    second: ZBrush _rock1_5
+  - first:
+      213: 5012192386321276290
+    second: ZBrush _rock1_6
+  - first:
+      213: -7875420061190672513
+    second: ZBrush _rock1_7
+  - first:
+      213: 4151783184287773518
+    second: ZBrush _rock1_8
+  - first:
+      213: -6500581972711689165
+    second: ZBrush _rock1_9
+  - first:
+      213: 6377292966627782706
+    second: ZBrush _rock1_10
+  - first:
+      213: -93714537573650574
+    second: ZBrush _rock1_11
+  - first:
+      213: 8765372753084356337
+    second: ZBrush _rock1_12
+  - first:
+      213: 4614144666649243316
+    second: ZBrush _rock1_13
+  - first:
+      213: 7819754715666320028
+    second: ZBrush _rock1_14
+  - first:
+      213: 8807201788179080156
+    second: ZBrush _rock1_15
+  - first:
+      213: 2080765945787634649
+    second: ZBrush _rock1_16
+  - first:
+      213: -460142099696193154
+    second: ZBrush _rock1_17
+  - first:
+      213: 5631934069796484683
+    second: ZBrush _rock1_18
+  - first:
+      213: 165910986998708843
+    second: ZBrush _rock1_19
+  - first:
+      213: 2892144819946889493
+    second: ZBrush _rock1_20
+  - first:
+      213: 4174403635587535074
+    second: ZBrush _rock1_21
+  - first:
+      213: 1960312252029069947
+    second: ZBrush _rock1_22
+  - first:
+      213: -4210295010294729992
+    second: ZBrush _rock1_23
+  - first:
+      213: 1063881132810058162
+    second: ZBrush _rock1_24
+  - first:
+      213: -7723930578972289088
+    second: ZBrush _rock1_25
+  - first:
+      213: 1692781612068074013
+    second: ZBrush _rock1_26
+  - first:
+      213: 794892838646041763
+    second: ZBrush _rock1_27
+  - first:
+      213: 9022808383866499520
+    second: ZBrush _rock1_28
+  - first:
+      213: -2306623138619404196
+    second: ZBrush _rock1_29
+  - first:
+      213: 1625324476948624266
+    second: ZBrush _rock1_30
+  - first:
+      213: -8015613416004310049
+    second: ZBrush _rock1_31
+  - first:
+      213: 5483142394483652396
+    second: ZBrush _rock1_32
+  - first:
+      213: -9018314270970032858
+    second: ZBrush _rock1_33
+  - first:
+      213: -6075636921070242310
+    second: ZBrush _rock1_34
+  - first:
+      213: 529511312720864955
+    second: ZBrush _rock1_35
+  - first:
+      213: -5566636597258141941
+    second: ZBrush _rock1_36
+  - first:
+      213: -444351926441750221
+    second: ZBrush _rock1_37
+  - first:
+      213: -470346353085549278
+    second: ZBrush _rock1_38
+  - first:
+      213: 5654638832549907549
+    second: ZBrush _rock1_39
+  - first:
+      213: -2275834120170753587
+    second: ZBrush _rock1_40
+  - first:
+      213: 7119765590973565040
+    second: ZBrush _rock1_41
+  - first:
+      213: 7465061752033912491
+    second: ZBrush _rock1_42
+  - first:
+      213: -6315527791633231274
+    second: ZBrush _rock1_43
+  - first:
+      213: -8371263502856912903
+    second: ZBrush _rock1_44
+  - first:
+      213: 7113686614557573894
+    second: ZBrush _rock1_45
+  - first:
+      213: 1634690257411496494
+    second: ZBrush _rock1_46
+  - first:
+      213: 7953961820475117970
+    second: ZBrush _rock1_47
+  - first:
+      213: 1928540321129452869
+    second: ZBrush _rock1_48
+  - first:
+      213: -8785816356886676748
+    second: ZBrush _rock1_49
+  - first:
+      213: 4908655646271932076
+    second: ZBrush _rock1_50
+  - first:
+      213: -1921172664986845464
+    second: ZBrush _rock1_51
+  - first:
+      213: 2769194932230734422
+    second: ZBrush _rock1_52
+  - first:
+      213: 4363154775268914511
+    second: ZBrush _rock1_53
+  - first:
+      213: -9187149038370885781
+    second: ZBrush _rock1_54
+  - first:
+      213: -2960112522573591181
+    second: ZBrush _rock1_55
+  - first:
+      213: -3070544004847835541
+    second: ZBrush _rock1_56
+  - first:
+      213: -4224967529195125
+    second: ZBrush _rock1_57
+  - first:
+      213: -2175285051721003975
+    second: ZBrush _rock1_58
+  - first:
+      213: -6424503246143999779
+    second: ZBrush _rock1_59
+  - first:
+      213: 232326840865458709
+    second: ZBrush _rock1_60
+  - first:
+      213: -3891787458591670853
+    second: ZBrush _rock1_61
+  - first:
+      213: 1173259648715410857
+    second: ZBrush _rock1_62
+  - first:
+      213: 7938000183651562455
+    second: ZBrush _rock1_63
+  - first:
+      213: 591117171604311187
+    second: ZBrush _rock1_64
+  - first:
+      213: -2950125145848779404
+    second: ZBrush _rock1_65
+  - first:
+      213: -2715205423250679312
+    second: ZBrush _rock1_66
+  - first:
+      213: 227229282920509755
+    second: ZBrush _rock1_67
+  - first:
+      213: 3707539295829263420
+    second: ZBrush _rock1_68
+  - first:
+      213: -8164010120220417993
+    second: ZBrush _rock1_69
+  - first:
+      213: 7059369017975504036
+    second: ZBrush _rock1_70
+  - first:
+      213: -1164699139254088887
+    second: ZBrush _rock1_71
+  - first:
+      213: 1759335728980667858
+    second: ZBrush _rock1_72
+  - first:
+      213: -2893404292323567684
+    second: ZBrush _rock1_73
+  - first:
+      213: 8300970353355640900
+    second: ZBrush _rock1_74
+  - first:
+      213: -6433549699121449913
+    second: ZBrush _rock1_75
+  - first:
+      213: 7669416605009797681
+    second: ZBrush _rock1_76
+  - first:
+      213: 5287219594192687466
+    second: ZBrush _rock1_77
+  - first:
+      213: -2162181776731636951
+    second: ZBrush _rock1_78
+  - first:
+      213: -5234911330389916459
+    second: ZBrush _rock1_79
+  - first:
+      213: 1244948397395557089
+    second: ZBrush _rock1_80
+  - first:
+      213: -610228942824567990
+    second: ZBrush _rock1_81
+  - first:
+      213: 2137493068994575846
+    second: ZBrush _rock1_82
+  - first:
+      213: 2252194767476192139
+    second: ZBrush _rock1_83
+  - first:
+      213: -1423218333991189015
+    second: ZBrush _rock1_84
+  - first:
+      213: -2022384400901625365
+    second: ZBrush _rock1_85
+  - first:
+      213: 2302022911411224178
+    second: ZBrush _rock1_86
+  - first:
+      213: -8009167745397032592
+    second: ZBrush _rock1_87
+  - first:
+      213: -1728289642224429889
+    second: ZBrush _rock1_88
+  - first:
+      213: -1403096966396146329
+    second: ZBrush _rock1_89
+  - first:
+      213: 5992595162007813202
+    second: ZBrush _rock1_90
+  - first:
+      213: -4749262239638761445
+    second: ZBrush _rock1_91
+  - first:
+      213: 1498521409384821446
+    second: ZBrush _rock1_92
+  - first:
+      213: -3149969160784127339
+    second: ZBrush _rock1_93
+  - first:
+      213: -2440180015155964805
+    second: ZBrush _rock1_94
+  - first:
+      213: 1031854530359415948
+    second: ZBrush _rock1_95
+  - first:
+      213: -6474706919226020788
+    second: ZBrush _rock1_96
+  - first:
+      213: 373231635023476015
+    second: ZBrush _rock1_97
+  - first:
+      213: 8241061031645462403
+    second: ZBrush _rock1_98
+  - first:
+      213: -8130766889420757826
+    second: ZBrush _rock1_99
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZBrush _rock1_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6900b7adb0415750800000000000000
+      internalID: 6291881337719621995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3201713e2941e5bc0800000000000000
+      internalID: -3792571215091658717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d6a672465780200800000000000000
+      internalID: 146496060908006810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d128bf2e303b0cd50800000000000000
+      internalID: 6755596270330151453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_4
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c81b323ffec9a90800000000000000
+      internalID: -7305700667946857351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934e4f5f8327c7230800000000000000
+      internalID: 3637908187978720313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dd89c6b62ee8540800000000000000
+      internalID: 5012192386321276290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7faebb1e23e4b290800000000000000
+      internalID: -7875420061190672513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43b9eb1fc81e9930800000000000000
+      internalID: 4151783184287773518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_9
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334363b232b49c5a0800000000000000
+      internalID: -6500581972711689165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_10
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23032703a22b08850800000000000000
+      internalID: 6377292966627782706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_11
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fe1a5ef1f03bef0800000000000000
+      internalID: -93714537573650574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f61b77f31cd4a970800000000000000
+      internalID: 8765372753084356337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be24e5a02cb80040800000000000000
+      internalID: 4614144666649243316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a0af9ab79558c60800000000000000
+      internalID: 7819754715666320028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd369912d57793a70800000000000000
+      internalID: 8807201788179080156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3d6637a9d50ec10800000000000000
+      internalID: 2080765945787634649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71f761c23f3d99f0800000000000000
+      internalID: -460142099696193154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46b3ac7236a82e40800000000000000
+      internalID: 5631934069796484683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a7464e92f6d4200800000000000000
+      internalID: 165910986998708843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511abe7f366f22820800000000000000
+      internalID: 2892144819946889493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e05b485df57ee930800000000000000
+      internalID: 4174403635587535074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ae9076b9d643b10800000000000000
+      internalID: 1960312252029069947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f278c7cef60295c0800000000000000
+      internalID: -4210295010294729992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_24
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9326ce04aa3ce00800000000000000
+      internalID: 1063881132810058162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_25
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c75492cf061fc490800000000000000
+      internalID: -7723930578972289088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_26
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1271ad48e7fd7710800000000000000
+      internalID: 1692781612068074013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3accff143d6080b00800000000000000
+      internalID: 794892838646041763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c177c49b64773d70800000000000000
+      internalID: 9022808383866499520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50d4e7f97a3dffd0800000000000000
+      internalID: -2306623138619404196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83354d10005e8610800000000000000
+      internalID: 1625324476948624266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb25321112d2c090800000000000000
+      internalID: -8015613416004310049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c273514f4f8081c40800000000000000
+      internalID: 5483142394483652396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dcefd93f288d280800000000000000
+      internalID: -9018314270970032858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_34
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af53c5f09600faba0800000000000000
+      internalID: -6075636921070242310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_35
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb62743cbb3395700800000000000000
+      internalID: 529511312720864955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_36
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f3db212855fb2b0800000000000000
+      internalID: -5566636597258141941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331dd25f64855d9f0800000000000000
+      internalID: -444351926441750221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_38
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257feedb7ef879f0800000000000000
+      internalID: -470346353085549278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_39
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c44430f00597e40800000000000000
+      internalID: 5654638832549907549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_40
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc13283fcec9a60e0800000000000000
+      internalID: -2275834120170753587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_41
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0784706351d7ec260800000000000000
+      internalID: 7119765590973565040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba62654ac1a399760800000000000000
+      internalID: 7465061752033912491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65218924fecba58a0800000000000000
+      internalID: -6315527791633231274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff750f623c43db80800000000000000
+      internalID: -8371263502856912903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_46
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2addcec0269fa610800000000000000
+      internalID: 1634690257411496494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_47
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29150724226226e60800000000000000
+      internalID: 7953961820475117970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_48
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54550f7443d83ca10800000000000000
+      internalID: 1928540321129452869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_49
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf3f99292821680800000000000000
+      internalID: -8785816356886676748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_50
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca601c89d4c0f1440800000000000000
+      internalID: 4908655646271932076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_51
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeb447d3af9655e0800000000000000
+      internalID: -1921172664986845464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_52
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652cc697e182e6620800000000000000
+      internalID: 2769194932230734422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_53
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45f3ffa62a0d8c30800000000000000
+      internalID: 4363154775268914511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_54
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fe45d00a0b08080800000000000000
+      internalID: -9187149038370885781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_55
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dc0d418519be6d0800000000000000
+      internalID: -2960112522573591181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b891c371a6df0fff0800000000000000
+      internalID: -4224967529195125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_58
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cc3f645c5dfc1e0800000000000000
+      internalID: -2175285051721003975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_59
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd03e3b065497d6a0800000000000000
+      internalID: -6424503246143999779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_60
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a0395e704693300800000000000000
+      internalID: 232326840865458709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_61
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdb25d0de79df9c0800000000000000
+      internalID: -3891787458591670853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_62
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad4bfe2f61484010800000000000000
+      internalID: 1173259648715410857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_63
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d379851c11792e60800000000000000
+      internalID: 7938000183651562455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_64
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ccb1a8fe1143800800000000000000
+      internalID: 591117171604311187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_65
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 440
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d6cbe6fcc0f07d0800000000000000
+      internalID: -2950125145848779404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9dde6ad07a15ad0800000000000000
+      internalID: -2715205423250679312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_67
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b313b0334d7472300800000000000000
+      internalID: 227229282920509755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_68
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3484be9853d37330800000000000000
+      internalID: 3707539295829263420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_69
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7306199ec0c93be80800000000000000
+      internalID: -8164010120220417993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_70
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acf3de38bae7f160800000000000000
+      internalID: 7059369017975504036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_71
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b8e8ebd4826dfe0800000000000000
+      internalID: -1164699139254088887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_72
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddab8e268a6a6810800000000000000
+      internalID: 1759335728980667858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_73
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb79674402098d7d0800000000000000
+      internalID: -2893404292323567684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_74
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440dfc25e88f23370800000000000000
+      internalID: 8300970353355640900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_75
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7447b0392a077b6a0800000000000000
+      internalID: -6433549699121449913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_76
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132671894cd3f6a60800000000000000
+      internalID: 7669416605009797681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_45
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603c7283944e8b260800000000000000
+      internalID: 7113686614557573894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_56
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 568
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66e6dbfe7c3365d0800000000000000
+      internalID: -3070544004847835541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_77
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 312
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a611751453aff5940800000000000000
+      internalID: 5287219594192687466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b761a31236ef1e0800000000000000
+      internalID: -2162181776731636951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_79
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4017971ebd957b0800000000000000
+      internalID: -5234911330389916459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_80
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea347ea8f1f64110800000000000000
+      internalID: 1244948397395557089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_81
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b874772080887f0800000000000000
+      internalID: -610228942824567990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_82
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edf74f0f96e9ad10800000000000000
+      internalID: 2137493068994575846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_83
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8379685537614f10800000000000000
+      internalID: 2252194767476192139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_84
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5c1ac3776bf3ce0800000000000000
+      internalID: -1423218333991189015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_85
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9a7f83a1c0fe3e0800000000000000
+      internalID: -2022384400901625365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_86
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ef97b24ad62ff10800000000000000
+      internalID: 2302022911411224178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_87
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079f715be58b9d090800000000000000
+      internalID: -8009167745397032592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_88
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 184
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4d93e2ab1e308e0800000000000000
+      internalID: -1728289642224429889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_89
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d87843eb2378ce0800000000000000
+      internalID: -1403096966396146329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_90
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c333abc89f92350800000000000000
+      internalID: 5992595162007813202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_91
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10d72dd72b371eb0800000000000000
+      internalID: -4749262239638761445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_92
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c233b64841dbc410800000000000000
+      internalID: 1498521409384821446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_93
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ad60eccbf0944d0800000000000000
+      internalID: -3149969160784127339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_94
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b741f90743db22ed0800000000000000
+      internalID: -2440180015155964805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_95
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8453f57a32e15e00800000000000000
+      internalID: 1031854530359415948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_96
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ce4c68c583526a0800000000000000
+      internalID: -6474706919226020788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_97
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f253380d13cfd2500800000000000000
+      internalID: 373231635023476015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_98
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fba8368512e5270800000000000000
+      internalID: 8241061031645462403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZBrush _rock1_99
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 56
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4619cb796b92f80800000000000000
+      internalID: -8130766889420757826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
