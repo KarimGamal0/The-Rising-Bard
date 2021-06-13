@@ -165,8 +165,7 @@ AnimatorState:
   m_Name: Rapiada_Hit_anim
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -1196825095909669309}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -215,9 +214,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isStateTwo
-    m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isAttacking
     m_EventTreshold: 0
@@ -1020,7 +1016,7 @@ AnimatorStateMachine:
     m_Position: {x: 520, y: 360, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5890509535783955029}
-    m_Position: {x: 280, y: 40, z: 0}
+    m_Position: {x: 280, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -45290644031275332}
     m_Position: {x: 890, y: 360, z: 0}
@@ -1034,8 +1030,7 @@ AnimatorStateMachine:
     m_State: {fileID: 5311894245253723149}
     m_Position: {x: 520, y: 100, z: 0}
   m_ChildStateMachines: []
-  m_AnyStateTransitions:
-  - {fileID: -1602719168701119804}
+  m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
