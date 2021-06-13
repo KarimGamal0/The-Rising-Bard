@@ -92,7 +92,8 @@ public class levelManagerCareTaker : MonoBehaviour
 
         firstCameraPostionSwitchEvent?.Invoke();
 
-
+        PD.playerHP = 100;
+        PD.playerMana = 100;
         if (!(System.Object.ReferenceEquals(lastCheckPointData, null)) )
         {
             player.GetMementoFromCareTaker(lastCheckPointData);//restore data stored in check point
@@ -136,12 +137,9 @@ public class levelManagerCareTaker : MonoBehaviour
             // RestartGame();
             PD.startFirstLevelData();
             SceneManager.LoadScene(1);//dialog
-
         }
         else
         {
-
-
             SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentLevel"));
             PD.setLevelData(PlayerPrefs.GetInt("CurrentLevel"));
         }
