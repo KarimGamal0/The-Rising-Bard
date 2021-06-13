@@ -10,7 +10,7 @@ public class BossTina : MonoBehaviour
     [SerializeField]
     Transform player;
 
-    [SerializeField] Slider healthSlider;
+    [SerializeField] HelthBarController healthSlider;
 
     [SerializeField] float attackRadius;
     [SerializeField] Transform hitBox;
@@ -57,12 +57,14 @@ public class BossTina : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        healthSlider.maxValue = maxHealth;
+        currentHealth = maxHealth;
         animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        healthSlider.SetHealthAmount(currentHealth, maxHealth);
+
         if (currentHealth <= 50 && m_stateTwoPlayed == false)
         {
             Debug.Log("state 2 change");
@@ -115,7 +117,6 @@ public class BossTina : MonoBehaviour
     {
         Debug.Log("Damage Tina");
         currentHealth -= playerAttackDetails[0] * damgeTaken;
-        healthSlider.value = currentHealth;
 
         animator.SetTrigger("isHurt");
         if (currentHealth <= 0)
