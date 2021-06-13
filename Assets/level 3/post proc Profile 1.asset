@@ -161,7 +161,7 @@ MonoBehaviour:
     max: 1
   clamp:
     m_OverrideState: 1
-    m_Value: 65470.73
+    m_Value: 65467.08
     min: 0
   tint:
     m_OverrideState: 1
