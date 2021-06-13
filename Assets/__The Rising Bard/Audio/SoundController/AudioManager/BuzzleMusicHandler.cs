@@ -29,6 +29,7 @@ public class BuzzleMusicHandler : MonoBehaviour
         //  Destroy(gameObject);
 
     }
+
     public void ExternalPlaySound()
     {
         PlaySoundEvent.Invoke(itemPickSound);
