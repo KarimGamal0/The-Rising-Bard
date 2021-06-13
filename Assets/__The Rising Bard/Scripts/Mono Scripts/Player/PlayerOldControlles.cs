@@ -6,6 +6,11 @@ using UnityEngine;
 public class PlayerOldControlles : MonoBehaviour
 {
 
+
+    public delegate void onestringdelegate(string song);
+    internal static event onestringdelegate PlaySoundEvent;
+
+
     [SerializeField] private PlayerData PD;
     [SerializeField] GameEvent manaChange;
 
@@ -82,13 +87,6 @@ public class PlayerOldControlles : MonoBehaviour
     [Header("Music")]
     [SerializeField] private string walkSound;
     [SerializeField] private string jumpSound;
-
-
-
-
-    public delegate void onestringdelegate(string song);
-    internal static event onestringdelegate PlaySoundEvent;
-
 
 
     private Rigidbody2D rb;
@@ -290,14 +288,13 @@ public class PlayerOldControlles : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             amountOfJumpsLeft--;
-            PlaySoundEvent.Invoke(jumpSound);
 
         }
 
         if (Input.GetButton("Dash"))
         {
             //  check for the mana value is able to dash or not
-            Debug.Log(PD.abilities[0].abilityGained);
+           // Debug.Log(PD.abilities[0].abilityGained);
             if (Time.time >= (lastDash + dashCoolDown) && PD.abilities[0].abilityGained && PD.playerMana >= PD.abilities[0].abilityCost)
             {
                 AttempToDash();
@@ -306,17 +303,6 @@ public class PlayerOldControlles : MonoBehaviour
                 isDashing = true;
             }
         }
-
-        if (isWalking)
-        {
-            PlaySoundEvent.Invoke(walkSound);
-
-        }
-
-
-
-
-
 
     }
 
@@ -688,6 +674,11 @@ public class PlayerOldControlles : MonoBehaviour
         transform.position = memento.PlayerPosition;
 
 
+    }
+
+    public void PlaySound(string sound)
+    {
+        PlaySoundEvent.Invoke(sound);
     }
 
     private void OnDrawGizmos()
