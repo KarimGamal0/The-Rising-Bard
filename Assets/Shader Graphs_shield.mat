@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs_shield
-  m_Shader: {fileID: -6465566751694194690, guid: af6d4c433a7feeb4fb5825dcbc7a4233, type: 3}
+  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,8 +23,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: 51ed3c27adf078b4cb89c487f01e0f95, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 57c7f38cb2ab1d043a8cc86e40f81d39, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -42,6 +54,10 @@ Material:
     m_Floats:
     - Vector1_01f7602d627a49b9b74d23f2e1d65dd1: 0.3
     - Vector1_c5bc1273392c49bb89f1fcc9a1276f89: 0.95
+    - _EnableExternalAlpha: 0
     m_Colors:
     - Color_d62530c6e6264ce3bd86c3db27e7bf02: {r: 0.1547704, g: 0.197264, b: 0.8867924, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

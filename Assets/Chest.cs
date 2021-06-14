@@ -5,8 +5,8 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     Animator anim;
-    [SerializeField] Transform player;
-    [SerializeField] Transform telportArea;
+    public GameEvent showWeapon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +15,15 @@ public class Chest : MonoBehaviour
 
     public void OpenChest()
     {
-        anim.SetBool("isOpen", true);
-        StartCoroutine(DoCheck());
+        anim.SetBool("isOpen", true);  
     }
-
-    IEnumerator DoCheck()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-
-        yield return new WaitForSeconds(5);
-        player.position = telportArea.position;
-
+        if(collision.tag == "Player")
+        {
+            showWeapon.Raise();
+        }
     }
+
+
 }
