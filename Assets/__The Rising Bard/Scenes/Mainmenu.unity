@@ -146,42 +146,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: sfxMixer
-      value: 
-      objectReference: {fileID: -3138711771191640874, guid: 9716e4ede058bf94aaf72b1f500bd7a8, type: 2}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: MusicMixer
-      value: 
-      objectReference: {fileID: -4336079692264658919, guid: 9716e4ede058bf94aaf72b1f500bd7a8, type: 2}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: customMixer
-      value: 
-      objectReference: {fileID: -3138711771191640874, guid: 9716e4ede058bf94aaf72b1f500bd7a8, type: 2}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: sounds.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: backGroundMusic.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: fa5f1ad9019f75d499c9771237127e0a, type: 3}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: backGroundMusic.loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: backGroundMusic.name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: backGroundMusic.mixerGroup
-      value: 
-      objectReference: {fileID: -4336079692264658919, guid: 9716e4ede058bf94aaf72b1f500bd7a8, type: 2}
-    - target: {fileID: 1281024324, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
-      propertyPath: sounds.Array.data[0].mixerGroup
-      value: 
-      objectReference: {fileID: -4336079692264658919, guid: 9716e4ede058bf94aaf72b1f500bd7a8, type: 2}
     - target: {fileID: 2753185572658894411, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -416,6 +380,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 445089323}
+    - target: {fileID: 84829476237096860, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CallMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 84829476237096860, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7506557361290938608, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -506,11 +478,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
---- !u!1 &1996322868 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7415836229146463757, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-  m_PrefabInstance: {fileID: 7415836227158554169}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7415836227158554169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -542,10 +509,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7415836227479831718, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7415836227479831719, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -594,10 +557,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7415836228189581889, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: mainMenuPanel
-      value: 
-      objectReference: {fileID: 1996322868}
     - target: {fileID: 7415836228189581889, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
       propertyPath: settingsPanel
       value: 
@@ -690,10 +649,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mainmenu Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7415836228189581902, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7415836228761260427, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -715,54 +670,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7415836228761260427, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_Spacing
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_Padding.m_Left
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_ChildScaleWidth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_Padding.m_Right
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_ChildScaleHeight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_Padding.m_Bottom
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_ChildControlWidth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150233, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_ChildControlHeight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150246, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 309.2202
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150246, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 432.5026
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150246, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415836228829150246, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
