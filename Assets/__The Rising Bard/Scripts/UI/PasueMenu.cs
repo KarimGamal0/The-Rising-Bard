@@ -63,9 +63,12 @@ public class PasueMenu : MonoBehaviour
         //Application.Quit();
     }
 
+<<<<<<< Updated upstream
     public void BackMusicPanel()
     {
         pauseMenuUI.SetActive(true);
         UISound.SetActive(false);
     }
+=======
+>>>>>>> Stashed changes
 }
