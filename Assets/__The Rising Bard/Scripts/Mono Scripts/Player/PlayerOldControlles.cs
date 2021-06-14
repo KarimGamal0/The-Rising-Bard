@@ -14,6 +14,9 @@ public class PlayerOldControlles : MonoBehaviour
     [SerializeField] private PlayerData PD;
     [SerializeField] GameEvent manaChange;
 
+    [SerializeField] GameEvent canDashUI;
+    [SerializeField] GameEvent cantDashUI;
+
 
     [Header("Movement Compenet")]
     [SerializeField] private float movementSpeed = 10f;
@@ -165,6 +168,7 @@ public class PlayerOldControlles : MonoBehaviour
             // CheckLedgeClimb();
             CheckDash();
             CheckKnockback();
+            UpdateDashUI();
         }
     }
 
@@ -306,7 +310,18 @@ public class PlayerOldControlles : MonoBehaviour
 
     }
 
+    void UpdateDashUI()
+    {
+        if (Time.time >= (lastDash + dashCoolDown) && PD.abilities[0].abilityGained && PD.playerMana >= PD.abilities[0].abilityCost)
+        {
+            canDashUI.Raise();
+        }
+        else
+        {
+            cantDashUI.Raise();
 
+        }
+    }
 
     private void AttempToDash()
     {
@@ -323,6 +338,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         if (isDashing)
         {
+ 
             if (dashTimeLeft > 0)
             {
                 canFlip = false;
@@ -345,6 +361,7 @@ public class PlayerOldControlles : MonoBehaviour
 
             }
         }
+ 
     }
 
 
