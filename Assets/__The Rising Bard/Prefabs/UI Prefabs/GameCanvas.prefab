@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 8811570781787800802}
+  UISound: {fileID: 0}
   healthBar: {fileID: 2138441181708446564}
 --- !u!1001 &926558679453362830
 PrefabInstance:
@@ -289,6 +290,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138441181906171960}
     m_Modifications:
+    - target: {fileID: 426980597750683517, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2138441181906171964}
+    - target: {fileID: 426980597750683517, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 885005207747846202, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Name
+      value: Music Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607399315322447074, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Name
+      value: Skills Button
+      objectReference: {fileID: 0}
     - target: {fileID: 2530302441215202505, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -426,6 +443,18 @@ PrefabInstance:
       value: 847.3839
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.34414583
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.34414583
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.34414583
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -455,11 +484,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 379.50418
+      value: 409
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 197.37161
+      value: 160.92
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028466, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -479,7 +508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442061028477, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2530302442266424544, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_Interactable
@@ -532,6 +561,78 @@ PrefabInstance:
     - target: {fileID: 2530302442971939805, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219499941767811804, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429774335087721509, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2138441181906171964}
+    - target: {fileID: 3429774335087721509, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923092495103153553, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Name
+      value: map Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017347832956840782, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5113477183085008160}
+    - target: {fileID: 4017347832956840782, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017347832956840782, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PasueMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608614126270263250, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5113477183085008160}
+    - target: {fileID: 4608614126270263250, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MusicPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608614126270263250, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PasueMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812824833849641192, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Name
+      value: Exit Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517536838389683991, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 59ffe5318e8d3c347834373ee1ee7821, type: 3}
+    - target: {fileID: 7361211280249393067, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5113477183085008160}
+    - target: {fileID: 7361211280249393067, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361211280249393067, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PasueMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740688964919755047, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.63599
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740688964919755047, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.63599
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740688964919755047, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.63599
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdee526b77fcfcc4a95884cd4726bf02, type: 3}

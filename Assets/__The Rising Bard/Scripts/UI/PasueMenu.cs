@@ -8,6 +8,9 @@ public class PasueMenu : MonoBehaviour
 {
     bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+
+    [SerializeField] GameObject UISound;
+
     [SerializeField]
     GameObject healthBar;
 
@@ -38,21 +41,31 @@ public class PasueMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         healthBar.SetActive(true);
+        UISound.SetActive(false);
     }
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
         healthBar.SetActive(false);
+
     }
-    public void LoadMenu()
+    public void MusicPanel()
     {
-        Debug.Log("Loading Game...");
+        pauseMenuUI.SetActive(false);
+        UISound.SetActive(true);
     }
     public void ExitToMainMenu()
     {
         SceneManager.LoadScene(0);
         //Application.Quit();
+    }
+
+    public void BackMusicPanel()
+    {
+        pauseMenuUI.SetActive(true);
+        UISound.SetActive(false);
     }
 }
