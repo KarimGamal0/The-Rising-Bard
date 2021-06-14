@@ -74,7 +74,7 @@ public class EnemyBehavoir : MonoBehaviour
 
     [Header("DamageInfo")]
     [SerializeField] float damgeTaken;
-    [SerializeField] float damgeJasserToPlayer;
+    [SerializeField] float damgeToPlayer;
 
     private void Awake()
     {
@@ -252,7 +252,7 @@ public class EnemyBehavoir : MonoBehaviour
     {
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(hitPostion.position, m_rayCastDistance, m_rayCastMask);
 
-        attackDetails[0] = damgeJasserToPlayer;
+        attackDetails[0] = damgeToPlayer;
         attackDetails[1] = transform.position.x;
         foreach (Collider2D collider in detectedObjects)
         {

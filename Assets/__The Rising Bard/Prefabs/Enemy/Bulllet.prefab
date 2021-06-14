@@ -103,6 +103,7 @@ MonoBehaviour:
   whatIsSolid:
     serializedVersion: 2
     m_Bits: 512
+  damgeAmountToPlayer: 5
 --- !u!95 &5396848018689539737
 Animator:
   serializedVersion: 3

@@ -100,6 +100,10 @@ PrefabInstance:
       value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
+      propertyPath: deathChunkParticle
+      value: 
+      objectReference: {fileID: 3380558688841995781, guid: 9b714643d80ea3145865e962adf536f0, type: 3}
+    - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: damgeJasserToPlayer
       value: 5
       objectReference: {fileID: 0}

@@ -297,10 +297,10 @@ MonoBehaviour:
   playersMask:
     serializedVersion: 2
     m_Bits: 512
-  damageAmout: 10
+  damageAmout: 15
   shootingPoint: {fileID: 1087168199}
   Bullet: {fileID: 6216679005462487333, guid: 194ea4cbde8aca7409bcb821d27e42d6, type: 3}
-  maxHealth: 60
+  maxHealth: 130
   hitParticle: {fileID: 7842988718719884486, guid: e027d94943ff7ad40962800d621daf61, type: 3}
   deathChunkParticle: {fileID: 3380558688841995781, guid: 211999d9f5b0dba45a8287881de03ec2, type: 3}
   deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
@@ -312,7 +312,7 @@ MonoBehaviour:
   touchDamage: 10
   touchDamageWidth: 0.8
   touchDamageHeight: 1.1
-  damgeTaken: 10
+  damgeTaken: 5
 --- !u!61 &3578083299897203791
 BoxCollider2D:
   m_ObjectHideFlags: 0

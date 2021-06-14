@@ -246,7 +246,7 @@ MonoBehaviour:
   helthBarController: {fileID: 4847591602190158597}
   hurtCooldownSet: 0.25
   m_moveSpeed: 2
-  maxHelth: 50
+  maxHelth: 100
   m_attackDistance: 0.7
   m_cooldownTimer: 0.7
   m_rayCast: {fileID: 3030236556749634283}
@@ -263,7 +263,7 @@ MonoBehaviour:
   knockbackSpeed: {x: 10, y: 5}
   knockbackDuration: 0.1
   hitParticle: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
-  deathChunkParticle: {fileID: 3380558688841995781, guid: a5c684d0103b17743ae4629a09cb3187, type: 3}
+  deathChunkParticle: {fileID: 3380558688841995781, guid: 12e882596b8aa9049a69d03db3b32e82, type: 3}
   deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
   whatIsPlayer:
     serializedVersion: 2
@@ -273,8 +273,8 @@ MonoBehaviour:
   touchDamage: 10
   touchDamageWidth: 0.31
   touchDamageHeight: 1.07
-  damgeTaken: 10
-  damgeJasserToPlayer: 0
+  damgeTaken: 15
+  damgeJasserToPlayer: 10
 --- !u!95 &3030236555196509461
 Animator:
   serializedVersion: 3

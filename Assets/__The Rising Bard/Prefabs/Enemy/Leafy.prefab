@@ -219,7 +219,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 734879849
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 5554459640148684445, guid: b5baff12ef5d4a14d9fc33d03aa448f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -249,7 +249,7 @@ MonoBehaviour:
   helthBarController: {fileID: 7025242629614200775}
   hurtCooldownSet: 0.25
   m_moveSpeed: 2
-  maxHelth: 50
+  maxHelth: 100
   m_attackDistance: 0.7
   m_cooldownTimer: 0.7
   m_rayCast: {fileID: 1319753540944016659}
@@ -266,7 +266,7 @@ MonoBehaviour:
   knockbackSpeed: {x: 10, y: 5}
   knockbackDuration: 0.1
   hitParticle: {fileID: 7842988718719884486, guid: c400c933ede8bf548b2f1325fab89781, type: 3}
-  deathChunkParticle: {fileID: 3380558688841995781, guid: a5c684d0103b17743ae4629a09cb3187, type: 3}
+  deathChunkParticle: {fileID: 3380558688841995781, guid: d8d731146d69e604dbea9b430bf3dd6f, type: 3}
   deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
   whatIsPlayer:
     serializedVersion: 2
@@ -276,6 +276,8 @@ MonoBehaviour:
   touchDamage: 10
   touchDamageWidth: 0.41
   touchDamageHeight: 1.14
+  damgeTaken: 10
+  damgeJasserToPlayer: 13
 --- !u!95 &1319753539628229357
 Animator:
   serializedVersion: 3
