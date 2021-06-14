@@ -26,6 +26,12 @@ public class UIManager : MonoBehaviour
 
         levelManager = FindObjectOfType<levelManagerCareTaker>();
     }
+    
+    public void PlayGame()
+    {
+        levelManager.checkLevelData();
+        //SceneManager.LoadScene(1);
+    }
 
     public void Settings()
     {
@@ -37,19 +43,13 @@ public class UIManager : MonoBehaviour
         mainMenuPanel.SetActive(false);
         credit.SetActive(true);
     }
-
-    public void PlayGame()
-    {
-        levelManager.checkLevelData();
-        //SceneManager.LoadScene(1);
-    }
-
+    
     public void QuitGame()
     {
         Application.Quit();
     } 
 
-    public void callMainMenu()
+    public void CallMainMenu()
     {
         settingsPanel.SetActive(false);
     }
