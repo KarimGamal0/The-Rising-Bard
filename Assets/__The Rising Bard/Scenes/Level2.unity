@@ -1130,7 +1130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981561, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.127934
+      value: 50.27
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981561, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1170,11 +1170,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981563, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_Force.x
-      value: -4
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981563, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_RelativeForce.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981566, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_Name
@@ -1283,7 +1283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981561, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.421963
+      value: 50.27
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981561, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1323,11 +1323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981563, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_Force.x
-      value: 4
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981563, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_RelativeForce.x
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3877757560937981566, guid: 264ff31654213ef4fbb2cb60ad6ec097, type: 3}
       propertyPath: m_Name
@@ -1607,11 +1607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3934784150086822051, guid: b835b935deff8854495e889277bd9706, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -78.98167
+      value: -78.98165
       objectReference: {fileID: 0}
     - target: {fileID: 3934784150086822051, guid: b835b935deff8854495e889277bd9706, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.168278
+      value: 12.165769
       objectReference: {fileID: 0}
     - target: {fileID: 3934784150086822051, guid: b835b935deff8854495e889277bd9706, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1627,6 +1627,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b835b935deff8854495e889277bd9706, type: 3}
+--- !u!1 &1313896557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2138441181708446564, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
+  m_PrefabInstance: {fileID: 633571689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1313896558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313896557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7986838f1b5073a479e83477d0221ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 13a32a04ba7240c4397c7f0c934ffb91, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1313896560}
+        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
+        m_MethodName: updatePlayerUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1313896560 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2138441181708446562, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
+  m_PrefabInstance: {fileID: 633571689}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313896557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8b47f468a4bea4285b253db521b515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1384080906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,6 +2677,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 220278996}
     - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163249835288274711, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: chestEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 883289466}
@@ -2649,6 +2697,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 220278998}
+    - target: {fileID: 1435415845380066217, guid: 55a85d0f8618fec4aa9e1351bfd41e66, type: 3}
+      propertyPath: updatePlayerUI
+      value: 
+      objectReference: {fileID: 11400000, guid: 13a32a04ba7240c4397c7f0c934ffb91, type: 2}
     - target: {fileID: 1671274169869950553, guid: 55a85d0f8618fec4aa9e1351bfd41e66, type: 3}
       propertyPath: m_Name
       value: LevelManagerCare

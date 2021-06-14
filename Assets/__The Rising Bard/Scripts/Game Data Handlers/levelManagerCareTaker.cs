@@ -7,10 +7,11 @@ public class levelManagerCareTaker : MonoBehaviour
 
 
     [SerializeField] PlayerData PD;
+    [SerializeField] GameEvent updatePlayerUI;
     private Dictionary<string, Memento> mementoDic = new Dictionary<string, Memento>();
     public static levelManagerCareTaker instance;
     public PlayerOldControlles player;
-
+    
 
     public delegate void MyDelegate();
     internal static event MyDelegate firstCameraPostionSwitchEvent;
@@ -94,6 +95,8 @@ public class levelManagerCareTaker : MonoBehaviour
 
         PD.playerHP = 100;
         PD.playerMana = 100;
+        updatePlayerUI.Raise();
+
         if (!(System.Object.ReferenceEquals(lastCheckPointData, null)) )
         {
             player.GetMementoFromCareTaker(lastCheckPointData);//restore data stored in check point
