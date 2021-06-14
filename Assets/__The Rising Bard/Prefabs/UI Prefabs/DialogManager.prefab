@@ -68,6 +68,7 @@ MonoBehaviour:
   typingSpeed: 0.01
   delayButtonDuration: 1.5
   continueButton: {fileID: 0}
-  palnel1: {fileID: 4140990828397391456, guid: 16d3039af64b1794b9db021eb5568153, type: 3}
-  palnel2: {fileID: 6480710893164996282, guid: a331b8dcd2e0b8b43ac981797c398ac7, type: 3}
-  palnel3: {fileID: 8305519438267216071, guid: 65bd5ca4a71bd09449d59e56de308d5c, type: 3}
+  palnel: {fileID: 0}
+  sprite1: {fileID: 21300000, guid: 0bab158859cf70446b69c7f0a92247fd, type: 3}
+  sprite2: {fileID: 21300000, guid: 2766b437de7b51645ae5a17184edbcce, type: 3}
+  sprite3: {fileID: 21300000, guid: 0d1ac60fba093a547989328287222a70, type: 3}
