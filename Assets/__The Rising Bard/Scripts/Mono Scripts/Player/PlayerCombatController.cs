@@ -24,16 +24,18 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private GameObject deathChunkParticle;
     [SerializeField] private GameObject deathBloodParticle;
 
+    [Header("CoolDown Attack")]
+    [SerializeField] private float coolDownAttackTimerSet;
 
- 
-
-    private bool deathFlag=false;
+    private bool deathFlag = false;
     private bool gotInput;
     private bool isAttacking;
     private bool isFirstAttack;
 
     private float lastInputTime = Mathf.NegativeInfinity;
     private float[] attackDetails = new float[2];
+    private float cooldownTimer;
+
 
 
     private Animator anim;
@@ -46,6 +48,7 @@ public class PlayerCombatController : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
         POC = GetComponent<PlayerOldControlles>();
+        cooldownTimer = coolDownAttackTimerSet;
     }
 
 
@@ -67,7 +70,7 @@ public class PlayerCombatController : MonoBehaviour
     {
         CheckCombatInput();
         CheckAttacks();
- 
+
     }
 
 
@@ -76,11 +79,14 @@ public class PlayerCombatController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+
             if (combatEnabled)
             {
                 gotInput = true;
                 lastInputTime = Time.time;
             }
+
+
         }
     }
 
@@ -89,15 +95,26 @@ public class PlayerCombatController : MonoBehaviour
     {
         if (gotInput)
         {
-            if (!isAttacking)
+            if (cooldownTimer >= 0)
             {
-                gotInput = false;
-                isAttacking = true;
-                isFirstAttack = !isFirstAttack;
-                anim.SetBool("attack1", true);
-                anim.SetBool("firstAttack", isFirstAttack);
-                anim.SetBool("isAttacking", isAttacking);
+               
+                cooldownTimer -= Time.deltaTime;
             }
+            else
+            {
+                cooldownTimer = coolDownAttackTimerSet;
+                if (!isAttacking)
+                {
+                    gotInput = false;
+                    isAttacking = true;
+                    //isFirstAttack = !isFirstAttack;
+                   //anim.SetBool("attack1", true);
+                   // anim.SetBool("firstAttack", isFirstAttack);
+                    anim.SetBool("isAttacking", isAttacking);
+                }
+            }
+
+
         }
         if (Time.time >= lastInputTime + inputTimer)
         {
@@ -149,20 +166,20 @@ public class PlayerCombatController : MonoBehaviour
     {
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
-        anim.SetBool("attack1", false);
-    }  
+        //anim.SetBool("attack1", false);
+    }
     private void Die()
     {
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
-       //GetComponent<SpriteRenderer>().enabled = false;
-       //GetComponent<BoxCollider2D>().enabled = false;
-       
-         playerDeathE.Invoke();
-      //  Destroy(gameObject);
+        //GetComponent<SpriteRenderer>().enabled = false;
+        //GetComponent<BoxCollider2D>().enabled = false;
+
+        playerDeathE.Invoke();
+        //  Destroy(gameObject);
     }
 
-    
+
 
 
     private void OnDrawGizmos()
