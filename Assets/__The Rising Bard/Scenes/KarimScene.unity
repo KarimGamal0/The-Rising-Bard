@@ -409,12 +409,88 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 106089295}
     - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: typingSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
       propertyPath: continueButton
       value: 
       objectReference: {fileID: 443681496}
     - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
       propertyPath: delayButtonDuration
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[0]
+      value: Darkness creeps in, all that once was bright and beautiful is now defiled. 
+        Everything seems dull and tasteless.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[1]
+      value: City of guardians was a city known for its strong warriors and great
+        melodies.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[2]
+      value: It was told that these melodies had a healing power and magical effects
+        that made rivers flow and plants grow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[3]
+      value: Now, all is lost.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[4]
+      value: for Haru the demon of darkness had arrived. He took over the city, pillaged
+        its people and took them to himself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[5]
+      value: The once prideful people of this city are now powerless against him.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[6]
+      value: What about our last hope?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[7]
+      value: The first bard of this kingdom? Ash
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[8]
+      value: as the legend tells, was the one who introduced music to this city.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[9]
+      value: One stroke of his mandoline could bend time and enchant minds. Where
+        is he now?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[10]
+      value: Buried in the dungeon of heroes, underground. Can he be resurrected?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[11]
+      value: Buried in the dungeon of heroes, underground.  Can he be resurrected?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[12]
+      value: Yes? So here we go.  Using the last power of melodies the citizens could
+        master, they collaborate to bring Ash back to life.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[13]
+      value: Yes? So here we go.  Using the last power of melodies the citizens could
+        master, they collaborate to bring Ash back to life.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011445441387699907, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
+      propertyPath: setntences.Array.data[14]
+      value: Yes? So here we go.  Using the last power of melodies the citizens could
+        master, they collaborate to bring Ash back to life.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577c1afe2917ca541824c841e70812c1, type: 3}
@@ -532,6 +608,14 @@ PrefabInstance:
     - target: {fileID: 7894254268103553315, guid: dba8a80521da35944ba31ab00d3fd154, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -428.9919
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894254268302799029, guid: dba8a80521da35944ba31ab00d3fd154, type: 3}
+      propertyPath: m_wordSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894254268302799029, guid: dba8a80521da35944ba31ab00d3fd154, type: 3}
+      propertyPath: m_characterSpacing
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba8a80521da35944ba31ab00d3fd154, type: 3}

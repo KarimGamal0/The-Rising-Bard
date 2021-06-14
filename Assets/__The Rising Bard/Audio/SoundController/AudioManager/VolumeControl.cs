@@ -14,13 +14,14 @@ public class VolumeControl : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        slider.value = PlayerPrefs.GetFloat(volumeParam);
 
     }
+
     void Awake()
     {
         slider.onValueChanged.AddListener(CustomControlSound);
         toggle.onValueChanged.AddListener(ToggleSound);
+        slider.value = PlayerPrefs.GetFloat(volumeParam);
     }
 
     private void ToggleSound(bool toggleValue)

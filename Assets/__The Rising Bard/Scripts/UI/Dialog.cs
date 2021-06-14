@@ -42,8 +42,7 @@ public class Dialog : MonoBehaviour
     void Start()
     {
         StartCoroutine(Type());
-     image1= palnel.GetComponent<Image>();
-
+        image1 = palnel.GetComponent<Image>();
     }
 
     private void Update()
@@ -56,20 +55,16 @@ public class Dialog : MonoBehaviour
 
         if (index == 0)
         {
-            image1.sprite=sprite1;
+            image1.sprite = sprite1;
 
         }
-        else if (index == 8)
+        else if (index == 4)
         {
-
             image1.sprite = sprite2;
-
-
         }
-        else if (index == 12)
+        else if (index == 7)
         {
             image1.sprite = sprite3;
-
         }
 
     }

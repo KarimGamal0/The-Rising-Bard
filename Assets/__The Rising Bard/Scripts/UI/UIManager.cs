@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     PlayerData PD;
     [SerializeField]
-    GameObject mainmenuPanel;
+    GameObject mainMenuPanel;
     [SerializeField]
     GameObject settingsPanel; 
     [SerializeField]
@@ -21,38 +21,36 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        mainmenuPanel.SetActive(true);
-        settingsPanel.GetComponent<Canvas>().enabled=(false);
-        settingsPanel.SetActive(true);
+        mainMenuPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+
         levelManager = FindObjectOfType<levelManagerCareTaker>();
-        credit.SetActive(false);
     }
-    public void Settings()
-    {
-        mainmenuPanel.SetActive(false);
-        settingsPanel.GetComponent<Canvas>().enabled = (true);
-
-
-    }
-    public void Credit()
-    {
-        mainmenuPanel.SetActive(false);
-        credit.SetActive(true);
-    }
+    
     public void PlayGame()
     {
         levelManager.checkLevelData();
         //SceneManager.LoadScene(1);
-
     }
+
+    public void Settings()
+    {
+        settingsPanel.SetActive(true);
+    }
+
+    public void Credit()
+    {
+        mainMenuPanel.SetActive(false);
+        credit.SetActive(true);
+    }
+    
     public void QuitGame()
     {
         Application.Quit();
     } 
 
-    public void callMainMemu()
+    public void CallMainMenu()
     {
-
+        settingsPanel.SetActive(false);
     }
-
 }
