@@ -457,14 +457,14 @@ MonoBehaviour:
   combatEnabled: 1
   inputTimer: 0.2
   attack1HitBoxPos: {fileID: 7537674935191869151}
-  attack1Radius: 0.45
+  attack1Radius: 0.55
   attack1Damage: 1
   whatIsDamageable:
     serializedVersion: 2
     m_Bits: 128
   deathChunkParticle: {fileID: 3380558688841995781, guid: 4a1431f88f52b8944bc7f43fa9881389, type: 3}
   deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
-  coolDownAttackTimerSet: 0
+  coolDownAttackTimerSet: 1
   PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
 --- !u!1 &7928889977678348548
 GameObject:

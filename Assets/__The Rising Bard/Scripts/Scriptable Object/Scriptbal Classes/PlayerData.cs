@@ -71,7 +71,7 @@ public class PlayerData : ScriptableObject
             if (i > 2)
                 abilities[i].abilityGained = true;
             else
-                abilities[i].abilityGained = false;
+                abilities[i].abilityGained = false; 
         }
     }
 

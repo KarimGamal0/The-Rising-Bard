@@ -2638,14 +2638,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: canDashUI
-      value: 
-      objectReference: {fileID: 11400000, guid: 2116c23dd364fa7468185079d376a37b, type: 2}
-    - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: cantDashUI
-      value: 
-      objectReference: {fileID: 11400000, guid: d3fb576b3c27d534799cf751dac7c6dc, type: 2}
     - target: {fileID: 7537674935522300346, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2690,9 +2682,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7537674935522300347, guid: 740f025201a216b468535a7343a274cb, type: 3}
-      propertyPath: coolDownAttackTimerSet
-      value: 1
+    - target: {fileID: 7537674935522300350, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.7716666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537674935522300350, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.8966666
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 740f025201a216b468535a7343a274cb, type: 3}
