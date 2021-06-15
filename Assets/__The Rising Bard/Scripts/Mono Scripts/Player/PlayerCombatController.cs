@@ -166,6 +166,7 @@ public class PlayerCombatController : MonoBehaviour
     {
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
+        cooldownTimer = coolDownAttackTimerSet;
         //anim.SetBool("attack1", false);
     }
     private void Die()

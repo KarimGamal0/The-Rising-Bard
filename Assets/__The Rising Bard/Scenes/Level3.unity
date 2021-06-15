@@ -2682,6 +2682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7537674935522300347, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: coolDownAttackTimerSet
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7537674935522300350, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.7716666
