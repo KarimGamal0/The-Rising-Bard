@@ -2586,6 +2586,7 @@ MonoBehaviour:
   defultMat: {fileID: 2100000, guid: 8725f7f6739bb4346877cf184bd23b02, type: 2}
   matToChange: {fileID: 2100000, guid: d0b3a72050333074ea1f558d28551268, type: 2}
   BaseColor: {r: 0.2977686, g: 1, b: 0, a: 1}
+  PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
 --- !u!61 &1325777375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3382,10 +3383,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 946710238, guid: e5c70443a1af9264ab5f2beb75936304, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1288825451315893211, guid: e5c70443a1af9264ab5f2beb75936304, type: 3}
       propertyPath: m_Name
       value: level 3

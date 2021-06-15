@@ -21,11 +21,8 @@ public class HealingArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log( collision.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("W_Idle"));
-        if (collision.tag == "Player"/*&&collision.GetComponent<PlayerOldControlles>().is*/)
+        if (collision.tag == "Player")
         {
-
-            //todo : add heath for the player
             StartCoroutine("StartHealing", collision);
 
         }
@@ -55,7 +52,7 @@ public class HealingArea : MonoBehaviour
             collision.GetComponent<Renderer>().material = matToChange;
             HealPlayer.Invoke();
             updateUI.Invoke();
-            yield return new WaitForSeconds(.08f);
+            yield return new WaitForSeconds(0.25F);
 
         }
         isHealing = false;

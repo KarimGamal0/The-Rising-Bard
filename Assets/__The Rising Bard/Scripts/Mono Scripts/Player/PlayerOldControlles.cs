@@ -643,7 +643,7 @@ public class PlayerOldControlles : MonoBehaviour
         return facingDirection;
     }
 
-
+    [ContextMenu("fLIP")]
     private void Flip()
     {
         if (!isWallSliding && canFlip && !knockback && !ledgeDetected)
