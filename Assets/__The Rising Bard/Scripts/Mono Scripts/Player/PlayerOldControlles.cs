@@ -704,4 +704,25 @@ public class PlayerOldControlles : MonoBehaviour
         Gizmos.DrawLine(RopeCheck.position, new Vector3(RopeCheck.position.x + ropeCheckDistance, RopeCheck.position.y, RopeCheck.position.z));
         // Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + wallCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
     }
+
+
+
+    private void OnEnable()
+    {
+        HealingArea.HealPlayer += HealPlayer;
+
+    }
+    private void OnDisable()
+    {
+        HealingArea.HealPlayer -= HealPlayer;
+
+    }
+    void HealPlayer()
+    {
+        if (PD.playerHP<=PD.playerMaxHP-1)
+        {
+            PD.playerHP += 1;
+        }
+
+    }
 }

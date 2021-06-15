@@ -10,12 +10,18 @@ public class HealthBar : MonoBehaviour
     [SerializeField] Slider ManaSlider;
     [SerializeField] PlayerData playerData;
 
+
     private void OnEnable()
     {
         SetMaxHealth();
         SetMaxMana();
+        HealingArea.updateUI += updatePlayerUI;
     }
+    private void OnDisable()
+    {
+        HealingArea.updateUI -= updatePlayerUI;
 
+    }
 
     public void SetMaxHealth()
     {
