@@ -147,6 +147,7 @@ public class levelManagerCareTaker : MonoBehaviour
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentLevel"));
             PD.setLevelData(PlayerPrefs.GetInt("CurrentLevel"));
+            PD.restoreOrignalData();
         }
     }    
 

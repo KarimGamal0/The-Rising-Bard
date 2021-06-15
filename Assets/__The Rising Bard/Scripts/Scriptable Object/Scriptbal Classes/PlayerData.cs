@@ -40,6 +40,7 @@ public class PlayerData : ScriptableObject
     {
         playerHP = 100;
         playerMana = 100;
+        Debug.Log("restoring mana and hp to 100 ");
     }
 
     public void startFirstLevelData()
@@ -66,9 +67,10 @@ public class PlayerData : ScriptableObject
     {
         playerHP = 100;
         playerMana = 100;
+        Debug.Log("startThirdLevelData");
         for (int i = 0; i < 6; i++)
         {
-            if (i > 2)
+            if (i < 2)
                 abilities[i].abilityGained = true;
             else
                 abilities[i].abilityGained = false; 
@@ -89,6 +91,15 @@ public class PlayerData : ScriptableObject
         {
             startThirdLevelData();
         }
+        else
+        {
+            playerHP = 100;
+            playerMana = 100;
+            Debug.Log("this is am error ? no current level saved in player prefs please check level manager ...");
+            //
+        }
+        Debug.Log($"you are at level {levelnum - 1}");
     }
+
 
 }
