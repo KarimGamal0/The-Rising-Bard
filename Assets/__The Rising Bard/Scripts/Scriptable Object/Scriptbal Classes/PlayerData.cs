@@ -14,9 +14,26 @@ public class PlayerData : ScriptableObject
      * Hyper Attack
      * 
      */
+
+
+
+
     public Abilities[] abilities;
     public float playerHP = 100;
+   
     public float playerMana = 100;
+
+
+    private int myVar;
+
+ 
+
+
+    public readonly  float playerMaxMana = 100;
+    public readonly  float playerMaxHP = 100;
+
+
+
     public float playerScore = 0;
     public bool isPlayerStop = false;
     public void restoreOrignalData()

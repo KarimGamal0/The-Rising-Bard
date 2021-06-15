@@ -10,7 +10,7 @@ public class dashHandlerUI : MonoBehaviour
     private void Start()
     {
          image = GetComponent<Image>();
-        image.enabled = false;
+       // image.enabled = false;
 
     }
     public void CanDashEffect()
