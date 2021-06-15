@@ -68,7 +68,7 @@ public class PlayerData : ScriptableObject
         playerMana = 100;
         for (int i = 0; i < 6; i++)
         {
-            if (i > 2)
+            if (i < 2)
                 abilities[i].abilityGained = true;
             else
                 abilities[i].abilityGained = false; 
