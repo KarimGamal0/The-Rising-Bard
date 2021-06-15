@@ -61,7 +61,8 @@ public class levelManagerCareTaker : MonoBehaviour
     {
  
         yield return new WaitForSeconds(1);
-        PD.restoreOrignalData();
+    //    PD.restoreOrignalData();
+        PD.setLevelData(PlayerPrefs.GetInt("CurrentLevel"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
@@ -93,8 +94,9 @@ public class levelManagerCareTaker : MonoBehaviour
 
         firstCameraPostionSwitchEvent?.Invoke();
 
-        PD.playerHP = 100;
-        PD.playerMana = 100;
+        //PD.playerHP = 100;
+        //PD.playerMana = 100;
+        PD.setLevelData(PlayerPrefs.GetInt("CurrentLevel"));
         updatePlayerUI.Raise();
 
         if (!(System.Object.ReferenceEquals(lastCheckPointData, null)) )
