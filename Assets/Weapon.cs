@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Transform telportArea;
     SpriteRenderer spriteRenderer;
+    public GameEvent ShowDashPannel;
     bool isPicked = false;
     bool isChestOpend = false;
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isPicked = true;
+            ShowDashPannel.Raise();
         }
     }
 

@@ -38,6 +38,11 @@ public class HealthBar : MonoBehaviour
     {
         ManaSlider.value = playerData.playerMana ;
     }
+    public void updatePlayerUI()
+    {
+        SetMaxHealth();
+        SetMaxMana();
+    }
 
 
 
