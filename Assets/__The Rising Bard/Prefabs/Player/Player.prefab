@@ -302,8 +302,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -635523501
-  m_SortingLayer: -1
+  m_SortingLayerID: -551995453
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: -411866495789504100, guid: f5beaa1ce0c105b4fb4623d3499ca1ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -396,6 +396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
   manaChange: {fileID: 11400000, guid: 32f1019c19bf22d468769e083c701ffb, type: 2}
+  canDashUI: {fileID: 11400000, guid: 2116c23dd364fa7468185079d376a37b, type: 2}
+  cantDashUI: {fileID: 11400000, guid: d3fb576b3c27d534799cf751dac7c6dc, type: 2}
   movementSpeed: 3.5
   jumpForce: 14.3
   groundCheck: {fileID: 7537674934568653328}
@@ -462,6 +464,7 @@ MonoBehaviour:
     m_Bits: 128
   deathChunkParticle: {fileID: 3380558688841995781, guid: 4a1431f88f52b8944bc7f43fa9881389, type: 3}
   deathBloodParticle: {fileID: 6391396260325994419, guid: 682480e1d05a84849b441508691caa09, type: 3}
+  coolDownAttackTimerSet: 0
   PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
 --- !u!1 &7928889977678348548
 GameObject:
