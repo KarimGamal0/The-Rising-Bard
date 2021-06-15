@@ -6,6 +6,7 @@ public class Teleporting : MonoBehaviour
 {
     [SerializeField] Transform player;
     [SerializeField] Transform telportArea;
+    [SerializeField] float waitForTelport;
  
 
    
@@ -14,7 +15,7 @@ public class Teleporting : MonoBehaviour
     {
 
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(waitForTelport);
         player.position = telportArea.position;
 
     }
