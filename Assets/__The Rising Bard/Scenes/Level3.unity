@@ -2597,6 +2597,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: canDashUI
+      value: 
+      objectReference: {fileID: 11400000, guid: 2116c23dd364fa7468185079d376a37b, type: 2}
+    - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: cantDashUI
+      value: 
+      objectReference: {fileID: 11400000, guid: d3fb576b3c27d534799cf751dac7c6dc, type: 2}
     - target: {fileID: 7537674935522300346, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2829,11 +2837,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3934784150086822051, guid: b835b935deff8854495e889277bd9706, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.05114
+      value: 5.6996365
       objectReference: {fileID: 0}
     - target: {fileID: 3934784150086822051, guid: b835b935deff8854495e889277bd9706, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.477726
+      value: 17.731041
       objectReference: {fileID: 0}
     - target: {fileID: 3934784150086822051, guid: b835b935deff8854495e889277bd9706, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3987,6 +3995,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 687276273}
+    - target: {fileID: 1435415845380066217, guid: 55a85d0f8618fec4aa9e1351bfd41e66, type: 3}
+      propertyPath: updatePlayerUI
+      value: 
+      objectReference: {fileID: 11400000, guid: 13a32a04ba7240c4397c7f0c934ffb91, type: 2}
     - target: {fileID: 1671274169869950553, guid: 55a85d0f8618fec4aa9e1351bfd41e66, type: 3}
       propertyPath: m_Name
       value: LevelManagerCare
