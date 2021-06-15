@@ -275,6 +275,8 @@ public class EnemyBehavoir : MonoBehaviour
         {
             damageDirection = 1;
         }
+        
+        transform.Translate(new Vector3(0.5f * damageDirection, rb.velocity.y, 0));
         EnterKnockbackState();
     }
 
@@ -284,6 +286,8 @@ public class EnemyBehavoir : MonoBehaviour
         movement.Set(knockbackSpeed.x * damageDirection, knockbackSpeed.y);
         rb.AddForce(movement);
     }
+
+    //private void EnterEnemyBackState
 
     private void Die()
     {
