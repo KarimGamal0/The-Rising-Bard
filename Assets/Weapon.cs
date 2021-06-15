@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform telportArea;
     SpriteRenderer spriteRenderer;
     bool isPicked = false;
+    bool isChestOpend = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,9 @@ public class Weapon : MonoBehaviour
     public void OpenChest()
     {
         gameObject.SetActive(true);
+        isChestOpend = true;
         anim.SetBool("isOpen", true);
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
