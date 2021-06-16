@@ -30,7 +30,7 @@ public class dashHandlerUI : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("dashcalled");
+          //  Debug.Log("dashcalled");
            image.color = new Color32(255, 255, 255,255);// (byte)(Mathf.Sin(255f)
             yield return new WaitForSeconds(1f);
            

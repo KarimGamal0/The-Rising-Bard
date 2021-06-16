@@ -424,7 +424,7 @@ MonoBehaviour:
   ledgeClimbYOffset1: 0
   ledgeClimbXOffset2: 0.4
   ledgeClimbYOffset2: 0.5
-  dashTime: 0.1
+  dashTime: 0.2
   dashSpeed: 30
   distanceBetweenImages: 0.1
   dashCoolDown: 2.5

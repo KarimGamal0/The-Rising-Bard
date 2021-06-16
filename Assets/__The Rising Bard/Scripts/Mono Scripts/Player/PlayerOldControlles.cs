@@ -446,7 +446,7 @@ public class PlayerOldControlles : MonoBehaviour
             {
                 WallJump();
             }
-            else if (isGrounded)
+            else if (isGrounded )
             {
                 NormalJump();
             }
@@ -615,7 +615,7 @@ public class PlayerOldControlles : MonoBehaviour
 
         if (isWallSliding)
         {
-            if (rb.velocity.y < -wallSlideSpeed)
+            if (rb.velocity.y < wallSlideSpeed)
             {
                 rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
             }
@@ -643,7 +643,6 @@ public class PlayerOldControlles : MonoBehaviour
         return facingDirection;
     }
 
-    [ContextMenu("fLIP")]
     private void Flip()
     {
         if (!isWallSliding && canFlip && !knockback && !ledgeDetected)
