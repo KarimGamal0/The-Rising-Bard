@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433425852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.572, z: 0}
+  m_LocalPosition: {x: 0.001, y: 0.572, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
@@ -407,7 +407,7 @@ MonoBehaviour:
   groundCheckRadius: 0.132
   amountOfJumps: 2
   wallCheck: {fileID: 6627103875636012024}
-  wallCheckDistance: 0.25
+  wallCheckDistance: 0.27
   wallSlideSpeed: 1
   moveFoecOnAir: 20
   airDragMultiplier: 0.95
@@ -416,7 +416,7 @@ MonoBehaviour:
   wallHopDirection: {x: 1, y: 0.5}
   wallJumpDirection: {x: 1, y: 2}
   wallHopForce: 5
-  wallJumpForce: 15
+  wallJumpForce: 18
   turnTimerSet: 0.1
   wallJumpTimerSet: 0.1
   ledgeCheck: {fileID: 962964645515708008}
@@ -434,8 +434,8 @@ MonoBehaviour:
   whatIsRope:
     serializedVersion: 2
     m_Bits: 2048
-  ropeCheckDistance: 0.3
-  hangTimeSet: 0.1
+  ropeCheckDistance: 0.15
+  hangTimeSet: 0.12
   jumpBufferLenght: 0.1
   fallDamagePerSec: 0.1
   dust: {fileID: 0}
