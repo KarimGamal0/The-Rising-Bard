@@ -46,6 +46,7 @@ public class EnemyBehavoir : MonoBehaviour
     [Header("DamageInfo")]
     [SerializeField] float damgeTaken;
     [SerializeField] float damgeToPlayer;
+    [SerializeField] float damageDisplacement;
 
     private Vector2 movement;
     private Vector2 touchDamageBotLeft;
@@ -279,7 +280,7 @@ public class EnemyBehavoir : MonoBehaviour
             damageDirection = 1;
         }
 
-        transform.Translate(new Vector2(1 * 0.5f, 0));
+        transform.Translate(new Vector2(damageDisplacement, 0));
         //EnterKnockbackState();
     }
 
