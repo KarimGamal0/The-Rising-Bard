@@ -22,28 +22,31 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         mainmenuPanel.SetActive(true);
-        settingsPanel.GetComponent<Canvas>().enabled=(false);
-        settingsPanel.SetActive(true);
-        levelManager = FindObjectOfType<levelManagerCareTaker>();
+        //settingsPanel.GetComponent<Canvas>().enabled=(false);
+        //settingsPanel.SetActive();
+
+        //levelManager = FindObjectOfType<levelManagerCareTaker>();
         credit.SetActive(false);
     }
     public void Settings()
     {
-        mainmenuPanel.SetActive(false);
-        settingsPanel.GetComponent<Canvas>().enabled = (true);
-
-
+        //mainmenuPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+        //settingsPanel.GetComponent<Canvas>().enabled = (true);
     }
     public void Credit()
     {
         mainmenuPanel.SetActive(false);
         credit.SetActive(true);
     }
-    public void PlayGame()
+    public void NewGame()
+    {
+        //SceneManager.LoadScene(1);
+    }
+
+    public void LoadGame()
     {
         levelManager.checkLevelData();
-        //SceneManager.LoadScene(1);
-
     }
     public void QuitGame()
     {
@@ -52,7 +55,7 @@ public class UIManager : MonoBehaviour
 
     public void callMainMemu()
     {
-
+        settingsPanel.SetActive(false);
     }
 
 }
