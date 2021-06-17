@@ -203,66 +203,43 @@ public class PlayerOldControlles : MonoBehaviour
     private void CheckInput()
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
-        ropeInputDirection = Input.GetAxisRaw("Vertical");
+        //  ropeInputDirection = Input.GetAxisRaw("Vertical");
+        if (isGrounded||(amountOfJumpsLeft > 0 && isTouchingWall))
+        {
+            hangTime = hangTimeSet;
+            amountOfJumpsLeft = amountOfJumps;
+        }
+        else
+        {
+            hangTime -= Time.deltaTime;
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (isGrounded || (amountOfJumpsLeft > 0 && isTouchingWall))
+            jumpBufferTime = jumpBufferLenght;
+        }
+        else
+        {
+            jumpBufferTime -= Time.fixedDeltaTime;
+        }
+        if(Input.GetButtonDown("Jump") && amountOfJumpsLeft>0 && PD.abilities[1].abilityGained )
+        {
+            NormalJump();
+        }
+        if (jumpBufferTime >= 0)
+        {
+
+            if (amountOfJumpsLeft >= 0  && hangTime > 0)
             {
                 NormalJump();
+                jumpBufferTime = 0;
+
             }
-            else
-            {
-                jumpTimer = jumpTimerSet;
-                isAttemptingToJump = true;
-            }
+
         }
 
-        if (Input.GetButtonDown("Horizontal") && isTouchingWall)
-        {
-            if (!isGrounded && movementInputDirection != facingDirection)
-            {
-                canMove = false;
-                canFlip = false;
+        
 
-                turnTimer = turnTimerSet;
-            }
-        }
-
-        if (turnTimer >= 0)
-        {
-            turnTimer -= Time.deltaTime;
-
-            if (turnTimer <= 0)
-            {
-                canMove = true;
-                canFlip = true;
-            }
-        }
-
-        // todo : Adding hange time
-        /*if (isGrounded || isWallSliding )
-        {
-            lastFrameInGround = true;
-        }
-        else
-        {
-            lastFrameInGround = false;
-        }
-
-        if(!lastFrameInGround)
-        {
-            fallDamageTimer += Time.deltaTime;
-        }
-        else
-        {
-            fallDamageTimer = 0;
-        }
-        if(fallDamageTimer >= 0.65)
-        {
-            PD.playerHP -= (fallDamageTimer ) * fallDamagePerSec;
-
-        }*/
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
         {
@@ -298,7 +275,7 @@ public class PlayerOldControlles : MonoBehaviour
         if (Input.GetButton("Dash"))
         {
             //  check for the mana value is able to dash or not
-           // Debug.Log(PD.abilities[0].abilityGained);
+            // Debug.Log(PD.abilities[0].abilityGained);
             if (Time.time >= (lastDash + dashCoolDown) && PD.abilities[0].abilityGained && PD.playerMana >= PD.abilities[0].abilityCost)
             {
                 AttempToDash();
@@ -338,7 +315,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         if (isDashing)
         {
- 
+
             if (dashTimeLeft > 0)
             {
                 canFlip = false;
@@ -361,7 +338,7 @@ public class PlayerOldControlles : MonoBehaviour
 
             }
         }
- 
+
     }
 
 
@@ -446,7 +423,7 @@ public class PlayerOldControlles : MonoBehaviour
             {
                 WallJump();
             }
-            else if (isGrounded )
+            else if (isGrounded || (amountOfJumpsLeft>0&& !isTouchingWall))
             {
                 NormalJump();
             }
@@ -625,10 +602,10 @@ public class PlayerOldControlles : MonoBehaviour
     private void ApplyRopeMovement()
     {
 
-        if (isTouchingRope && !knockback && ropeInputDirection !=0)
+        if (isTouchingRope && !knockback && ropeInputDirection != 0)
         {
             isRopeCliming = true;
-            rb.velocity = new Vector2( rb.velocity.x , movementSpeed * ropeInputDirection);
+            rb.velocity = new Vector2(rb.velocity.x, movementSpeed * ropeInputDirection);
         }
         else
         {
@@ -677,9 +654,9 @@ public class PlayerOldControlles : MonoBehaviour
         canMove = true;
     }
 
-    public Memento GiveCurrentMemoToCareTaker( )
+    public Memento GiveCurrentMemoToCareTaker()
     {
-        return new Memento( transform.position);
+        return new Memento(transform.position);
     }
 
     public void GetMementoFromCareTaker(Memento memento)
@@ -718,7 +695,7 @@ public class PlayerOldControlles : MonoBehaviour
     }
     void HealPlayer()
     {
-        if (PD.playerHP<=PD.playerMaxHP-1)
+        if (PD.playerHP <= PD.playerMaxHP - 1)
         {
             PD.playerHP += 1;
         }

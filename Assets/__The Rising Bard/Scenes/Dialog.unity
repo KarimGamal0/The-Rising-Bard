@@ -13773,6 +13773,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
+      propertyPath: hangTimeSet
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537674935522300225, guid: 740f025201a216b468535a7343a274cb, type: 3}
       propertyPath: ropeCheckDistance
       value: 0.15
       objectReference: {fileID: 0}
