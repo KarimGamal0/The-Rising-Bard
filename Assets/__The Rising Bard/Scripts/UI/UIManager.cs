@@ -32,6 +32,12 @@ public class UIManager : MonoBehaviour
         levelManager.checkLevelData();
         //SceneManager.LoadScene(1);
     }
+    public void LoadGame()
+    {
+        //todo : load scene
+        levelManager.checkLevelData();
+        //SceneManager.LoadScene(1);
+    }
 
     public void Settings()
     {

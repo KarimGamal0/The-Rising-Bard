@@ -380,14 +380,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 445089323}
-    - target: {fileID: 84829476237096860, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CallMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 84829476237096860, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 7506557361290938608, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -485,6 +477,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2768159111302979682, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768159111302979682, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768159111302979682, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768159111302979682, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768159111302979682, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768159111302979682, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7415836227392497939, guid: f4b99936096d2334989e85bf00ca31d4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

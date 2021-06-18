@@ -226,7 +226,7 @@ public class PlayerOldControlles : MonoBehaviour
         {
             NormalJump();
         }
-        if(Input.GetButtonDown("Jump") && isTouchingWall &&movementInputDirection!= facingDirection)
+        if(Input.GetButtonDown("Jump") && isTouchingWall && movementInputDirection!= facingDirection)
         {
             WallJump();
         }
