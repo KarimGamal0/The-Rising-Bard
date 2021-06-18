@@ -11,11 +11,11 @@ public class VolumeControl : MonoBehaviour
     [SerializeField] AudioMixer mixer;
     [SerializeField] Slider slider;
     [SerializeField] Toggle toggle;
+
     // Start is called before the first frame update
     private void Start()
     {
         slider.value = PlayerPrefs.GetFloat(volumeParam);
-
     }
     void Awake()
     {

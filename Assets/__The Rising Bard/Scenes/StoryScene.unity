@@ -301,6 +301,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7894254268103553313, guid: dba8a80521da35944ba31ab00d3fd154, type: 3}
+      propertyPath: m_text
+      value: 'Skip
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 9125092680914888464, guid: dba8a80521da35944ba31ab00d3fd154, type: 3}
       propertyPath: m_IsActive
       value: 0
