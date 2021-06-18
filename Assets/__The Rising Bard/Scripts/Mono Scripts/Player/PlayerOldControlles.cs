@@ -204,7 +204,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
         //  ropeInputDirection = Input.GetAxisRaw("Vertical");
-        if (isGrounded||(amountOfJumpsLeft > 0 && isTouchingWall))
+        if (isGrounded||(amountOfJumpsLeft > 0 && !isTouchingWall))
         {
             hangTime = hangTimeSet;
             amountOfJumpsLeft = amountOfJumps;
@@ -225,6 +225,10 @@ public class PlayerOldControlles : MonoBehaviour
         if(Input.GetButtonDown("Jump") && amountOfJumpsLeft>0 && PD.abilities[1].abilityGained )
         {
             NormalJump();
+        }
+        if(Input.GetButtonDown("Jump") && isTouchingWall &&movementInputDirection!= facingDirection)
+        {
+            WallJump();
         }
         if (jumpBufferTime >= 0)
         {
