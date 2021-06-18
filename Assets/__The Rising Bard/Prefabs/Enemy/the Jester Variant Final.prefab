@@ -41,11 +41,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458520972, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.18
+      value: 9.86
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458520972, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.74
+      value: 7.04
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458520972, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: m_LocalPosition.z
@@ -84,6 +84,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: damgeTaken
       value: 20
       objectReference: {fileID: 0}
@@ -100,6 +104,10 @@ PrefabInstance:
       value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
+      propertyPath: damageDisplacement
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2198050142458520975, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: deathChunkParticle
       value: 
       objectReference: {fileID: 3380558688841995781, guid: 9b714643d80ea3145865e962adf536f0, type: 3}
@@ -109,7 +117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2198050142458521073, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}
       propertyPath: m_Name
-      value: the Jester Variant Final
+      value: the Jester
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82f7abd0bd2257648be53c04bc53a007, type: 3}

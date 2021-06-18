@@ -35,6 +35,8 @@ public class TinaBullet : MonoBehaviour
 
     }
 
+
+
     void DestroyProjectile()
     {
         //Instantiate(destroyEffect, transform.position, Quaternion.identity);

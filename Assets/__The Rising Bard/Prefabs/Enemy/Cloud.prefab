@@ -246,7 +246,7 @@ MonoBehaviour:
   helthBarController: {fileID: 4847591602190158597}
   hurtCooldownSet: 0.25
   m_moveSpeed: 2
-  maxHelth: 100
+  maxHealth: 100
   m_attackDistance: 0.7
   m_cooldownTimer: 0.7
   m_rayCast: {fileID: 3030236556749634283}
@@ -274,7 +274,8 @@ MonoBehaviour:
   touchDamageWidth: 0.31
   touchDamageHeight: 1.07
   damgeTaken: 15
-  damgeJasserToPlayer: 10
+  damgeToPlayer: 0
+  damageDisplacement: 0.7
 --- !u!95 &3030236555196509461
 Animator:
   serializedVersion: 3
