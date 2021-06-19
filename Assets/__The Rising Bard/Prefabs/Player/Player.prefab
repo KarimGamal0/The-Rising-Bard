@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1433425852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.001, y: 0.572, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 6
@@ -55,7 +55,7 @@ Transform:
   m_GameObject: {fileID: 6274763604230744580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.42, y: 0.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 3
@@ -85,7 +85,7 @@ Transform:
   m_GameObject: {fileID: 7181918461712688262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.042, y: 0.601, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 5
@@ -114,9 +114,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7537674934231397944}
-  m_LocalRotation: {x: -0, y: -0, z: -0.011999449, w: 0.999928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 2
@@ -187,7 +187,7 @@ Transform:
   m_GameObject: {fileID: 7537674934568653331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.081, y: 0.009, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 0
@@ -217,7 +217,7 @@ Transform:
   m_GameObject: {fileID: 7537674935191869150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.43, y: 0.71, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 1
@@ -253,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 7537674935522300224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.46, y: -2.55, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 7537674934568653328}
   - {fileID: 7537674935191869151}
@@ -302,8 +302,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -551995453
-  m_SortingLayer: -4
+  m_SortingLayerID: -635523501
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -411866495789504100, guid: f5beaa1ce0c105b4fb4623d3499ca1ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -407,18 +407,18 @@ MonoBehaviour:
   groundCheckRadius: 0.132
   amountOfJumps: 2
   wallCheck: {fileID: 6627103875636012024}
-  wallCheckDistance: 0.27
+  wallCheckDistance: 0.2
   wallSlideSpeed: 1
   moveFoecOnAir: 20
   airDragMultiplier: 0.95
-  variableJumpHeightMultiplier: 0.5
-  jumpTimerSet: 0.15
+  variableJumpHeightMultiplier: 0.1
+  jumpTimerSet: 0.05
   wallHopDirection: {x: 1, y: 0.5}
   wallJumpDirection: {x: 1, y: 2}
   wallHopForce: 5
   wallJumpForce: 18
-  turnTimerSet: 0.1
-  wallJumpTimerSet: 0.1
+  turnTimerSet: 0.05
+  wallJumpTimerSet: 0.05
   ledgeCheck: {fileID: 962964645515708008}
   ledgeClimbXOffset1: 0.05
   ledgeClimbYOffset1: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   dashTime: 0.2
   dashSpeed: 30
   distanceBetweenImages: 0.1
-  dashCoolDown: 2.5
+  dashCoolDown: 5
   knockbackDuration: 0.1
   knockbackSpeed: {x: 10, y: 5}
   RopeCheck: {fileID: 1433425853}
@@ -435,8 +435,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   ropeCheckDistance: 0.15
-  hangTimeSet: 0.12
-  jumpBufferLenght: 0.1
+  hangTimeSet: 0.05
+  jumpBufferLenght: 0.05
   fallDamagePerSec: 0.1
   dust: {fileID: 0}
   walkSound: walk
@@ -491,7 +491,7 @@ Transform:
   m_GameObject: {fileID: 7928889977678348548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.063, y: 0.684, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 7537674935522300346}
   m_RootOrder: 4

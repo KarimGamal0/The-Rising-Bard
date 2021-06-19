@@ -347,6 +347,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1362586734, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362586735, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_text
+      value: '[E] TO OPEN THE DOOR'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362586735, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_fontSize
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362586735, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 1362586735, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362586735, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362586735, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 1152396817354734662, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1663,6 +1691,14 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[192].Y
       value: -130000000
       objectReference: {fileID: 0}
+    - target: {fileID: 8154238540654840693, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8154238540654840693, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.084
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
 --- !u!114 &572532371 stripped
@@ -1817,6 +1853,10 @@ PrefabInstance:
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 572532371}
+    - target: {fileID: 6495855076808043209, guid: acab10cd17172d345941870979b63303, type: 3}
+      propertyPath: checkPointName
+      value: CHECKpOINT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acab10cd17172d345941870979b63303, type: 3}
 --- !u!1 &991284997 stripped

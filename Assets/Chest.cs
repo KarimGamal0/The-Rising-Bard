@@ -6,6 +6,7 @@ public class Chest : MonoBehaviour
 {
     Animator anim;
     public GameEvent showWeapon;
+    bool isChestOpend = false;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +16,13 @@ public class Chest : MonoBehaviour
 
     public void OpenChest()
     {
-        anim.SetBool("isOpen", true);  
+        anim.SetBool("isOpen", true);
+        isChestOpend = true;
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && isChestOpend)
         {
             showWeapon.Raise();
         }
