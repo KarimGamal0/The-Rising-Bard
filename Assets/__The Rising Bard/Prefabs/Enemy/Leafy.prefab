@@ -250,7 +250,7 @@ MonoBehaviour:
   hurtCooldownSet: 0.25
   m_moveSpeed: 2
   maxHelth: 100
-  m_attackDistance: 0.7
+  m_attackDistance: 0.6
   m_cooldownTimer: 0.6
   m_rayCast: {fileID: 1319753540944016659}
   m_rayCastDistance: 0.3
@@ -277,7 +277,7 @@ MonoBehaviour:
   touchDamageWidth: 0.41
   touchDamageHeight: 1.14
   damgeTaken: 10
-  damgeToPlayer: 0
+  damgeToPlayer: 13
 --- !u!95 &1319753539628229357
 Animator:
   serializedVersion: 3
@@ -481,6 +481,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: low.g
+      value: 0.07366473
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: low.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: hight.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: hight.r
+      value: 0.26853323
+      objectReference: {fileID: 0}
     - target: {fileID: 7969350688943697424, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
       propertyPath: m_Name
       value: EnemyHealthBar
@@ -555,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7969350688943697427, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.632
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 7969350688943697427, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

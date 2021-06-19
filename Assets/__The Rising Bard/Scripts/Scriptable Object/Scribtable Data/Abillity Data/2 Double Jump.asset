@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 2 Double Jump
   m_EditorClassIdentifier: 
   abilityName: Double Jump
-  abilityGained: 1
+  abilityGained: 0
   abilityActive: 0
   abilityCost: 45

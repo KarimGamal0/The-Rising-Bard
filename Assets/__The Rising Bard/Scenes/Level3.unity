@@ -3899,23 +3899,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1319753539628229266, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_attackDistance
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 1319753539628229356, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_Name
       value: Leafy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5090156429076695927, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6062350014927238907, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6062350014927238907, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -3972,23 +3960,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1319753539628229266, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_attackDistance
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 1319753539628229356, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_Name
       value: Leafy
       objectReference: {fileID: 0}
     - target: {fileID: 5090156429076695927, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6062350014927238907, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6062350014927238907, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -4206,27 +4182,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1319753539628229266, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_attackDistance
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 1319753539628229356, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_Name
       value: Leafy (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5090156428358523370, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.59
-      objectReference: {fileID: 0}
     - target: {fileID: 5090156429076695927, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6062350014927238907, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6062350014927238907, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -4724,10 +4684,6 @@ PrefabInstance:
     - target: {fileID: 1319753539628229265, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319753539628229266, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
-      propertyPath: m_attackDistance
-      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1319753539628229356, guid: 302ebbcbe8bd9054faea14c2c674bbe9, type: 3}
       propertyPath: m_Name
