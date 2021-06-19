@@ -285,7 +285,7 @@ public class EnemyBehavoir : MonoBehaviour
         rb.AddForce(movement);
     }
 
-    private void Die()
+    public void Die()
     {
         Debug.Log("Die");
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
