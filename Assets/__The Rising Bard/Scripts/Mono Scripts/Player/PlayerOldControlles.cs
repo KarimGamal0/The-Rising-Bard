@@ -237,6 +237,10 @@ public class PlayerOldControlles : MonoBehaviour
             }
 
         }
+        if (Input.GetButtonDown("Jump") &&isTouchingWall && movementInputDirection != facingDirection)
+        {
+            WallJump();
+        }
 
 
 
@@ -559,7 +563,6 @@ public class PlayerOldControlles : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0.0f);
             isWallSliding = false;
-            amountOfJumpsLeft = amountOfJumps;
             amountOfJumpsLeft--;
             Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
