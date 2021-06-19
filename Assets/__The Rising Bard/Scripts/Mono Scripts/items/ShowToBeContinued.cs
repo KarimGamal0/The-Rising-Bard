@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ShowToBeContinued : MonoBehaviour
 {
     [SerializeField] GameObject toBeConPanel;
+    bool isTinaKilled = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -13,7 +14,7 @@ public class ShowToBeContinued : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player" )
+        if(collision.tag == "Player" && isTinaKilled)
         {
             toBeConPanel.SetActive(true);
         }
@@ -21,5 +22,10 @@ public class ShowToBeContinued : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void TinaKilled()
+    {
+        isTinaKilled = true;
     }
 }

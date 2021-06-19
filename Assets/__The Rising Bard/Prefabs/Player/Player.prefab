@@ -428,7 +428,7 @@ MonoBehaviour:
   dashSpeed: 30
   distanceBetweenImages: 0.1
   dashCoolDown: 5
-  knockbackDuration: 0.1
+  knockbackDuration: 0.05
   knockbackSpeed: {x: 10, y: 5}
   RopeCheck: {fileID: 1433425853}
   whatIsRope:

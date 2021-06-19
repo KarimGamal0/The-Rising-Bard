@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e751dca0366344496286716b4197d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tinaKilled: {fileID: 11400000, guid: 61811be16de4c4b4982b7fbf7da98fbb, type: 2}
   player: {fileID: 0}
   healthSlider: {fileID: 7969350687214308453}
   attackRadius: 1

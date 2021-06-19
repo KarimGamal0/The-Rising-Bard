@@ -171,7 +171,7 @@ public class PlayerCombatController : MonoBehaviour
     }
     private void Die()
     {
-        Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
+       // Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         //GetComponent<SpriteRenderer>().enabled = false;
         //GetComponent<BoxCollider2D>().enabled = false;

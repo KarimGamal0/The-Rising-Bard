@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class BossTina : MonoBehaviour
 {
+
+    // events 
+    [SerializeField] GameEvent tinaKilled;
+
+
     Animator animator;
 
     [SerializeField]
@@ -138,6 +143,7 @@ public class BossTina : MonoBehaviour
 
     private void Die()
     {
+        tinaKilled.Raise();
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         Destroy(gameObject);
