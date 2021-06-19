@@ -36086,6 +36086,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rapiada
       objectReference: {fileID: 0}
+    - target: {fileID: 5419063428635402086, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: low.g
+      value: 0.037798893
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419063428635402086, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: low.r
+      value: 0.77254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419063428635402086, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: hight.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419063428635402086, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: hight.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419063428635402086, guid: f03435e8b3531ef49896fa319595328f, type: 3}
+      propertyPath: hight.r
+      value: 0.26853323
+      objectReference: {fileID: 0}
     - target: {fileID: 5419063429223484903, guid: f03435e8b3531ef49896fa319595328f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
