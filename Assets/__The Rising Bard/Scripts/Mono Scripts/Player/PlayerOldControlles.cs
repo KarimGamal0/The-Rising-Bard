@@ -181,6 +181,7 @@ public class PlayerOldControlles : MonoBehaviour
             ApplyMovement();
             CheckSurroundings();
             ApplyRopeMovement();
+            AddManaToPlayer();
         }
     }
 
@@ -204,7 +205,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
         //  ropeInputDirection = Input.GetAxisRaw("Vertical");
-        if (isGrounded||(amountOfJumpsLeft > 0 && !isTouchingWall))
+        if (isGrounded || (amountOfJumpsLeft > 0 && isTouchingWall))
         {
             hangTime = hangTimeSet;
             amountOfJumpsLeft = amountOfJumps;
@@ -222,18 +223,14 @@ public class PlayerOldControlles : MonoBehaviour
         {
             jumpBufferTime -= Time.fixedDeltaTime;
         }
-        if(Input.GetButtonDown("Jump") && amountOfJumpsLeft>0 && PD.abilities[1].abilityGained )
+        if (Input.GetButtonDown("Jump") && amountOfJumpsLeft > 0 && PD.abilities[1].abilityGained)
         {
             NormalJump();
-        }
-        if(Input.GetButtonDown("Jump") && isTouchingWall && movementInputDirection!= facingDirection)
-        {
-            WallJump();
         }
         if (jumpBufferTime >= 0)
         {
 
-            if (amountOfJumpsLeft >= 0  && hangTime > 0)
+            if (amountOfJumpsLeft >= 0 && hangTime > 0)
             {
                 NormalJump();
                 jumpBufferTime = 0;
@@ -241,8 +238,12 @@ public class PlayerOldControlles : MonoBehaviour
             }
 
         }
+        if (Input.GetButtonDown("Jump") &&isTouchingWall && movementInputDirection != facingDirection)
+        {
+            WallJump();
+        }
 
-        
+
 
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
@@ -427,7 +428,7 @@ public class PlayerOldControlles : MonoBehaviour
             {
                 WallJump();
             }
-            else if (isGrounded || (amountOfJumpsLeft>0&& !isTouchingWall))
+            else if (isGrounded || (amountOfJumpsLeft > 0 && !isTouchingWall))
             {
                 NormalJump();
             }
@@ -563,7 +564,6 @@ public class PlayerOldControlles : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0.0f);
             isWallSliding = false;
-            amountOfJumpsLeft = amountOfJumps;
             amountOfJumpsLeft--;
             Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
@@ -705,4 +705,14 @@ public class PlayerOldControlles : MonoBehaviour
         }
 
     }
+
+    void AddManaToPlayer()
+    {
+        if (PD.playerMana <= PD.playerMaxMana - 1)
+        {
+            PD.playerMana += 0.01F;
+        }
+
+    }
+    //todo : add mana generate per sec
 }

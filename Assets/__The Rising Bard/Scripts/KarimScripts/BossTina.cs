@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class BossTina : MonoBehaviour
 {
+
+    // events 
+    [SerializeField] GameEvent tinaKilled;
+
+
     Animator animator;
 
     [SerializeField]
@@ -75,6 +80,8 @@ public class BossTina : MonoBehaviour
         }
 
         CheckTouchDamage();
+
+        Debug.Log(animator.GetBool("isStateTwo"));
     }
 
     public void LookAtPlayer()
@@ -105,17 +112,14 @@ public class BossTina : MonoBehaviour
 
     public void Shoot()
     {
-
         Instantiate(Bullet, shootingPoint.position - new Vector3(Random.Range(0f, 5f), Random.Range(0f, 3f), 0), shootingPoint.rotation, shootingPoint);
         Instantiate(Bullet, shootingPoint.position - new Vector3(Random.Range(0f, 5f), 0, 0), shootingPoint.rotation, shootingPoint);
         Instantiate(Bullet, shootingPoint.position + new Vector3(Random.Range(0f, 5f), 0, 0), shootingPoint.rotation, shootingPoint);
         Instantiate(Bullet, shootingPoint.position + new Vector3(Random.Range(0f, 5f), Random.Range(0f, 3f), 0), shootingPoint.rotation, shootingPoint);
-
     }
 
     public void Damage(float[] playerAttackDetails)
     {
-        Debug.Log("Damage Tina");
         currentHealth -= playerAttackDetails[0] * damgeTaken;
 
         animator.SetTrigger("isHurt");
@@ -139,7 +143,7 @@ public class BossTina : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Die");
+        tinaKilled.Raise();
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         Destroy(gameObject);

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3030236554898811225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.34, y: 2.66, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 1
@@ -83,7 +83,7 @@ Transform:
   m_GameObject: {fileID: 3030236554966582005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.08, y: 0.57, z: 0}
-  m_LocalScale: {x: 3.8674998, y: 1, z: 1}
+  m_LocalScale: {x: 3.8674998, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 2
@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 3030236555196509460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -75.27, y: -6.35, z: -0.807884}
-  m_LocalScale: {x: 0.2686629, y: 0.2686629, z: 0.2686629}
+  m_LocalScale: {x: 0.2686629, y: 0.2686629, z: 0}
   m_Children:
   - {fileID: 3030236555825360460}
   - {fileID: 3030236554898811230}
@@ -246,7 +246,7 @@ MonoBehaviour:
   helthBarController: {fileID: 4847591602190158597}
   hurtCooldownSet: 0.25
   m_moveSpeed: 2
-  maxHealth: 100
+  maxHelth: 100
   m_attackDistance: 0.7
   m_cooldownTimer: 0.7
   m_rayCast: {fileID: 3030236556749634283}
@@ -274,8 +274,7 @@ MonoBehaviour:
   touchDamageWidth: 0.31
   touchDamageHeight: 1.07
   damgeTaken: 15
-  damgeToPlayer: 0
-  damageDisplacement: 0.7
+  damgeToPlayer: 10
 --- !u!95 &3030236555196509461
 Animator:
   serializedVersion: 3
@@ -346,7 +345,7 @@ Transform:
   m_GameObject: {fileID: 3030236555825360463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 0
@@ -376,7 +375,7 @@ Transform:
   m_GameObject: {fileID: 3030236556749634282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.92, y: 2.263, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 3
@@ -405,8 +404,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3786571686028947653}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5, y: 3.27, z: 0}
-  m_LocalScale: {x: 2.7211425, y: 2.7211425, z: 2.7211425}
+  m_LocalPosition: {x: -1.15, y: 3.27, z: 0}
+  m_LocalScale: {x: 2.7211425, y: 2.7211425, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 6
@@ -436,7 +435,7 @@ Transform:
   m_GameObject: {fileID: 7751568899219508136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.17, y: 1.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 4
@@ -466,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 8668520157507182513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.33, y: 2.65, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 3030236555196509545}
   m_RootOrder: 5
@@ -481,6 +480,22 @@ PrefabInstance:
     - target: {fileID: 7969350688326188174, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: low.g
+      value: 0.07371559
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: low.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: hight.g
+      value: 0.85882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969350688943697423, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
+      propertyPath: hight.r
+      value: 0.24432741
       objectReference: {fileID: 0}
     - target: {fileID: 7969350688943697424, guid: 1053be86e16f89f43a0f1316f9da7488, type: 3}
       propertyPath: m_Name

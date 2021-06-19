@@ -38,7 +38,7 @@ public class PlayerKillMemoTest : MonoBehaviour
                     if(memo.PlayerHP!=-1)
                     {
                         player.GetMementoFromCareTaker(memo);
-                        //todo event (send memo via event )
+
 
                     }
                     else
