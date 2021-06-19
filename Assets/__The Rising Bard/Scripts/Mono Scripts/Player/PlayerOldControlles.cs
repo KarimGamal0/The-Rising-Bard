@@ -205,7 +205,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
         //  ropeInputDirection = Input.GetAxisRaw("Vertical");
-        if (isGrounded || (amountOfJumpsLeft > 0 && isTouchingWall))
+        if (isGrounded )
         {
             hangTime = hangTimeSet;
             amountOfJumpsLeft = amountOfJumps;
@@ -238,7 +238,7 @@ public class PlayerOldControlles : MonoBehaviour
             }
 
         }
-        if (Input.GetButtonDown("Jump") &&isTouchingWall && movementInputDirection != facingDirection)
+        if (Input.GetButtonDown("Jump") && isTouchingWall && movementInputDirection != facingDirection && movementInputDirection!=0)
         {
             WallJump();
         }
@@ -710,7 +710,7 @@ public class PlayerOldControlles : MonoBehaviour
     {
         if (PD.playerMana <= PD.playerMaxMana - 1)
         {
-            PD.playerMana += 0.01F;
+            PD.playerMana += 0.05F;
         }
 
     }

@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     GameObject mainMenuPanel;
     [SerializeField]
-    GameObject settingsPanel; 
+    GameObject settingsPanel;
     [SerializeField]
     GameObject credit;
     [SerializeField]
@@ -26,12 +26,17 @@ public class UIManager : MonoBehaviour
 
         levelManager = FindObjectOfType<levelManagerCareTaker>();
     }
-    
-    public void PlayGame()
+
+    public void NewGame()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.DeleteAll();
+        levelManager.checkLevelData();
+    }
+    public void LoadGame()
     {
         levelManager.checkLevelData();
-        //SceneManager.LoadScene(1);
-    }
+    } 
 
     public void Settings()
     {

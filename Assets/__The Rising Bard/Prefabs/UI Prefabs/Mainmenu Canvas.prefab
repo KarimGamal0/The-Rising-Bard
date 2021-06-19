@@ -1061,7 +1061,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7415836228189581889}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a218ba4410458774f9a61faf7fde3cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PD: {fileID: 0}
+  PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
   mainMenuPanel: {fileID: 7415836229146463757}
   settingsPanel: {fileID: 0}
   credit: {fileID: 7415836228445057316}
