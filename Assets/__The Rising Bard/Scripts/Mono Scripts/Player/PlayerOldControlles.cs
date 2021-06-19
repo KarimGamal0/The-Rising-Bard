@@ -181,6 +181,7 @@ public class PlayerOldControlles : MonoBehaviour
             ApplyMovement();
             CheckSurroundings();
             ApplyRopeMovement();
+            AddManaToPlayer();
         }
     }
 
@@ -701,6 +702,15 @@ public class PlayerOldControlles : MonoBehaviour
         if (PD.playerHP <= PD.playerMaxHP - 1)
         {
             PD.playerHP += 1;
+        }
+
+    }
+
+    void AddManaToPlayer()
+    {
+        if (PD.playerMana <= PD.playerMaxMana - 1)
+        {
+            PD.playerMana += 0.01F;
         }
 
     }
