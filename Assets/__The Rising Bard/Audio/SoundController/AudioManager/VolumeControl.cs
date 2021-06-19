@@ -21,7 +21,16 @@ public class VolumeControl : MonoBehaviour
     {
         slider.onValueChanged.AddListener(CustomControlSound);
         toggle.onValueChanged.AddListener(ToggleSound);
-        slider.value = PlayerPrefs.GetFloat(volumeParam);
+        if (PlayerPrefs.HasKey(volumeParam))
+        {
+            slider.value = PlayerPrefs.GetFloat(volumeParam);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat(volumeParam, 1f);
+            slider.value = PlayerPrefs.GetFloat(volumeParam);
+
+        }
     }
 
     private void ToggleSound(bool toggleValue)
@@ -45,12 +54,11 @@ public class VolumeControl : MonoBehaviour
     private void CustomControlSound(float arg0)
     {
         //  await Task.Delay(100);
-    
+
         mixer.SetFloat(volumeParam, (1 - Mathf.Sqrt(arg0)) * -80f);
         PlayerPrefs.SetFloat(volumeParam, slider.value);
- 
 
-        if (slider.value==0)
+        if (slider.value == 0)
         {
             toggle.isOn = true;
         }
@@ -59,5 +67,5 @@ public class VolumeControl : MonoBehaviour
             toggle.isOn = false;
         }
     }
- 
+
 }
