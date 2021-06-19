@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Debug.Log(Vector2.Distance(postionXStart, postionXEnd));
+
         if (doorOpend &&Vector2.Distance(postionXStart,postionXEnd)<=4 )
         {
             postionX = transform.position.x;

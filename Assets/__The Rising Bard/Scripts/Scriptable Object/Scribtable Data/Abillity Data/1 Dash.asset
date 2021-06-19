@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 1 Dash
   m_EditorClassIdentifier: 
   abilityName: Dash
-  abilityGained: 1
+  abilityGained: 0
   abilityActive: 0
   abilityCost: 45
