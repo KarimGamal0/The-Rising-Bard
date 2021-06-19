@@ -704,4 +704,5 @@ public class PlayerOldControlles : MonoBehaviour
         }
 
     }
+    //todo : add mana generate per sec
 }
