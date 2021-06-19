@@ -13,6 +13,8 @@ public class TinaBullet : MonoBehaviour
     [SerializeField] float damgeAmountToPlayer;
 
     private float[] attackDetails = new float[2];
+
+    RaycastHit2D hitInfo;
     void Start()
     {
         Invoke("DestroyProjectile", m_lifeTime);
@@ -21,18 +23,24 @@ public class TinaBullet : MonoBehaviour
 
     void Update()
     {
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
-        if (hitInfo.collider != null)
+        hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //hitInfo = Physics2D.Raycast(transform.position, -transform.up, distance, whatIsSolid);
+        hitInfo = Physics2D.BoxCast(transform.position, new Vector2(2, 2), 0.0f, -transform.up, distance, whatIsSolid);
+        if (collision.gameObject.tag == "Player")
         {
-            if (hitInfo.collider.CompareTag("Player"))
-            {
-                //Player Damage
-                attackDetails[1] = transform.position.x;
-                hitInfo.collider.SendMessage("Damage", attackDetails);
-            }
+            attackDetails[1] = transform.position.x;
+            hitInfo.collider.SendMessage("Damage", attackDetails);
             DestroyProjectile();
         }
 
+        if (collision.transform.tag == "Ground")
+        {
+            DestroyProjectile();
+        }
     }
 
     void DestroyProjectile()
