@@ -106,5 +106,10 @@ public class Dialog : MonoBehaviour
         }
     }
 
+    public void skipAll()
+    {
+        SceneManager.LoadScene(2);
+
+    }
 
 }

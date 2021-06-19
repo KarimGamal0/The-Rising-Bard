@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PD: {fileID: 11400000, guid: 2b4514d8318eb1a43b77cd2ce2a3d538, type: 2}
+  updatePlayerUI: {fileID: 11400000, guid: 13a32a04ba7240c4397c7f0c934ffb91, type: 2}
   player: {fileID: 0}

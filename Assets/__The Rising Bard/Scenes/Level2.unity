@@ -34470,6 +34470,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031923889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3934784149933685701, guid: b835b935deff8854495e889277bd9706, type: 3}
+  m_PrefabInstance: {fileID: 526946618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2042745401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2478142962198736466, guid: 4b41030e526d23e42ae9fe59cd6da88e, type: 3}
@@ -34998,7 +35009,7 @@ PrefabInstance:
     - target: {fileID: 5150241558690571441, guid: 77b9571d15933d741b1336e14a9bdb0d, type: 3}
       propertyPath: secondCM
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2031923889}
     - target: {fileID: 5150241558690571442, guid: 77b9571d15933d741b1336e14a9bdb0d, type: 3}
       propertyPath: m_Name
       value: CameraControllerSystem
