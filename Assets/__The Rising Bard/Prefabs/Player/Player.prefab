@@ -407,7 +407,7 @@ MonoBehaviour:
   groundCheckRadius: 0.132
   amountOfJumps: 2
   wallCheck: {fileID: 6627103875636012024}
-  wallCheckDistance: 0.2
+  wallCheckDistance: 0.28
   wallSlideSpeed: 1
   moveFoecOnAir: 20
   airDragMultiplier: 0.95

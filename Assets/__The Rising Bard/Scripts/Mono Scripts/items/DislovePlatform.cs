@@ -6,12 +6,12 @@ public class DislovePlatform : MonoBehaviour
 {
 
     Material material;
-    float fadeValue;
+    float fadeValue = 1;
     [SerializeField] float waitSecs;
     void Start()
     {
         material = GetComponent<Renderer>().material;
-        StartCoroutine("WaitCoroutine", (waitSecs));
+        //StartCoroutine("WaitCoroutine", (waitSecs));
     }
 
 
@@ -20,41 +20,26 @@ public class DislovePlatform : MonoBehaviour
     {
         while (true)
         {
-            if (fadeValue >= 1)
-            {
-                StopCoroutine("WaitCoroutine");
-                StartCoroutine("WaitCoroutine2", waitSec);
-            }
-            fadeValue += 0.1f;
-
+            fadeValue -= 0.05f;
             material.SetFloat("_Fade", fadeValue);
+            if (fadeValue <= 0.3f)
+            {
+                Destroy(gameObject);
+            }
             yield return new WaitForSeconds(waitSec);
-
+           
         }
-
-
+        
     }
-
-
-
-    IEnumerator WaitCoroutine2(float waitSec)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        while (true)
+        if (collision.tag == "Player")
         {
-            if (fadeValue <= 0)
-            {
-                StopCoroutine("WaitCoroutine2");
-                StartCoroutine("WaitCoroutine", waitSec);
-            }
-
-            fadeValue -= 0.1f;
-
-            material.SetFloat("_Fade", fadeValue);
-            yield return new WaitForSeconds(waitSec);
-
+            StartCoroutine(WaitCoroutine(waitSecs));
         }
-
-
     }
+
+
+
 }
 
