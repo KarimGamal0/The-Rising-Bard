@@ -24,6 +24,7 @@ public class Weapon : MonoBehaviour
         {
             isPicked = true;
             ShowDashPannel.Raise();
+            Debug.Log("Shwoing dash panel;");
         }
     }
 

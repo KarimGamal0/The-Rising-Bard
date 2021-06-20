@@ -493,6 +493,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1855672920, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
+      propertyPath: m_BlendStyleIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1976609695, guid: d799db3ff9e03494e94d885f8d051639, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0

@@ -4817,6 +4817,10 @@ PrefabInstance:
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 913756692}
+    - target: {fileID: 6495855076808043209, guid: acab10cd17172d345941870979b63303, type: 3}
+      propertyPath: checkPointName
+      value: BeforeBosstina
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acab10cd17172d345941870979b63303, type: 3}
 --- !u!1001 &1762793262

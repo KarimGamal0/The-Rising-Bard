@@ -831,9 +831,17 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4016041249600646964, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4373819912727826546, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
       propertyPath: m_Color.a
       value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474925007877364594, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5113477183085008160, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
       propertyPath: UISound
@@ -841,7 +849,7 @@ PrefabInstance:
       objectReference: {fileID: 1769570686}
     - target: {fileID: 6241098464464690827, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811570781787800802, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
       propertyPath: m_IsActive
@@ -35579,50 +35587,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f976c5a90ecf1c843b2515bfb805e230, type: 3}
---- !u!1 &1187228853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6241098464464690827, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-  m_PrefabInstance: {fileID: 633571689}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1187228857 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6514540084068140510, guid: aed2a22d1b8a3ef41a69470ef4ee29dc, type: 3}
-  m_PrefabInstance: {fileID: 633571689}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187228853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfe1b76082930e04a93680402dd218ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1187228861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187228853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7986838f1b5073a479e83477d0221ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: da62c6d3d5a3df7408dda001d0d6bd56, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1187228857}
-        m_TargetAssemblyTypeName: dashHandlerUI, Assembly-CSharp
-        m_MethodName: showDashPanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &1198692578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 850713685097389779, guid: 4b41030e526d23e42ae9fe59cd6da88e, type: 3}
