@@ -83,13 +83,14 @@ public class levelManagerCareTaker : MonoBehaviour
     {
         player.GetComponent<SpriteRenderer>().enabled = false;   //hide player from enemy then fall down . no collide you will fall
         player.GetComponent<BoxCollider2D>().enabled = false;    //hide player from enemy then fall down . no collide you will fall
-        yield return new WaitForSeconds(2);//null;
+         yield return new WaitForSeconds(2);//null;
 
         Debug.Log("OnPlayerDeath player is diead ?? event called ");
 
 
         player.GetComponent<SpriteRenderer>().enabled = true;
         player.GetComponent<BoxCollider2D>().enabled = true;
+ 
         var lastCheckPointData = get($"{CheckPointMain.lastCheckPoint}");
 
         firstCameraPostionSwitchEvent?.Invoke();
