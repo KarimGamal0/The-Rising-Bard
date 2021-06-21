@@ -56,6 +56,7 @@ public class PasueMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         UISound.SetActive(true);
+        Time.timeScale = 1f;
     }
     public void ExitToMainMenu()
     {
