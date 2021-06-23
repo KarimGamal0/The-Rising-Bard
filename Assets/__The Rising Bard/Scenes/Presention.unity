@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3332538978192279090, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a077e0a47593fe44bb29a53eb87dfac9, type: 3}
 --- !u!114 &451943713 stripped
@@ -619,7 +623,19 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 3213609965272165875, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 141.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313455323879956603, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 112.34
+      objectReference: {fileID: 0}
     - target: {fileID: 3726114115729896851, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: firstCM
+      value: 
+      objectReference: {fileID: 451943713}
+    - target: {fileID: 3874986880005081021, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
@@ -683,6 +699,10 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 6166131044054592628, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 132.04
+      objectReference: {fileID: 0}
     - target: {fileID: 6307968487869310285, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: firstCM
       value: 
@@ -691,6 +711,14 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 7082726767727407334, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: firstCM
+      value: 
+      objectReference: {fileID: 451943713}
+    - target: {fileID: 7606603797921712794, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 102.66
+      objectReference: {fileID: 0}
     - target: {fileID: 7864929215046419044, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: m_Name
       value: PRESENATATION
@@ -699,6 +727,10 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 8770056782524262054, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 93.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8770056782606656905, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: firstCM
       value: 
@@ -707,6 +739,10 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 8770056782969041522, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8770056783055171452, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: firstCM
       value: 
@@ -739,6 +775,10 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 8770056783695821843, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 111.62
+      objectReference: {fileID: 0}
     - target: {fileID: 8770056783696819499, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: firstCM
       value: 
@@ -759,6 +799,10 @@ PrefabInstance:
       propertyPath: firstCM
       value: 
       objectReference: {fileID: 451943713}
+    - target: {fileID: 8770056784056568623, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 84.89
+      objectReference: {fileID: 0}
     - target: {fileID: 8770056784366653403, guid: b3cd5468e85564e4497d33348c54bda7, type: 3}
       propertyPath: firstCM
       value: 
