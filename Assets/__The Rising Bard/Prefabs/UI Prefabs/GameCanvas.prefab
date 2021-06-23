@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1036789009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926558680271814588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260c677f1f8d2134cbf2b99a41eb174c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1190746458247332013
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,62 +86,6 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
---- !u!114 &559809274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138441181708446564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7986838f1b5073a479e83477d0221ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 32f1019c19bf22d468769e083c701ffb, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2138441181708446562}
-        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
-        m_MethodName: ChangeMana
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1138771666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138441181708446564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7986838f1b5073a479e83477d0221ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 13a32a04ba7240c4397c7f0c934ffb91, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2138441181708446562}
-        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
-        m_MethodName: updatePlayerUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2138441181906171964
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,26 +240,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138441181906171960}
     m_Modifications:
-    - target: {fileID: 1258343612080934292, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+    - target: {fileID: 1366857011, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1258343612080934292, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
-      propertyPath: m_AnchorMax.y
+    - target: {fileID: 1366857011, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1258343612794663310, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
+    - target: {fileID: 1366857011, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 52.671
       objectReference: {fileID: 0}
-    - target: {fileID: 1258343612794663310, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 1366857011, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 426.02
       objectReference: {fileID: 0}
-    - target: {fileID: 1258343612794663313, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1258343613508813290, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
       propertyPath: m_Name
       value: Health Bar
@@ -392,6 +344,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 33346
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.034508705
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 0.4970588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.0047169924
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0.26731172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669405255840268046, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.m_NumAlphaKeys
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617226022980964448, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617226022980964448, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518540094532089723, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: a317bcd1cb2673c40931de8d54e71268, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
 --- !u!1 &2138441181708446564 stripped
@@ -404,17 +408,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1258343613508813293, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
   m_PrefabInstance: {fileID: 926558679453362830}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2138441181708446562 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1258343613508813292, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
+--- !u!1 &926558680271814588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1366857010, guid: 84dfbe739cfe1134c8f15a5a6a8e6213, type: 3}
   m_PrefabInstance: {fileID: 926558679453362830}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138441181708446564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f8b47f468a4bea4285b253db521b515, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1598919994742639249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -506,13 +504,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2417124025183806885, guid: e82f67bcacfb4064f95cc79d1f47b901, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4660192894009791514, guid: e82f67bcacfb4064f95cc79d1f47b901, type: 3}
       propertyPath: m_Name
       value: skill Pannel
       objectReference: {fileID: 0}
     - target: {fileID: 4660192894009791514, guid: e82f67bcacfb4064f95cc79d1f47b901, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6736527371358044124, guid: e82f67bcacfb4064f95cc79d1f47b901, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
