@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
     public void LoadGame()
     {
         levelManager.checkLevelData();
+        Time.timeScale = 1;
     } 
 
     public void Settings()
