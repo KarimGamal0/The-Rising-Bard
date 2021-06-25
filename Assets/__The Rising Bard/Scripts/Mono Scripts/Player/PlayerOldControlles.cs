@@ -181,7 +181,7 @@ public class PlayerOldControlles : MonoBehaviour
             ApplyMovement();
             CheckSurroundings();
             ApplyRopeMovement();
-            AddManaToPlayer();
+            
         }
     }
 
@@ -690,16 +690,18 @@ public class PlayerOldControlles : MonoBehaviour
     private void OnEnable()
     {
         HealingArea.HealPlayer += HealPlayer;
+        HealingArea.HealPlayer += AddManaToPlayer;
 
     }
     private void OnDisable()
     {
         HealingArea.HealPlayer -= HealPlayer;
+        HealingArea.HealPlayer -= AddManaToPlayer;
 
     }
     void HealPlayer()
     {
-        if (PD.playerHP <= PD.playerMaxHP - 1)
+        if (PD.playerHP < PD.playerMaxHP)
         {
             PD.playerHP += 1;
         }
@@ -708,9 +710,9 @@ public class PlayerOldControlles : MonoBehaviour
 
     void AddManaToPlayer()
     {
-        if (PD.playerMana <= PD.playerMaxMana - 1)
+        if (PD.playerMana < PD.playerMaxMana )
         {
-            PD.playerMana += 0.05F;
+            PD.playerMana += 1;
         }
 
     }

@@ -43,7 +43,7 @@ public class HealingArea : MonoBehaviour
     }
     IEnumerator StartHealing(Collider2D collision)
     {
-        while (PD.playerHP < PD.playerMaxHP)
+        while (PD.playerHP < PD.playerMaxHP || PD.playerMana < PD.playerMaxMana)
         {
             isHealing = true;
             playerAnimator = collision.GetComponent<Animator>();
